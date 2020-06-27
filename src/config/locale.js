@@ -1,5 +1,5 @@
 const WEEKDAYS_SHORT = {
-  cs: ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'],
+  cs: ['N', 'P', 'Ú', 'S', 'Č', 'P', 'S'],
 };
 const MONTHS = {
   cs: [

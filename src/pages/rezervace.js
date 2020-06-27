@@ -11,7 +11,34 @@ import DayPicker from 'react-day-picker';
 
 import 'react-day-picker/lib/style.css';
 
+import LeftArrow from '../components/svg/leftArrow'
+import RightArrow from '../components/svg/rightArrow'
+
 import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
+
+
+function Navbar({
+  nextMonth,
+  previousMonth,
+  onPreviousClick,
+  onNextClick,
+  className,
+  localeUtils,
+}) {
+  const months = localeUtils.getMonths();
+  const prev = months[previousMonth.getMonth()];
+  const next = months[nextMonth.getMonth()];
+  return (
+    <div className={className}>
+      <LeftArrow className='DayPicker-NavButton--Previous' onClick={() => onPreviousClick()} />
+      <RightArrow className='DayPicker-NavButton--Next' onClick={() => onNextClick()} />
+      {/* <button style={styleLeft} onClick={() => onPreviousClick()}>
+      </button> */}
+      {/* <button style={styleRight} onClick={() => onNextClick()}>
+      </button> */}
+    </div>
+  );
+}
 
 const ReservationPage = () => {
 
@@ -22,32 +49,18 @@ const ReservationPage = () => {
   let bookings = []
   let modifiers = {}
 
-  const birthdayStyle = `.DayPicker-Day--booked {
-    background-color: orange;
-    color: white;
-  }`;
-
   useEffect(() => {
 
   }, [])
 
+  // Load all the bookings
   const { loading, data } = useQuery(GET_ALL_BOOKINGS, {});
-  console.log('data: ', data)
 
   if (!loading) {
-
-  // console.log('data: ', data.page.edges)
-  
     bookings = data.page.edges.map((node) => {
       return node.node
     })
 
-  // setBookings(loading ? [] : data.page.edges.map((node) => {
-  //   return node.node
-  // }))
-  
-  console.log('bookings: ', bookings)
-    
     modifiers = {
       booked: bookings.map((booking) => {
         return {
@@ -56,18 +69,8 @@ const ReservationPage = () => {
         }
       })
     }
-  // setModifiers(loading ? {} : {
-  //   booked: bookings.map((booking) => {
-  //     return {
-  //       from: new Date(booking.bookedFrom),
-  //       to: new Date(booking.bookedTo)
-  //     }
-  //   })
-  // })
-  
-  //   console.log('modifiers: ', modifiers)
   }
-  
+
   if (loading) {
     return (
       <Layout>
@@ -82,11 +85,9 @@ const ReservationPage = () => {
     return (
       <Layout>
         <SEO title="Home" />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <style>{birthdayStyle}</style>
-        
+
+        <div className='cont relative mx-auto'>
+
         <DayPicker 
           numberOfMonths={3}
           locale={locale}
@@ -97,13 +98,12 @@ const ReservationPage = () => {
           labels={LABELS[locale]}
           showOutsideDays
           modifiers={modifiers}
+          navbarElement={<Navbar />}
+    
           />
-  
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
         </div>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+        
+  
       </Layout>
     )
 
