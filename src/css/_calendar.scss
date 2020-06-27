@@ -1,0 +1,159 @@
+
+.calendar-wrapper {
+
+  --dimension: 60px;
+  .legend-wrapper {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+  }
+  .legend-block {
+    font-size: var(--size-2);
+
+    .legend-box {
+      width: var(--dimension);
+      height: var(--dimension);
+      border-radius: 0px;
+      border: 1px solid var(--primaryLight);
+      color: var(--primary);
+      line-height: var(--dimension);
+      vertical-align: middle;
+      text-align: center;
+
+    }
+    .legend-text {
+      color: var(--primary);
+      text-transform: uppercase;
+      padding-left: 2rem;
+      letter-spacing: 0.12em;
+    }
+    &.booked-slot {
+      .legend-box {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+
+
+  .DayPicker {
+    width: 100%;
+  }
+  .DayPicker-wrapper {
+    .DayPicker-Day {
+      width: var(--dimension);
+      height: var(--dimension);
+    
+      border-radius: 0px;
+      border: 1px solid var(--primaryLight);
+      color: var(--textColor);
+      font-size: var(--size-2);
+    }
+    .DayPicker-Months {
+      justify-content: space-between;
+    }
+    .DayPicker-Month {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .DayPicker-Day--today {
+      color: auto;
+      &.DayPicker-Day--booked {
+        color: white;
+      }
+      &.DayPicker-Day--outside {
+        color: var(--textColor);
+      }
+    }
+    .DayPicker-Day--booked {
+      background-color: var(--primary);
+      color: white;
+    }
+    .DayPicker-Day--outside {
+      background-color: white;
+      color: var(--textLight);
+      &.DayPicker-Day--booked {
+        color: var(--textLight);
+      }
+    }
+    .DayPicker-NavBar {
+      width: 100%;
+      position: absolute;
+      top: 1rem;
+      & > .DayPicker-NavButton--Next {
+        left: auto;
+        right: .5em;
+        position: absolute;
+        cursor: pointer;
+        height: 19px;
+        width: auto;
+      }
+      & > .DayPicker-NavButton--Previous {
+        left: .5em;
+        right: auto;
+        position: absolute;
+        cursor: pointer;
+        height: 19px;
+        width: auto;
+      }
+    }
+    .DayPicker-Weekday {
+      padding-bottom: 1rem;
+    }
+    .DayPicker-Caption {
+      margin-bottom: 2rem;
+      & > div {
+        text-align: center;
+        color: var(--textColor);
+        font-size: var(--size-2);
+        letter-spacing: 0.12em;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .calendar-wrapper {
+
+    --dimension: 3.8vw;
+    .DayPicker-wrapper {
+      .DayPicker-Day {
+        width: var(--dimension);
+        height: var(--dimension);
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .calendar-wrapper {
+
+    --dimension: 3.5vw;
+    .DayPicker-wrapper {
+      .DayPicker-Day {
+        width: var(--dimension);
+        height: var(--dimension);
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .calendar-wrapper {
+
+    --dimension: 60px;
+    .DayPicker {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .DayPicker-wrapper {
+      
+      .DayPicker-Day {
+        width: var(--dimension);
+        height: var(--dimension);
+      }
+      .DayPicker-Months {
+        justify-content: center;
+      }
+    }
+  }
+}

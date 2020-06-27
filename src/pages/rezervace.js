@@ -13,6 +13,7 @@ import 'react-day-picker/lib/style.css';
 
 import LeftArrow from '../components/svg/leftArrow'
 import RightArrow from '../components/svg/rightArrow'
+import { useMediaQuery } from 'react-responsive'
 
 import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
 
@@ -48,6 +49,7 @@ const ReservationPage = () => {
   // const [modifiers, setModifiers] = useState({})
   let bookings = []
   let modifiers = {}
+  const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
   useEffect(() => {
 
@@ -86,21 +88,43 @@ const ReservationPage = () => {
       <Layout>
         <SEO title="Home" />
 
-        <div className='cont relative mx-auto'>
+        <div className='cont relative mx-auto my-20'>
+          
+          <div className='calendar-wrapper'>
 
-        <DayPicker 
-          numberOfMonths={3}
-          locale={locale}
-          months={MONTHS[locale]}
-          weekdaysLong={WEEKDAYS_LONG[locale]}
-          weekdaysShort={WEEKDAYS_SHORT[locale]}
-          firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
-          labels={LABELS[locale]}
-          showOutsideDays
-          modifiers={modifiers}
-          navbarElement={<Navbar />}
-    
-          />
+            <DayPicker 
+              numberOfMonths={isMobile ? 1 : 3}
+              locale={locale}
+              months={MONTHS[locale]}
+              weekdaysLong={WEEKDAYS_LONG[locale]}
+              weekdaysShort={WEEKDAYS_SHORT[locale]}
+              firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
+              labels={LABELS[locale]}
+              showOutsideDays
+              modifiers={modifiers}
+              navbarElement={<Navbar />}
+        
+              />
+
+              <div className='legend-wrapper relative flex justify-start mt-16 mb-20'>
+                <div className='legend-block free-slot flex justify-start items-center mr-12'>
+                  <div className='legend-box'>
+                    19
+                  </div>
+                  <div className='legend-text'>
+                    volný termín
+                  </div>
+                </div>
+                <div className='legend-block booked-slot flex justify-start items-center'>
+                  <div className='legend-box'>
+                    27
+                  </div>
+                  <div className='legend-text'>
+                    rezervovaný termín
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
         
   

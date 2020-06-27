@@ -5,6 +5,7 @@
 @import 'fonts';
 @import 'settings';
 @import 'layout';
+@import 'calendar';
 
 html, body {
   font-family: 'Roboto', sans-serif, helvetica;
@@ -17,76 +18,3 @@ html, body {
 }
 
 // Overwrite default Daypicker styles
-.DayPicker {
-
-}
-.DayPicker-wrapper {
-  .DayPicker-Day {
-    --dimension: 60px;
-    width: var(--dimension);
-    height: var(--dimension);
-  
-    border-radius: 0px;
-    border: 1px solid var(--primaryLight);
-    color: var(--textColor);
-    font-size: var(--size-2);
-  }
-  .DayPicker-Months {
-    justify-content: space-between;
-  }
-  .DayPicker-Day--today {
-    color: auto;
-    &.DayPicker-Day--booked {
-      color: white;
-    }
-    &.DayPicker-Day--outside {
-      color: var(--textColor);
-    }
-  }
-  .DayPicker-Day--booked {
-    background-color: var(--primary);
-    color: white;
-  }
-  .DayPicker-Day--outside {
-    background-color: white;
-    color: var(--textLight);
-    &.DayPicker-Day--booked {
-      color: var(--textLight);
-    }
-  }
-  .DayPicker-NavBar {
-    width: 100%;
-    position: absolute;
-    top: 1rem;
-    & > .DayPicker-NavButton--Next {
-      left: auto;
-      right: 1.5em;
-      position: absolute;
-      cursor: pointer;
-      height: 19px;
-      width: auto;
-    }
-    & > .DayPicker-NavButton--Previous {
-      left: 1.5em;
-      right: auto;
-      position: absolute;
-      cursor: pointer;
-      height: 19px;
-      width: auto;
-    }
-  }
-  .DayPicker-Weekday {
-    padding-bottom: 1rem;
-  }
-  .DayPicker-Caption {
-    margin-bottom: 2rem;
-    & > div {
-      text-align: center;
-      color: var(--textColor);
-      font-size: var(--size-2);
-      letter-spacing: 0.12em;
-      font-weight: 400;
-      text-transform: uppercase;
-    }
-  }
-} 
