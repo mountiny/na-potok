@@ -6,14 +6,18 @@ const Header = ({ siteTitle }) => (
   <header className='absolute w-full flex justify-center'>
     <div className='inner-header flex justify-between items-center'>
       <div className="logo uppercase potok flex items-center">
-        <span>na potok</span>
+        <Link
+          to="/"
+        >
+          na potok
+        </Link>
       </div>
       <nav className="flex justify-end items-center">
        <Link
           to="/"
           className='nav-link'
         >
-          náš příběh
+            náš příběh
         </Link>
         <Link
           to="/"

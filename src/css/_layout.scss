@@ -19,11 +19,35 @@ nav {
   letter-spacing: 0.1em;
 }
 .nav-link {
-  padding: 20px;
+  padding: 20px 10px;
   text-transform: uppercase;
   font-size: var(--size-2);
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    background-color: white;
+    height: 2px;
+    bottom: 8px;
+    right: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 0;
+    transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
+  }
+  &:hover, &:focus, &:active {
+    &:after {
+      width: 100%;
+      bottom: 8px;
+      left: 0px;
+      right: auto;
+      opacity: 1;
+    }
+  }
+  
 }
 
 
@@ -51,15 +75,37 @@ footer {
 .underline-link {
   position: relative;
   letter-spacing: 0.1em;
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   background-color: white;
+  //   height: 2px;
+  //   bottom: -4px;
+  //   left: 0px;
+  //   right: 0px;
+  // }
+  overflow: hidden;
   &:after {
     content: '';
     position: absolute;
     width: 100%;
+    left: 0px;
+    opacity: 1;
+    
     background-color: white;
     height: 2px;
     bottom: -4px;
-    left: 0px;
-    right: 0px;
+    border-bottom-right-radius: 0px;
+    transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
+  }
+  &:hover, &:focus, &:active {
+    &:after {
+      width: 0%;
+      right: 0px;
+      left: auto;
+      opacity: 0;
+    }
   }
   &.text-primary {
     &:after {

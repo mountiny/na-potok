@@ -11,6 +11,7 @@ import MainImage2 from "../images/main_2.png"
 import MainImage3 from "../images/main_3.png"
 import MainImage4 from "../images/main_4.png"
 import MainImage5 from "../images/main_5.png"
+import MainImage6 from "../images/main_6.png"
 import ChataImg from '../components/svg/chata.js'
 
 import gql from 'graphql-tag';
@@ -29,7 +30,7 @@ const IndexPage = () => {
 
       {/* INTRO PAGE START */}
 
-      <div className="landing-page">
+      <section className="landing-page">
         <div className="images-cont">
           <img
             src={LandingImage1} 
@@ -39,11 +40,11 @@ const IndexPage = () => {
         <div className="title absolute flex justify-center items-center content-center">
           <h1 className='potok text-center uppercase'>na chatě</h1>
         </div>
-      </div>
+      </section>
 
       {/* INTRO PAGE END */}
 
-      <div className='container relative mx-auto text-primary'>
+      <section className='container relative mx-auto text-primary'>
         <div className="flex w-full justify-between pt-32">
           <div className="left-col flex flex-col">
             <div className="heading-wrapper">
@@ -100,18 +101,13 @@ const IndexPage = () => {
             src={MainImage3}
             />
         </div>
-        {/* <div className="centered-image-wrapper">
-          <img
-            src={MainImage3} 
-            />
-        </div> */}
-      </div>
+      </section>
 
       {/* FEATURES CONTAINER START */}
 
-      <div className="features-cont">
+      <section className="features-cont">
         <div className="cont relative mx-auto text-white">
-          <div className="flex w-full justify-between pt-32">
+          <div className="flex w-full justify-between pt-32 pb-56">
             <div className="left-col flex flex-col">
               <div className="images-wrapper inner-column mt-40">
                 <div className="image-text">
@@ -169,9 +165,65 @@ const IndexPage = () => {
 
           </div>
         </div>
-      </div>
+      </section>
 
       {/* FEATURES CONTAINER END */}
+
+      <section className="page-block">
+
+        <div className="cont relative mx-auto">
+
+          <div className="color-block"></div>
+
+          <div className="block-heading">
+            <h3 className='potok uppercase'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula tincidunt mauris sit amet molestie.
+            </h3>
+          </div>
+
+          <div className="flex w-full justify-between pt-32 pb-56">
+            <div className="left-col flex flex-col">
+              <div className="images-wrapper inner-column cursor-pointer">
+                <img
+                  src={MainImage1} 
+                  />
+                <div className="description description-left uppercase">
+                  popisek obrázku
+                </div>
+                <div className="controls-wrapper flex justify-end">
+                  <div className="switch-wrapper">
+                    <div className="switch active"></div>
+                  </div>
+                  <div className="switch-wrapper">
+                    <div className="switch"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="right-col flex flex-col pt-56">
+              <div className="images-wrapper inner-column self-end cursor-pointer">
+                <img
+                  src={MainImage6} 
+                  />
+                <div className="description description-right uppercase">
+                  popisek obrázku
+                </div>
+                <div className="controls-wrapper flex justify-end">
+                  <div className="switch-wrapper">
+                    <div className="switch active"></div>
+                  </div>
+                  <div className="switch-wrapper">
+                    <div className="switch"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
 
     </Layout>
   )
