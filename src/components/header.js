@@ -3,30 +3,43 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <header className='absolute w-full flex justify-center'>
+    <div className='inner-header flex justify-between items-center'>
+      <div className="logo uppercase potok flex items-center">
+        <span>na potok</span>
+      </div>
+      <nav className="flex justify-end items-center">
+       <Link
+          to="/"
+          className='nav-link'
+        >
+          náš příběh
+        </Link>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className='nav-link'
         >
-          {siteTitle}
+          chata na potok
         </Link>
-      </h1>
+        <Link
+          to="/"
+          className='nav-link'
+        >
+          akce
+        </Link>
+        <Link
+          to="/"
+          className='nav-link'
+        >
+          kontakt
+        </Link>
+        <Link
+          to="/rezervace/"
+          className='nav-link'
+        >
+          ceník a rezervace
+        </Link>
+      </nav>
     </div>
   </header>
 )

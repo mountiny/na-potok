@@ -16,8 +16,8 @@ const Footer = ({ children }) => {
                 <h4 className='potok kontakt-heading'>zůstaňte v kontaktu</h4>
               </div>
               <div className='social leading-normal pb-8'>
-                <a className='social-link mr-24' href='#'>instagram</a>
-                <a className='social-link' href='#'>facebook</a>
+                <a className='social-link underline-link mr-24' href='#'>instagram</a>
+                <a className='social-link underline-link' href='#'>facebook</a>
               </div>
 
               <div className='address leading-normal'>
@@ -33,7 +33,7 @@ const Footer = ({ children }) => {
             </div>
           </div>
 
-          <ChataImg className='chata-img mb-8 md:mt-0 sm:mt-8' />
+          <ChataImg width={163.01} height={156.7} viewBox="0 0 163.01 156.7" className='chata-img mb-8 md:mt-0 sm:mt-8' />
         </div>
         
       </div>
@@ -42,7 +42,7 @@ const Footer = ({ children }) => {
 }
 
 Footer.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
 export default Footer

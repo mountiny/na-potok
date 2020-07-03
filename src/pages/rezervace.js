@@ -2,7 +2,6 @@ import React, { useEffect, useState} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 import gql from 'graphql-tag';
@@ -106,7 +105,7 @@ const ReservationPage = () => {
         
               />
 
-              <div className='legend-wrapper relative flex justify-start mt-16 mb-20'>
+              <div className='legend-wrapper relative flex justify-start'>
                 <div className='legend-block free-slot flex justify-start items-center mr-12'>
                   <div className='legend-box'>
                     19

@@ -9,6 +9,10 @@
   --outer: 1630px;
   --inner: 1428px;
 
+  --offset: 101px;
+
+  --curve: cubic-bezier(0.22, 0.61, 0.36, 1);
+
 
   // Font sizes
   --size-1: 10px;
@@ -24,4 +28,6 @@
   --size-11: 70px;
   --size-12: 100px;
   --size-13: 160px;
+
+  --headerHeight: 100px;
 }

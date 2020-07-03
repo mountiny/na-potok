@@ -2,7 +2,7 @@ import * as React from "react"
 
 function Chata(props) {
   return (
-    <svg width={163.01} height={156.7} viewBox="0 0 163.01 156.7" {...props}>
+    <svg {...props}>
       <g data-name="Group 4">
         <g data-name="Group 1" fill="none" stroke="#fff">
           <path

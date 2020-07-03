@@ -13,8 +13,208 @@ html, body {
   width: 100%;
 }
 
+h1 {
+  font-size: var(--size-13);
+}
+
+h3 {
+  font-size: var(--size-10);
+}
+.container {
+  max-width: var(--outer);
+  width: 90%;
+  position: relative;
+  &.footer {
+    max-width: var(--inner);
+  }
+}
+.cont {
+  width: 90%;
+  max-width: var(--inner);
+}
+.text-primary {
+  color: var(--textColor);
+}
+.text-white {
+  color: var(--white);
+}
+
+main {
+  position: relative;
+  padding: 9rem 0;
+}
+
 .potok {
   font-family: 'Potok', 'Roboto', sans-serif, helvetica;
+}
+
+.landing-page {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.images-cont {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+.landing-image {
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 100%;
+}
+.title {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  color: white;
+}
+
+.left-col {
+  flex: 1 1 48%;
+
+}
+.right-col {
+  flex: 1 1 48%;
+
+}
+.heading-wrapper {
+  margin-top: 110px;
+  margin-bottom: 50px;
+  line-height: 90px;
+}
+.inner-column {
+  position: relative;
+  width: 100%;
+  max-width: 612px;
+}
+.text-block {
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  font-size: var(--size-4);
+  padding-bottom: 48px;
+}
+.images-wrapper {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+.image-text {
+  position: absolute;
+  left: calc(-1 * var(--offset));
+  top: 4vw;
+}
+.image-desctiption {
+
+}
+.controls-wrapper {
+  position: absolute;
+  right: 0px;
+  bottom: -3.5rem;
+}
+.switch-wrapper {
+  position: relative;
+  padding: 6px 6px;
+  cursor: pointer;
+  &:hover {
+    .switch {
+      background-color: var(--textColor);
+    }
+  }
+}
+.switch {
+  // position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0px 4px; 
+  background-color: var(--textLight);
+  transition: background-color 0.3s var(--curve);
+  &.active {
+    background-color: var(--textColor);
+  }
+ 
+}
+.description {
+  line-height: 0px;
+
+  &.description-right {
+    letter-spacing: 0.1em;
+    position: absolute;
+    right: -2rem;
+    bottom: 1rem;
+    transform: translateX(100%) translateY(0%) rotate(-90deg);
+    transform-origin: 0% 100%;
+  }
+  &.description-left {
+    letter-spacing: 0.1em;
+    position: absolute;
+    left: -2rem;
+    bottom: 1rem;
+    transform: translateX(0%) translateY(0%) rotate(-90deg);
+    transform-origin: 0% 100%;
+  }
+}
+
+
+.central-text-block {
+  margin: 200px 0px 0px 0px;
+  padding-bottom: 550px;
+}
+
+.centered-block {
+  display: inline-block;
+  letter-spacing: 0.05em;
+  width: 100%;
+  max-width: 816px;
+  line-height: 34px;
+  font-size: var(--size-4);
+}
+.centered-image {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  width: var(--inner);
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 101;
+}
+.centered-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  overflow: visible;
+  img {
+    position: relative;
+    bottom: 0px;
+    width: var(--inner);
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 101;
+  }
+}
+.features-cont {
+  background-color: var(--primary);
+  width: 100%;
+  position: relative;
+  padding-top: 400px;
+
 }
 
 // Overwrite default Daypicker styles
