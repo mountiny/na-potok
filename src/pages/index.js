@@ -16,6 +16,7 @@ import ChataImg from '../components/svg/chata.js'
 
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
+import ImageSlider from "../components/imageSlider"
 
 
 const IndexPage = () => {
@@ -73,7 +74,7 @@ const IndexPage = () => {
           </div>
 
           <div className="right-col flex flex-col">
-            <div className="images-wrapper cursor-pointer">
+            <div className="images-wrapper self-end cursor-pointer">
               <img
                 src={MainImage1} 
                 />
@@ -183,7 +184,11 @@ const IndexPage = () => {
 
           <div className="flex w-full justify-between pt-32 pb-56">
             <div className="left-col flex flex-col">
-              <div className="images-wrapper inner-column cursor-pointer">
+              <ImageSlider 
+                images={[MainImage1, MainImage6]}
+                descriptionSide={'description-left'}
+              />
+              {/* <div className="images-wrapper inner-column cursor-pointer">
                 <img
                   src={MainImage1} 
                   />
@@ -198,26 +203,15 @@ const IndexPage = () => {
                     <div className="switch"></div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="right-col flex flex-col pt-56">
-              <div className="images-wrapper inner-column self-end cursor-pointer">
-                <img
-                  src={MainImage6} 
-                  />
-                <div className="description description-right uppercase">
-                  popisek obrázku
-                </div>
-                <div className="controls-wrapper flex justify-end">
-                  <div className="switch-wrapper">
-                    <div className="switch active"></div>
-                  </div>
-                  <div className="switch-wrapper">
-                    <div className="switch"></div>
-                  </div>
-                </div>
-              </div>
+              <ImageSlider 
+                images={[MainImage6, MainImage1]}
+                descriptionSide={'description-right'}
+              />
+             
             </div>
           </div>
 

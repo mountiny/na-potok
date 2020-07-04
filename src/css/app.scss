@@ -21,6 +21,13 @@ h1 {
 h3 {
   font-size: var(--size-10);
 }
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
 .container {
   max-width: var(--outer);
   width: 90%;
@@ -113,8 +120,36 @@ main {
 }
 .images-wrapper {
   position: relative;
-  img {
-    width: 100%;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.images-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+}
+
+.slider-image {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  display: block;
+  transition: opacity 0.3s var(--curve), transform 0.3s var(--curve);
+  will-change: transform;
+  transform: translateX(-3%) scale(1.02);
+  &.active {
+    opacity: 1;
+    transform: translateX(0) scale(1.0);
+  }
+  &.leaving {
+    opacity: 0;
+    transform: translateX(3%) scale(1.02);
   }
 }
 .image-text {
