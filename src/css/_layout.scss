@@ -75,16 +75,7 @@ footer {
 .underline-link {
   position: relative;
   letter-spacing: 0.1em;
-  // &:after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 100%;
-  //   background-color: white;
-  //   height: 2px;
-  //   bottom: -4px;
-  //   left: 0px;
-  //   right: 0px;
-  // }
+  padding-bottom: 8px;
   overflow: hidden;
   &:after {
     content: '';
@@ -95,7 +86,7 @@ footer {
     
     background-color: white;
     height: 2px;
-    bottom: -4px;
+    bottom: 0px;
     border-bottom-right-radius: 0px;
     transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
   }

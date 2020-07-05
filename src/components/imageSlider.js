@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect, useRef, createRef } from "react"
 import { useSwipeable } from 'react-swipeable'
 
-const ImageSlider = ({ images, descriptionSide }) => {
+const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight }) => {
 
   const [count, setCount] = useState(images.length)
 
@@ -31,9 +31,13 @@ const ImageSlider = ({ images, descriptionSide }) => {
     // Set height of the container based on height of the images
     if (loaded) {
 
-      const imageHeight = container.current.children[0].height
+      // const imageHeight = container.current.children[0].height
+      // setContStyle({
+      //   height: `${imageHeight}px`
+      // })
       setContStyle({
-        height: `${imageHeight}px`
+        height: `120vh`,
+        maxHeight: maxHeight
       })
 
     } 
@@ -65,9 +69,10 @@ const ImageSlider = ({ images, descriptionSide }) => {
     }, 300)
   }
 
+
   return (
     <div 
-      className="images-wrapper inner-column self-end cursor-pointer"
+      className={`images-wrapper cursor-pointer ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
       {...handlers}
       > 
       <div 
@@ -89,9 +94,14 @@ const ImageSlider = ({ images, descriptionSide }) => {
           })
         }
       </div>
-      <div className={`description ${descriptionSide} uppercase`}>
-        popisek obrázku
-      </div>
+      {
+        descriptionSide &&
+        (
+          <div className={`description ${descriptionSide} uppercase`}>
+            popisek obrázku
+          </div>
+        )
+      }
       <div className="controls-wrapper flex justify-end">
         {
           images.map((control, key) => {
@@ -116,9 +126,16 @@ const ImageSlider = ({ images, descriptionSide }) => {
 }
 
 ImageSlider.propTypes = {
+  images: PropTypes.array.isRequired,
+  maxHeight: PropTypes.string.isRequired,
+  descriptionSide: PropTypes.string, 
+  selfEnd: PropTypes.bool, 
+  innerColumn: PropTypes.bool,
 }
 
 ImageSlider.defaultProps = {
+  selfEnd: false, 
+  innerColumn: false
 }
 
 export default ImageSlider

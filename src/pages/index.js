@@ -17,6 +17,10 @@ import ChataImg from '../components/svg/chata.js'
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 import ImageSlider from "../components/imageSlider"
+import IntroImageSlider from "../components/introImageSlider"
+import WideContainer from "../components/WideContainer"
+import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLink from "../components/UnderlineLink"
 
 
 const IndexPage = () => {
@@ -32,20 +36,17 @@ const IndexPage = () => {
       {/* INTRO PAGE START */}
 
       <section className="landing-page">
-        <div className="images-cont">
-          <img
-            src={LandingImage1} 
-            className='landing-image'
-            />
-        </div>
         <div className="title absolute flex justify-center items-center content-center">
           <h1 className='potok text-center uppercase'>na chatě</h1>
         </div>
+        <IntroImageSlider
+          images={[LandingImage1, LandingImage1]}
+          />
       </section>
 
       {/* INTRO PAGE END */}
 
-      <section className='container relative mx-auto text-primary'>
+      <WideContainer className='text-primary'>
         <div className="flex w-full justify-between pt-32">
           <div className="left-col flex flex-col">
             <div className="heading-wrapper">
@@ -58,11 +59,12 @@ const IndexPage = () => {
             <div className="text-block inner-column">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
             </div>
-            <a href="" className="link-wrapper">
-              <span className='uppercase underline-link text-primary'>
-                Přečíst více
-              </span>
-            </a>
+            <UnderlineLink 
+              classNameSpan={'text-primary'}
+              link={'#'}
+              text={'Přečíst více'}
+            />
+           
             <div className="images-wrapper inner-column mt-40">
               <img
                 src={MainImage2} 
@@ -73,24 +75,16 @@ const IndexPage = () => {
             </div>
           </div>
 
-          <div className="right-col flex flex-col">
-            <div className="images-wrapper self-end cursor-pointer">
-              <img
-                src={MainImage1} 
-                />
-              <div className="controls-wrapper flex justify-end">
-                <div className="switch-wrapper">
-                  <div className="switch active"></div>
-                </div>
-                <div className="switch-wrapper">
-                  <div className="switch"></div>
-                </div>
-              </div>
-            </div>
+          <div className="right-col flex flex-col wider-col">
+            <ImageSlider 
+              images={[MainImage1, MainImage6]}
+              selfEnd={true}
+              maxHeight={'1082px'}
+              />
           </div>
 
         </div>
-        <div className="central-text-block my-24 text-center">
+        <div className="central-text-block text-center h-spacing-top">
           <div className="centered-block">
             Spread over two interconnected buildings, Le Mirabeau offers 30 double, and 5 single rooms as well as 36 suites and junior suites. Families can enjoy some privacy thanks to interconnecting rooms or in our generous Family Suite with Matterhorn view on the top floor. Since our last renovation in 2018.
             <br></br>
@@ -102,15 +96,16 @@ const IndexPage = () => {
             src={MainImage3}
             />
         </div>
-      </section>
+      </WideContainer>
 
       {/* FEATURES CONTAINER START */}
 
       <section className="features-cont">
-        <div className="cont relative mx-auto text-white">
+
+        <NarrowContainer className='text-white'> 
           <div className="flex w-full justify-between pt-32 pb-56">
             <div className="left-col flex flex-col">
-              <div className="images-wrapper inner-column mt-40">
+              <div className="images-wrapper inner-column mt-40 with-text-overlap">
                 <div className="image-text">
                   <h3 className="potok uppercase">
                     svatby
@@ -120,16 +115,15 @@ const IndexPage = () => {
                   consectetur adipiscing elit.<br />
                   Praesent aliquam ante nibh, nec lacinia.
                   </div>
-                  <a href="" className="link-wrapper">
-                    <span  className='uppercase underline-link'>
-                      Zjistit více
-                    </span>
-                  </a>
+                  <UnderlineLink 
+                    link={'#'}
+                    text={'Zjistit více'}
+                  />
                 </div>
                 <img
                   src={MainImage4} 
                   />
-                <div className="description description-left uppercase">
+                <div className="description description-left uppercase text-white">
                   popisek obrázku
                 </div>
               </div>
@@ -139,7 +133,7 @@ const IndexPage = () => {
               <div className="chata-wrapper self-center pr-12">
                 <ChataImg width={179.36} height={173.46} viewBox="0 0 179.36 173.46" className='chata-img mb-8 md:mt-0 sm:mt-8' />
               </div>
-              <div className="images-wrapper inner-column self-end mt-40">
+              <div className="images-wrapper inner-column self-end mt-40 with-text-overlap overlap-right">
                 <div className="image-text">
                   <h3 className="potok uppercase">
                     teambuilding
@@ -158,64 +152,50 @@ const IndexPage = () => {
                 <img
                   src={MainImage5} 
                   />
-                <div className="description description-right uppercase">
+                <div className="description description-right uppercase text-white">
                   popisek obrázku
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
+        </NarrowContainer>
+
       </section>
 
       {/* FEATURES CONTAINER END */}
 
       <section className="page-block">
 
-        <div className="cont relative mx-auto">
-
-          <div className="color-block"></div>
-
+        <NarrowContainer className=''>
           <div className="block-heading">
-            <h3 className='potok uppercase'>
+            <div className="color-block"></div>
+            <h3 className='block-heading-text potok uppercase'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula tincidunt mauris sit amet molestie.
             </h3>
           </div>
 
-          <div className="flex w-full justify-between pt-32 pb-56">
+          <div className="flex w-full justify-between h-spacing-top h-spacing-bottom">
             <div className="left-col flex flex-col">
               <ImageSlider 
                 images={[MainImage1, MainImage6]}
                 descriptionSide={'description-left'}
+                innerColumn={true}
+                maxHeight={'903px'}
               />
-              {/* <div className="images-wrapper inner-column cursor-pointer">
-                <img
-                  src={MainImage1} 
-                  />
-                <div className="description description-left uppercase">
-                  popisek obrázku
-                </div>
-                <div className="controls-wrapper flex justify-end">
-                  <div className="switch-wrapper">
-                    <div className="switch active"></div>
-                  </div>
-                  <div className="switch-wrapper">
-                    <div className="switch"></div>
-                  </div>
-                </div>
-              </div> */}
             </div>
 
             <div className="right-col flex flex-col pt-56">
               <ImageSlider 
                 images={[MainImage6, MainImage1]}
                 descriptionSide={'description-right'}
+                selfEnd={true}
+                innerColumn={true}
+                maxHeight={'903px'}
               />
              
             </div>
           </div>
-
-        </div>
+        </NarrowContainer>
 
       </section>
 
