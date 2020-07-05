@@ -7,6 +7,9 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
 
   const [count, setCount] = useState(images.length)
 
+  console.log('Images: ', images)
+  console.log('Images length: ', images.length)
+
   const [active, setActive] = useState(0)
   const [leaving, setLeaving] = useState(null)
   const [loaded, setLoaded] = useState(false)
@@ -69,7 +72,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
     }, 300)
   }
 
-
+  console.log('Count, ', count)
   return (
     <div 
       className={`images-wrapper cursor-pointer ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
@@ -102,25 +105,31 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
           </div>
         )
       }
-      <div className="controls-wrapper flex justify-end">
-        {
-          images.map((control, key) => {
+      {
+        images.length > 1 &&
+        (
+          <div className="controls-wrapper flex justify-end">
+            {
+              images.map((control, key) => {
 
-            return (
-              <div 
-                key={key} 
-                className="switch-wrapper"
-                onClick={() => switchClicked(key)}
-                >
-                <div 
-                  className={`switch ${active === key ? 'active' : ''}`}
-                  >
+                return (
+                  <div 
+                    key={key} 
+                    className="switch-wrapper"
+                    onClick={() => switchClicked(key)}
+                    >
+                    <div 
+                      className={`switch ${active === key ? 'active' : ''}`}
+                      >
+                      </div>
                   </div>
-              </div>
-            )
-          })
-        }
-      </div>
+                )
+              })
+            }
+          </div>
+        ) 
+      }
+      
     </div>
   )
 }

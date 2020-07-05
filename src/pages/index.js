@@ -31,7 +31,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Na potok" />
 
       {/* INTRO PAGE START */}
 
@@ -49,7 +49,7 @@ const IndexPage = () => {
       <WideContainer className='text-primary'>
         <div className="flex w-full justify-between pt-32">
           <div className="left-col flex flex-col">
-            <div className="heading-wrapper">
+            <div className="heading-wrapper h-half-spacing-top">
               <h3 className='potok uppercase'>
                 Nejkrásnější<br />
                 výhledy na<br />
@@ -84,7 +84,7 @@ const IndexPage = () => {
           </div>
 
         </div>
-        <div className="central-text-block text-center h-spacing-top">
+        <div className="central-text-block h-bottom-padding-image text-center h-spacing-top">
           <div className="centered-block">
             Spread over two interconnected buildings, Le Mirabeau offers 30 double, and 5 single rooms as well as 36 suites and junior suites. Families can enjoy some privacy thanks to interconnecting rooms or in our generous Family Suite with Matterhorn view on the top floor. Since our last renovation in 2018.
             <br></br>
@@ -177,7 +177,7 @@ const IndexPage = () => {
           <div className="flex w-full justify-between h-spacing-top h-spacing-bottom">
             <div className="left-col flex flex-col">
               <ImageSlider 
-                images={[MainImage1, MainImage6]}
+                images={[MainImage1, MainImage6, MainImage1]}
                 descriptionSide={'description-left'}
                 innerColumn={true}
                 maxHeight={'903px'}

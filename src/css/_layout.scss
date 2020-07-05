@@ -103,6 +103,31 @@ footer {
       background-color: var(--textColor);
     }
   }
+
+  &.selection {
+
+    &:after {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      height: 2px;
+      bottom: 0px;
+      width: 0%;
+      right: 0px;
+      border-bottom-right-radius: 0px;
+      transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
+    }
+    &:hover, &:focus, &:active, &.active {
+      &:after {
+        width: 100%;
+        left: 0px;
+        right: auto;
+        opacity: 1;
+      }
+    }
+
+  }
+  
 }
 @media (max-width: 860px) {
   .footer-text {

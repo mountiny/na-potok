@@ -14,25 +14,25 @@ const Header = ({ siteTitle }) => (
       </div>
       <nav className="flex justify-end items-center">
        <Link
-          to="/"
+          to="/nas-pribeh/"
           className='nav-link'
         >
             náš příběh
         </Link>
         <Link
-          to="/"
+          to="/chata/"
           className='nav-link'
         >
           chata na potok
         </Link>
         <Link
-          to="/"
+          to="/akce/"
           className='nav-link'
         >
           akce
         </Link>
         <Link
-          to="/"
+          to="/kontakt/"
           className='nav-link'
         >
           kontakt
