@@ -6,6 +6,7 @@
 @import 'settings';
 @import 'layout';
 @import 'calendar';
+@import 'locomotive';
 
 html, body {
   font-family: 'Roboto', sans-serif, helvetica;
@@ -154,25 +155,29 @@ main {
     }
   }
 }
-.heading-wrapper {
-  margin-bottom: 50px;
-  line-height: 90px;
-}
-.inner-column {
-  position: relative;
-  width: 100%;
-  max-width: 612px;
 
-  &.with-text-overlap {
-    @media screen and (max-width: 1700px) {
-      max-width: 568px;
-      margin-left: var(--offset);
-      &.overlap-right {
-        margin-left: 0px;
+@media screen and (max-width: 1500px) {
+  .heading-wrapper {
+    margin-bottom: 50px;
+    line-height: 90px;
+  }
+  .inner-column {
+    position: relative;
+    width: 100%;
+    max-width: 612px;
+
+    &.with-text-overlap {
+      @media screen and (max-width: 1700px) {
+        max-width: 568px;
+        margin-left: var(--offset);
+        &.overlap-right {
+          margin-left: 0px;
+        }
       }
     }
   }
 }
+
 .text-block {
   line-height: 34px;
   letter-spacing: 0.05em;
@@ -201,20 +206,38 @@ main {
   height: 100%;
   object-fit: cover;
   position: absolute;
+  display: block;
   top: 0px;
   left: 0px;
-  opacity: 0;
-  display: block;
-  transition: opacity 0.3s var(--curve), transform 0.3s var(--curve);
+  // opacity: 0;
+  // transition: opacity 0.3s var(--curve), transform 0.3s var(--curve);
+  // will-change: transform;
+  // transform: translateX(-3%) scale(1.02);
+  transition: transform 0.5s ease-in-out;//var(--curve);
   will-change: transform;
-  transform: translateX(-3%) scale(1.02);
+  // transform: translateX(105%) translateY(5%) scale(1.1);
+  z-index: 50;
   &.active {
-    opacity: 1;
-    transform: translateX(0) scale(1.0);
+    transform: translateX(0) translateY(0%) scale(1.0);
+    z-index: 100;
   }
-  &.leaving {
-    opacity: 0;
-    transform: translateX(3%) scale(1.02);
+  &.past {
+    transform: translateX(-105%) translateY(5%) scale(1.1);
+    // z-index: 100;
+  }
+  &.before {
+    transform: translateX(105%) translateY(5%) scale(1.1);
+    // z-index: 100;
+  }
+  &.leaving.before {
+    // opacity: 0;
+    // transform: translateX(3%) scale(1.02);
+    transform: translateX(105%) translateY(5%) scale(1.1);
+  }
+  &.leaving.past {
+    // opacity: 0;
+    // transform: translateX(3%) scale(1.02);
+    transform: translateX(-105%) translateY(5%) scale(1.1);
   }
 }
 
@@ -526,3 +549,151 @@ main {
 }
 
 // Kontakt page end
+
+
+@media screen and (max-width: 1300px) {
+  .inner-column {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  
+    &.with-text-overlap {
+      max-width: 100%;
+      margin-left: 0px;
+      &.overlap-right {
+        margin-left: 0px;
+      }
+    }
+    .image-text {
+      position: relative;
+      left: 0px;
+      top: 0vw;
+      margin-bottom: 4rem;
+    }
+  }
+  .features-cont {
+    .left-col {
+      width: 48%;
+    }
+    .right-col {
+      width: 48%;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .title {
+    h1 {
+      font-size: 10vw;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+
+  :root{
+    --spacing: 110px;
+    --size-10: 8vw
+  }
+
+  h1 {
+    font-size: var(--size-13);
+  }
+  h2 {
+    font-size: var(--size-11)
+  }
+  h3 {
+    font-size: var(--size-10);
+    line-height: 10vw;
+  }
+  h4 {
+    font-size: var(--size-9);
+    line-height: 90px;
+  }
+  h5 {
+    font-size: var(--size-7);
+    line-height: 50px;
+  }
+  .list-top {
+    position: absolute;
+    left: -60px;
+    bottom: -84px;
+    width: 200px;
+  }
+
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    width: 100%;
+    &.wider-col {
+      width: 100%;
+    }
+  }
+  .text-block {
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    font-size: var(--size-4);
+    padding-bottom: 0px;
+  }
+  .features-cont {
+    padding-top: 16vw;
+    .left-col {
+      width: 100%;
+    }
+    .right-col {
+      width: 100%;
+      &.wider-col {
+        width: 100%;
+      }
+    }
+  }
+  .images-wrapper {
+    img {
+      width: 100%;
+    }
+  }
+  .h-bottom-padding-image {
+    padding-bottom: 30vw;
+  }
+  .block-heading {
+    width: 100%;
+  }
+  .block-heading-text {
+    padding: 0px 0px;
+    font-size: 9vw;
+    line-height: 12vw;
+  }
+  .description {
+    &.description-right {
+      right: -1rem;
+    }
+    &.description-left {
+      left: -1rem;
+    }
+  }
+  .kontakt-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+  .kontakt-block {
+    text-align: center;
+    flex: 1 1 100%;
+    padding-bottom: 4rem
+
+  }
+
+  .tabulka-ceny {
+    tr {
+      line-height: 40px;
+      td:nth-child(1) {
+        width: 160px;
+      }
+      td {
+        vertical-align: top;
+      }
+    }
+  }
+}

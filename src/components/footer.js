@@ -9,7 +9,7 @@ const Footer = ({ children }) => {
   return (
     <footer className=''>
       <div className='container footer relative mx-auto'>
-        <div className='flex md:flex-row sm:flex-col justify-between relative'>
+        <div className='flex flex-wrap md:flex-row sm:flex-col justify-between relative'>
           <div className='footer-text flex relative justify-start'>
             <div className='flex flex-col justify-between mr-32 md:mr-16'>
               <div className='potok'>
@@ -33,7 +33,11 @@ const Footer = ({ children }) => {
             </div>
           </div>
 
-          <ChataImg width={163.01} height={156.7} viewBox="0 0 163.01 156.7" className='chata-img mb-8 md:mt-0 sm:mt-8' />
+          <ChataImg 
+            width={163.01} 
+            height={156.7} 
+            viewBox="0 0 163.01 156.7" 
+            className='chata-img mb-8 phone:mt-16' />
         </div>
         
       </div>

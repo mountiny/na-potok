@@ -136,6 +136,17 @@
     }
   }
 }
+@media screen and (max-width: 900px) { 
+
+  .calendar-wrapper {
+    .legend-wrapper {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    
+  }
+
+}
 @media (max-width: 800px) {
   .calendar-wrapper {
 

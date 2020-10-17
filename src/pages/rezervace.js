@@ -2,6 +2,7 @@ import React, { useEffect, useState} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import AnimateIn from '../components/AnimateIn'
 
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
@@ -42,7 +43,7 @@ function Navbar({
   );
 }
 
-const ReservationPage = () => {
+const ReservationPage = ({location}) => {
 
   const locale = 'cs'
 
@@ -72,7 +73,7 @@ const ReservationPage = () => {
   }
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
 
       <section className="top-block">
@@ -84,129 +85,138 @@ const ReservationPage = () => {
       <NarrowContainer className='text-primary'>
         <div className="central-text-block text-center h-half-spacing-top h-half-spacing-bottom">
           <div className="centered-block">
-            <span className='font-medium'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam purus, euismod et tincidunt vel, alique aptent taciti sociosqu ad litorat id est.
-            </span>
+            <AnimateIn>
+              <span className='font-medium'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam purus, euismod et tincidunt vel, alique aptent taciti sociosqu ad litorat id est.
+              </span>
+            </AnimateIn>
           </div>
         </div>
 
-        <div className="flex w-full justify-between h-half-spacing-bottom">
+        <div className="flex w-full flex-wrap justify-between h-half-spacing-bottom">
           <div className="left-col flex flex-col">
-            <div className="heading-wrapper heading-selection flex pt-24">
-              <h5 
-                className={`potok uppercase cursor-pointer underline-link selection mr-24 text-primary ${season === 0 && 'active'}`} 
-                onClick={() => setSeason(0)}
-                >
-                letní sezóna
-              </h5>
-              <h5 
-                className={`potok uppercase cursor-pointer underline-link selection text-primary ${season === 1 && 'active'}`} 
-                onClick={() => setSeason(1)}
-                >
-                zimní sezóna
-              </h5>
-            </div>
+            <AnimateIn>
+              <div className="heading-wrapper heading-selection flex pt-24 phone:pt-8">
+                <h5 
+                  className={`potok uppercase cursor-pointer underline-link selection mr-24 text-primary ${season === 0 && 'active'}`} 
+                  onClick={() => setSeason(0)}
+                  >
+                  letní sezóna
+                </h5>
+                <h5 
+                  className={`potok uppercase cursor-pointer underline-link selection text-primary ${season === 1 && 'active'}`} 
+                  onClick={() => setSeason(1)}
+                  >
+                  zimní sezóna
+                </h5>
+              </div>
+            </AnimateIn>
             <div className="text-block inner-column">
-              <table className='w-full table-auto tabulka-ceny'>
-                {
-                  season === 0 
-                  ? (
-                    <tbody className='w-full'>
-                      <tr className='w-full'>
-                        <td className='font-medium '>
-                          14 000 Kč / týden
-                        </td>
-                        <td className=''>
-                          Networking & drinks
-                        </td>
-                      </tr>
-  
-                      <tr className='w-full'>
-                        <td className='font-medium'>
-                          15 000 Kč / týden
-                        </td>
-                        <td className=''>
-                          Lena Lekkou: Teaching Creative Confidence
-                        </td>
-                      </tr>
-  
-                      <tr className='w-full'>
-                        <td className='font-medium'>
-                          13 500 Kč / týden
-                        </td>
-                        <td className=''>
-                        Maria Delliou: Stay in the game without restrictions
-                        </td>
-                      </tr>
-                    </tbody>
-                  )
-                  : (
-                    <tbody className='w-full'>
-                      <tr className='w-full'>
-                        <td className='font-medium '>
-                          24 000 Kč / týden
-                        </td>
-                        <td className=''>
-                          Hodně drahá zimní sezóna
-                        </td>
-                      </tr>
-  
-                      <tr className='w-full'>
-                        <td className='font-medium'>
-                          18 000 Kč / týden
-                        </td>
-                        <td className=''>
-                          Zima zima zima už tu je
-                        </td>
-                      </tr>
-  
-                      <tr className='w-full'>
-                        <td className='font-medium'>
-                          18 500 Kč / týden
-                        </td>
-                        <td className=''>
-                          Mrazík
-                        </td>
-                      </tr>
-                    </tbody>
-                  )
-                }
-                
-              </table>
-              
+              <AnimateIn>
+                <table className='w-full table-auto tabulka-ceny phone:mb-24'>
+                  {
+                    season === 0 
+                    ? (
+                      <tbody className='w-full'>
+                        <tr className='w-full'>
+                          <td className='font-medium '>
+                            14 000 Kč / týden
+                          </td>
+                          <td className=''>
+                            Networking & drinks
+                          </td>
+                        </tr>
+    
+                        <tr className='w-full'>
+                          <td className='font-medium'>
+                            15 000 Kč / týden
+                          </td>
+                          <td className=''>
+                            Lena Lekkou: Teaching Creative Confidence
+                          </td>
+                        </tr>
+    
+                        <tr className='w-full'>
+                          <td className='font-medium'>
+                            13 500 Kč / týden
+                          </td>
+                          <td className=''>
+                          Maria Delliou: Stay in the game without restrictions
+                          </td>
+                        </tr>
+                      </tbody>
+                    )
+                    : (
+                      <tbody className='w-full'>
+                        <tr className='w-full'>
+                          <td className='font-medium '>
+                            24 000 Kč / týden
+                          </td>
+                          <td className=''>
+                            Hodně drahá zimní sezóna
+                          </td>
+                        </tr>
+    
+                        <tr className='w-full'>
+                          <td className='font-medium'>
+                            18 000 Kč / týden
+                          </td>
+                          <td className=''>
+                            Zima zima zima už tu je
+                          </td>
+                        </tr>
+    
+                        <tr className='w-full'>
+                          <td className='font-medium'>
+                            18 500 Kč / týden
+                          </td>
+                          <td className=''>
+                            Mrazík
+                          </td>
+                        </tr>
+                      </tbody>
+                    )
+                  }
+                  
+                </table>
+              </AnimateIn>
             </div>
 
           </div>
 
           <div className="right-col flex flex-col">
-            <div className="dummy-block shorter">
+            <AnimateIn>
+              <div className="dummy-block shorter">
 
-            </div>
-
+              </div>
+            </AnimateIn>
           </div>
         </div>
           
         <div className='calendar-wrapper'>
-          <div className="heading-wrapper pb-12">
-            <h4 className='potok uppercase'>    
-              volné termíny
-            </h4>
+          <div className="heading-wrapper pb-12 phone:pb-0">
+            <AnimateIn>
+              <h4 className='potok uppercase'>    
+                volné termíny
+              </h4>
+            </AnimateIn>
           </div>
 
-
-          <DayPicker 
-            numberOfMonths={isMobile ? 1 : 3}
-            locale={locale}
-            months={MONTHS[locale]}
-            weekdaysLong={WEEKDAYS_LONG[locale]}
-            weekdaysShort={WEEKDAYS_SHORT[locale]}
-            firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
-            labels={LABELS[locale]}
-            showOutsideDays
-            modifiers={loading ? {} : modifiers}
-            navbarElement={<Navbar />}
-      
-            />
+          <AnimateIn>
+            <DayPicker 
+              numberOfMonths={isMobile ? 1 : 3}
+              locale={locale}
+              months={MONTHS[locale]}
+              weekdaysLong={WEEKDAYS_LONG[locale]}
+              weekdaysShort={WEEKDAYS_SHORT[locale]}
+              firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
+              labels={LABELS[locale]}
+              showOutsideDays
+              modifiers={loading ? {} : modifiers}
+              navbarElement={<Navbar />}
+        
+              />
+              
 
             <div className='legend-wrapper relative flex justify-start'>
               <div className='legend-block free-slot flex justify-start items-center mr-12'>
@@ -226,6 +236,7 @@ const ReservationPage = () => {
                 </div>
               </div>
             </div>
+          </AnimateIn>
         </div>
       </NarrowContainer>
         

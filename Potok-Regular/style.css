@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Potok-Regular";
+  src: url("./fonts/Potok-KK.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Potok-KK.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Potok-KK.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Potok-KK.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Potok-KK.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Potok-KK.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Potok-KK.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

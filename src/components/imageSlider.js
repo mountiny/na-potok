@@ -7,8 +7,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
 
   const [count, setCount] = useState(images.length)
 
-  console.log('Images: ', images)
-  console.log('Images length: ', images.length)
+  const transitionDuration = 500
 
   const [active, setActive] = useState(0)
   const [leaving, setLeaving] = useState(null)
@@ -52,7 +51,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
     setActive(active === (count - 1) ? 0 : active + 1)
     setTimeout(() => {
       setLeaving(null)
-    }, 300)
+    }, transitionDuration)
   }
 
   const onSwipeRight = (e) => {
@@ -60,7 +59,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
     setActive(active === 0 ? count - 1 : active - 1)
     setTimeout(() => {
       setLeaving(null)
-    }, 300)
+    }, transitionDuration)
   }
 
   const switchClicked = (position) => {
@@ -69,10 +68,9 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
     setActive(position)
     setTimeout(() => {
       setLeaving(null)
-    }, 300)
+    }, transitionDuration)
   }
 
-  console.log('Count, ', count)
   return (
     <div 
       className={`images-wrapper cursor-pointer ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
@@ -89,7 +87,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
               <img
                 src={image} 
                 onLoad={() => !loaded && setLoaded(true)}
-                className={`slider-image ${active === key ? 'active' : ''} ${leaving === key ? 'leaving' : ''}`}
+                className={`slider-image ${active === key ? 'active' : ''} ${active > key && 'past'} ${active < key && 'before'} ${leaving === key ? 'leaving' : ''}`}
                 data-position={key}
                 key={key}
                 />
