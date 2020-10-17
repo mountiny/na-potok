@@ -184,7 +184,7 @@ const IndexPage = ({location}) => {
 
         <NarrowContainer className=''>
           <div className="block-heading">
-            <div className="color phone:hidden"></div>
+            <div className="color-block phone:hidden"></div>
             <AnimateIn 
                
               style={{
