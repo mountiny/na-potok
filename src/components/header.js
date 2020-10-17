@@ -14,7 +14,7 @@ const Header = ({ siteTitle, location }) => {
         document.getElementsByTagName('html')[0].style.overflow = 'initial'
       }
     }
-  }, [menu, document])
+  }, [menu])
 
   return (
     <header className='absolute w-full flex justify-center'>
