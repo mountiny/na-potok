@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect, useRef, createRef } from "react"
 import { useSwipeable } from 'react-swipeable'
 
-const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight }) => {
+const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight, className = '' }) => {
 
   const [count, setCount] = useState(images.length)
 
@@ -17,7 +17,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
   const swipeConfig = {
     delta: 20,
     trackMouse: true,
-    preventDefaultTouchmoveEvent: false,
+    preventDefaultTouchmoveEvent: true,
   }
 
   const handlers = useSwipeable({ 
@@ -38,7 +38,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
       //   height: `${imageHeight}px`
       // })
       setContStyle({
-        height: `120vh`,
+        // height: `120vh`,
         maxHeight: maxHeight
       })
 
@@ -73,13 +73,15 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight 
 
   return (
     <div 
-      className={`images-wrapper cursor-pointer ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
+      className={`images-wrapper cursor-pointer ${className} ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
       {...handlers}
       > 
       <div 
         className="images-container flex" 
         ref={container}
-        style={contStyle}
+        style={{
+          height: '100%'
+        }}
         >
         {
           images.map((image, key) => {

@@ -57,7 +57,7 @@ const IndexPage = ({location}) => {
               </div>
             </AnimateIn>
             <AnimateIn >
-              <div className="text-block inner-column">
+              <div className="text-block inner-column phone:mb-16">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
               </div>
               <UnderlineLink 
@@ -84,6 +84,7 @@ const IndexPage = ({location}) => {
               <ImageSlider 
                 images={[MainImage1, MainImage6]}
                 selfEnd={true}
+                className={'tall-image'}
                 maxHeight={'1082px'}
                 />
             </AnimateIn>
@@ -121,7 +122,7 @@ const IndexPage = ({location}) => {
                   <h3 className="potok uppercase">
                     svatby
                   </h3>
-                  <div className="image-description text-block">
+                  <div className="image-description text-block phone:mb-16">
                   Lorem ipsum dolor sit amet,<br />
                   consectetur adipiscing elit.<br />
                   Praesent aliquam ante nibh, nec lacinia.
@@ -153,7 +154,7 @@ const IndexPage = ({location}) => {
                     <h3 className="potok uppercase">
                       teambuilding
                     </h3>
-                    <div className="image-description text-block">
+                    <div className="image-description text-block phone:mb-16">
                     Lorem ipsum dolor sit amet,<br />
                     consectetur adipiscing elit.<br />
                     Praesent aliquam ante nibh, nec lacinia.
@@ -204,6 +205,7 @@ const IndexPage = ({location}) => {
                   images={[MainImage1, MainImage6, MainImage1]}
                   descriptionSide={'description-left'}
                   innerColumn={true}
+                  className={'tall-image'}
                   maxHeight={'903px'}
                 />
               </AnimateIn>
@@ -216,6 +218,7 @@ const IndexPage = ({location}) => {
                   descriptionSide={'description-right'}
                   selfEnd={true}
                   innerColumn={true}
+                  className={'tall-image'}
                   maxHeight={'903px'}
                 />
               </AnimateIn>

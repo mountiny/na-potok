@@ -52,6 +52,7 @@ const AkcePage = ({location}) => {
               <ImageSlider 
                   images={[MainImage1, MainImage6]}
                   innerColumn={true}
+                  className={'tall-image'}
                   maxHeight={'462px'}
                 />
             </AnimateIn>
@@ -72,6 +73,7 @@ const AkcePage = ({location}) => {
               <ImageSlider 
                   images={[MainImage6, MainImage1]}
                   innerColumn={true}
+                  className={'tall-image'}
                   maxHeight={'655px'}
                 />
             </AnimateIn>

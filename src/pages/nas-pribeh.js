@@ -55,7 +55,7 @@ const NasPribehPage = ({location}) => {
               </AnimateIn>
             </div>
             <AnimateIn>
-              <div className="text-block inner-column">
+              <div className="text-block inner-column phone:mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
               </div>
             </AnimateIn>
@@ -78,11 +78,7 @@ const NasPribehPage = ({location}) => {
               > 
                 <AnimateIn>
                   <div 
-                    className="images-container flex" 
-                    style={{
-                      height: `120vh`,
-                      maxHeight: '973px'
-                    }}
+                    className="images-container tall-image flex" 
                     >
                     <img
                       src={MainImage1} 

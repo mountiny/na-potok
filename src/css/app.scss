@@ -163,7 +163,7 @@ main {
   }
   .inner-column {
     position: relative;
-    width: 100%;
+    // width: 100%;
     max-width: 612px;
 
     &.with-text-overlap {
@@ -198,6 +198,10 @@ main {
   position: relative;
   width: 100%;
 
+}
+.tall-image {
+  height: 120vh;
+  max-height: 973px;
 }
 
 
@@ -554,7 +558,7 @@ main {
 @media screen and (max-width: 1300px) {
   .inner-column {
     position: relative;
-    width: 100%;
+    // width: 100%;
     max-width: 100%;
   
     &.with-text-overlap {
@@ -695,5 +699,9 @@ main {
         vertical-align: top;
       }
     }
+  }
+  .tall-image {
+    height: 70vh;
+    max-height: 973px;
   }
 }
