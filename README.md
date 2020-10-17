@@ -1,6 +1,6 @@
 ## Website for a recreational building Na Potok
 
-### Using Gatsby basic template
+### Using Gatsby basic template
 
 Other technologies used:
 - TailwindCSS for making styling easier
