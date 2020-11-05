@@ -17,5 +17,16 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         ],
       },
     })
+  } else if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-leaflet/,
+            use: [loaders.null()]
+          }
+        ]
+      }
+    });
   }
 }

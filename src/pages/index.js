@@ -35,7 +35,7 @@ const IndexPage = ({location}) => {
 
       <section className="landing-page">
         <div className="title absolute flex justify-center items-center content-center">
-          <h1 className='potok text-center uppercase'>na chalupě</h1>
+          <h1 className='potok text-center uppercase'>na chalupu</h1>
         </div>
         <IntroImageSlider
           images={[LandingImage1, LandingImage1]}

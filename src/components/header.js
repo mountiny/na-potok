@@ -29,31 +29,31 @@ const Header = ({ siteTitle, location }) => {
         <nav className="flex justify-end items-center phone:hidden">
         <Link
             to="/nas-pribeh/"
-            className='nav-link'
+            className={`nav-link ${location.pathname === '/nas-pribeh/' && 'active-link'}`}
           >
               náš příběh
           </Link>
           <Link
             to="/"
-            className='nav-link'
+            className={`nav-link ${location.pathname === '/chata/' && 'active-link'}`}
           >
-            chalupa na potok
+            chata na potok
           </Link>
           <Link
             to="/akce/"
-            className='nav-link'
+            className={`nav-link ${location.pathname === '/akce/' && 'active-link'}`}
           >
             akce
           </Link>
           <Link
             to="/kontakt/"
-            className='nav-link'
+            className={`nav-link ${location.pathname === '/kontakt/' && 'active-link'}`}
           >
             kontakt
           </Link>
           <Link
             to="/rezervace/"
-            className='nav-link'
+            className={`nav-link ${location.pathname === '/rezervace/' && 'active-link'}`}
           >
             ceník a rezervace
           </Link>
@@ -106,12 +106,12 @@ const Header = ({ siteTitle, location }) => {
               to="/"
               className='mobile-nav-link'
               onClick={() => {
-                if (location.pathname === '/') {
+                if (location.pathname === '/chata/') {
                   setMenu(!menu)
                 }
               }}
             >
-              chalupa na potok
+              chata na potok
             </Link>
             <Link
               to="/akce/"

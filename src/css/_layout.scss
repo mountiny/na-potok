@@ -47,7 +47,15 @@ nav {
       opacity: 1;
     }
   }
-  
+  &.active-link {
+    &:after {
+      width: 100%;
+      bottom: 8px;
+      left: 0px;
+      right: auto;
+      opacity: 1;
+    }
+  }
 }
 
 .mobile-nav-link {
