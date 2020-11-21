@@ -70,3 +70,5 @@ yarn-error.log
 
 # Folder with resources for the project
 resources/
+
+*.xd
