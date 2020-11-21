@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import Scroll from "./locomotiveScroll"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -33,9 +32,6 @@ const Layout = ({ children, location }) => {
         <title>Na potok</title>
         </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} location={location} />
-
-      {/* <Scroll callbacks={location} /> */}
-
 
       <div className='app-wrapper'>
         {children}

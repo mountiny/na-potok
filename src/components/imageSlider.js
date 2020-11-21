@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect, useRef, createRef } from "react"
 import { useSwipeable } from 'react-swipeable'
 
-const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight, className = '' }) => {
+const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight, className = '', theme = "light", height = null }) => {
 
   const [count, setCount] = useState(images.length)
 
@@ -33,12 +33,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
     // Set height of the container based on height of the images
     if (loaded) {
 
-      // const imageHeight = container.current.children[0].height
-      // setContStyle({
-      //   height: `${imageHeight}px`
-      // })
       setContStyle({
-        // height: `120vh`,
         maxHeight: maxHeight
       })
 
@@ -74,6 +69,9 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
   return (
     <div 
       className={`images-wrapper cursor-pointer ${className} ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
+      style={{
+        height: height && height
+      }}
       {...handlers}
       > 
       <div 
@@ -119,7 +117,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
                     onClick={() => switchClicked(key)}
                     >
                     <div 
-                      className={`switch ${active === key ? 'active' : ''}`}
+                      className={`switch ${theme === 'dark' ? 'dark-bg' : ''} ${active === key ? 'active' : ''}`}
                       >
                       </div>
                   </div>

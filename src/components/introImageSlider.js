@@ -1,15 +1,32 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState, useEffect, useRef, createRef } from "react"
-import { useSwipeable } from 'react-swipeable'
+import React, { useState, useEffect } from "react"
 
 const IntroImageSlider = ({ images }) => {
-
-  const [count, setCount] = useState(images.length)
 
   const [active, setActive] = useState(0)
   const [leaving, setLeaving] = useState(null)
   const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+
+      setActive(active => {
+        if (active === images.length-1) {
+          setLeaving(active)
+          return 0
+        } else {
+          setLeaving(active)
+          return active+1
+        }
+
+      })
+      setTimeout(() => {
+        setLeaving(null)
+      }, 500)
+   
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const switchClicked = (position) => {
     if (position === active) return

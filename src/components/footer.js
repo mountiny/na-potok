@@ -16,28 +16,28 @@ const Footer = ({ children }) => {
                 <h4 className='potok kontakt-heading'>zůstaňte v kontaktu</h4>
               </div>
               <div className='social leading-normal pb-8'>
-                <a className='social-link underline-link mr-24' href='#'>instagram</a>
-                <a className='social-link underline-link' href='#'>facebook</a>
+                <a className='social-link underline-link mr-24' target="_blank" href='https://www.instagram.com/na_potok/'>instagram</a>
+                <a className='social-link underline-link' target="_blank" href='#'>facebook</a>
               </div>
 
               <div className='address leading-normal'>
-                <span>u lesa 123, hezké město</span><br />
-                <span>Dolní morava</span>
+                <span>vysoký potok 33</span><br />
+                <span>788 33 Malá morava</span>
               </div>
             </div>
             <div className='contact-block flex items-end leading-normal'>
               <div>
-                <span><a href='tel:+420777123456'>+420 777 123 456</a></span><br />
-                <span>mail : <a href='mailto:rezervace@napotok.cz'>rezervace@napotok.cz</a></span>
+                <span><a href='tel:+420777123456'>+420 777 441 876</a></span><br />
+                <span>mail : <a href='mailto:info@napotok.cz'>info@napotok.cz</a></span>
               </div>
             </div>
           </div>
 
           <ChataImg 
-            width={163.01} 
-            height={156.7} 
-            viewBox="0 0 163.01 156.7" 
-            className='chata-img mb-8 phone:mt-16' />
+            width={240.006}
+            height={231.879}
+            viewBox="0 0 240.006 231.879"
+            className='chata-img phone:mt-16 phone:self-center' />
         </div>
         
       </div>

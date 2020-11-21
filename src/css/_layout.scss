@@ -102,8 +102,8 @@ footer {
   letter-spacing: 0.1em;
   font-size: var(--size-3);
   .chata-img {
-    width: 160px;
-    height: auto;
+    // width: 160px;
+    height: 100%;
   }
 }
 .kontakt-heading {
@@ -186,7 +186,7 @@ footer {
     .chata-img {
       width: 240px;
       height: auto;
-      align-self: flex-end;
+      // align-self: flex-end;
     }
   }
 }

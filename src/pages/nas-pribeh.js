@@ -1,16 +1,20 @@
 import React, { useEffect } from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
- 
-import MainImage1 from "../images/main_1.png"
-import MainImage2 from "../images/main_2.png"
-import MainImage3 from "../images/main_3.png"
 
+import Uvodni from "../images/nas_pribeh1.png"
+
+import NasPribeh1 from "../images/nas_pribeh2_1.png"
+import NasPribeh2 from "../images/nas_pribeh2_2.png"
+import NasPribeh3 from "../images/nas_pribeh2_3.png"
+import NasPribeh4 from "../images/nas_pribeh3_1.png"
+import NasPribeh5 from "../images/nas_pribeh3_2.png"
+import NasPribeh6 from "../images/nas_pribeh3_3.png"
+
+import ImageSlider from "../components/imageSlider"
 import WideContainer from "../components/WideContainer"
-import NarrowContainer from "../components/NarrowContainer"
 
 
 
@@ -22,7 +26,7 @@ const NasPribehPage = ({location}) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Náš příběh" />
+      <SEO title="Na Potok - Náš příběh" />
 
       <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
@@ -32,118 +36,68 @@ const NasPribehPage = ({location}) => {
 
       <WideContainer className='text-primary'>
 
-        <div className="central-text-block text-center h-half-spacing-top h-half-spacing-bottom">
-          <div className="centered-block">
+        <div className="text-block h-spacing-top h-half-spacing-bottom">
+          <div className="w-full">
             <AnimateIn>
-              <span className='font-medium'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam purus, euismod et tincidunt vel, alique aptent taciti sociosqu ad litorat id est.
-              </span>
-              <br></br>
-              <br></br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus lectus. Aenean et est et ipsum commodo dapibus non et purus. Praesent neque erat, euismod venenatis magna non, congue rhoncus libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean . 
+              <h2 className="potok uppercase">
+                Jak to celé začalo...
+              </h2>
+              <div className="w-1/2 md:w-full">
+                <p className="pt-20">
+                Přirostla nám k srdci chalupa NA POTOK s přilehlým torzem stodoly. Většinou jsme slyšeli "je tady nádherně, ale hodně práce…to zbourejte a začněte znovu".  Stávající chalupa je dokonale přirozeně umístěná na terénu okolních luk.  Vyvolává emoce, snad nostalgii po starých časech, zemitosti a&nbsp;opravdovosti. Tyto emoce byly hlavním nástrojem zvyšující atraktivitu a&nbsp;cenu zachovat chalupu. 
+                Současně jevem nejcitlivějším k&nbsp;jakýmkoli novým zásahům či zbourání. Pustili jsme se do kompletní rekonstrukce, začali jsme snít a&nbsp;psát další kapitolu, kterou si tohle místo zaslouží…
+                </p>
+              </div>
+              
             </AnimateIn>
           </div>
         </div>
-        <div className="flex w-full flex-wrap justify-between">
-          <div className="left-col flex flex-col">
-            <div className="heading-wrapper pt-12">
-              <AnimateIn>
-                <h5 className='potok uppercase'>    
-                  Donec tincidunt purus velit,<br />
-                  a tempus eros lobortis ut.
-                </h5>
+        <div className="w-full relative h-half-spacing-bottom">
+          <img
+              className=''
+              src={Uvodni}
+              />
+        </div>
+
+        <div className="w-full relative">
+          <h2 className="potok uppercase">
+            Příběh chalupy
+          </h2>
+
+          <div className="flex w-full flex-wrap justify-between pb-56 phone:pb-32">
+            <div className="w-5/12 md:w-full flex flex-col min-w-xs">
+              <AnimateIn >
+                <div className="images-wrapper inner-column mt-16 phone:mt-12">
+                  <ImageSlider 
+                    images={[NasPribeh1, NasPribeh2, NasPribeh3]}
+                    innerColumn={true}
+                    className={'tall-image'}
+                    maxHeight={'655px'}
+                  />
+                </div>
               </AnimateIn>
             </div>
-            <AnimateIn>
-              <div className="text-block inner-column phone:mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
-              </div>
-            </AnimateIn>
 
-            <AnimateIn>
-              <div className="images-wrapper inner-column mt-40 phone:mt-8">
-                <img
-                  src={MainImage2} 
+            <div className="w-5/12 md:w-full flex flex-col pt-32 min-w-xs">
+              <AnimateIn >
+                <div className="images-wrapper inner-column self-end mt-16 phone:mt-16">
+                  <ImageSlider 
+                    images={[NasPribeh4, NasPribeh5, NasPribeh6]}
+                    innerColumn={true}
+                    className={'tall-image'}
+                    maxHeight={'655px'}
                   />
-                <div className="description description-right uppercase">
-                  popisek obrázku
-                </div>
               </div>
-            </AnimateIn>
-          </div>
-
-          <div className="right-col flex flex-col wider-col phone:mt-20">
-            <div 
-              className={`images-wrapper self-end inner-column`}
-              > 
-                <AnimateIn>
-                  <div 
-                    className="images-container tall-image flex" 
-                    >
-                    <img
-                      src={MainImage1} 
-                      className={`slider-image active`}
-                      />
-
-                  </div>
-                </AnimateIn>
-              </div>
-                
-          </div>
-        </div>
-
-        <div className="central-text-block text-center h-spacing-top h-spacing-bottom">
-          <div className="centered-block quote">
-            <AnimateIn>
-              <h3 className="potok">
-                "Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Morbi non facilisis"
-              </h3>
-            </AnimateIn>
-          </div>
-        </div>
-
-      </WideContainer>
-
-      <NarrowContainer>
-        <div>
-          <AnimateIn>
-            <img
-              className='centered-image-relative'
-              src={MainImage3}
-              />
-            <div className={`description description-right uppercase`}>
-              popisek obrázku
+              </AnimateIn>
             </div>
-            </AnimateIn>
-        </div>
-      </NarrowContainer>
-
-      <WideContainer className='h-spacing-top h-spacing-bottom'>
-        <div className="flex w-full flex-wrap justify-between">
-          <div className="left-col flex flex-col phone:mb-12">
-            <AnimateIn>
-              <div className="dummy-block">
-
-              </div>
-            </AnimateIn>
-          </div>
-
-          <div className="right-col flex flex-col wider-col text-primary">
-            <AnimateIn>
-              <div className="heading-wrapper pt-12">
-                <h5 className='potok uppercase'>    
-                  Donec tincidunt purus velit,<br />
-                  a tempus eros lobortis ut.
-                </h5>
-              </div>
-              <div className="text-block inner-column">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
-              </div>
-            </AnimateIn>
-
           </div>
         </div>
+
+
+        <div className="w-full text-block h-half-spacing-bottom font-medium text-center tracking-wide">
+          Celý příběh rekonstrukce chalupy i fotky z akcí najdete na <a href="https://www.instagram.com/na_potok/" target="_blank" className="underline">instagramu</a>.
+        </div>
+
       </WideContainer>
 
     </Layout>

@@ -1,10 +1,32 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState, useEffect} from "react"
+import useWindowDimensions from '../hooks/useWindowDimensions.js';  
 
 const Header = ({ siteTitle, location }) => {
 
   const [menu, setMenu] = useState(false)
+
+  const { height, width } = useWindowDimensions()
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0); 
+  const [visible, setVisible] = useState(true);  
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 0) || currentScrollPos < 10);
+
+    setPrevScrollPos(currentScrollPos);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, [prevScrollPos, visible, handleScroll]);
+
   
   useEffect(() => {
     if (document){
@@ -15,9 +37,9 @@ const Header = ({ siteTitle, location }) => {
       }
     }
   }, [menu])
-
+console.log('Location: ', location)
   return (
-    <header className='absolute w-full flex justify-center'>
+    <header className={`fixed w-full flex justify-center opacity-100 transition-all ${!visible  && "h-out"} ${location.pathname === "/" ? (prevScrollPos > height  && "h-primary-bg") : (prevScrollPos > (height*0.4)  && "h-primary-bg")}`}>
       <div className='inner-header flex justify-between items-center'>
         <div className="logo uppercase potok flex items-center">
           <Link
@@ -34,10 +56,10 @@ const Header = ({ siteTitle, location }) => {
               náš příběh
           </Link>
           <Link
-            to="/"
-            className={`nav-link ${location.pathname === '/chata/' && 'active-link'}`}
+            to="/chalupa/"
+            className={`nav-link ${location.pathname === '/chalupa/' && 'active-link'}`}
           >
-            chata na potok
+            chalupa na potok
           </Link>
           <Link
             to="/akce/"
@@ -103,15 +125,15 @@ const Header = ({ siteTitle, location }) => {
               náš příběh
             </Link>
             <Link
-              to="/"
+              to="/chalupa/"
               className='mobile-nav-link'
               onClick={() => {
-                if (location.pathname === '/chata/') {
+                if (location.pathname === '/chalupa/') {
                   setMenu(!menu)
                 }
               }}
             >
-              chata na potok
+              chalupa na potok
             </Link>
             <Link
               to="/akce/"

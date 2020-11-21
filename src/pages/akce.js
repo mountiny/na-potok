@@ -3,14 +3,17 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
+import { Link } from "gatsby"
  
-import ListImage from "../images/list-left.png"
-import MainImage1 from "../images/main_1.png"
-import MainImage6 from "../images/main_6.png"
+import Svatba1 from "../images/svatba1.png"
+import Svatba2 from "../images/svatba2.png"
+import Svatba3 from "../images/svatba3.png"
+import Svatba4 from "../images/svatba4.png"
+import Svatba5 from "../images/svatba5.png"
+import Teambuilding1 from "../images/teambuilding1.png"
+import Teambuilding2 from "../images/teambuilding2.png"
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
-
-
 
 const AkcePage = ({location}) => {
 
@@ -20,16 +23,13 @@ const AkcePage = ({location}) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Náš příběh" />
+      <SEO title="Na Potok - Akce" />
 
       <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
           <h2 className='potok text-center uppercase'>Akce a události</h2>
         </div>
-        <img 
-          src={ListImage}
-          className='list-top'
-          />
+        
       </section>
 
       <NarrowContainer className='text-primary h-half-spacing-bottom'>
@@ -38,19 +38,18 @@ const AkcePage = ({location}) => {
           <AnimateIn>
             <div className="centered-block">
               <span className='font-medium'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam purus, euismod et tincidunt vel, alique aptent taciti sociosqu ad litorat id est.
+              Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne. Výjimečné místo přitahuje výjimečné lidi.
               </span>
-              <br></br>
-              <br></br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus lectus. Aenean et est et ipsum commodo dapibus non et purus. Praesent neque erat, euismod venenatis magna non, congue rhoncus libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean . 
             </div>
           </AnimateIn>
         </div>
         <div className="flex w-full flex-wrap justify-between text-primary">
           <div className="left-col flex flex-col inner-column">
-            <AnimateIn>
+            <AnimateIn
+              threshold={0.1}
+              >
               <ImageSlider 
-                  images={[MainImage1, MainImage6]}
+                  images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
                   innerColumn={true}
                   className={'tall-image'}
                   maxHeight={'462px'}
@@ -58,20 +57,22 @@ const AkcePage = ({location}) => {
             </AnimateIn>
             <div className="text-wrapper pt-20">
               <AnimateIn>
-                <h5 className='potok uppercase'>    
+                <h3 className='potok uppercase'>    
                   svatby
-                </h5>
-                <div className="text-block inner-column pt-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
+                </h3>
+                <div className="text-block max-w-sm md:max-w-none pt-12">
+                  NA POTOK může být tím místem, kde si řeknete své ano. Otevřená stodola je ideální pro venkovní svatby až pro 150 osob s přilehlou zahradou.
                 </div>
               </AnimateIn>
             </div>
           </div>
 
           <div className="right-col flex flex-col inner-column phone:mt-20">
-            <AnimateIn>
+            <AnimateIn
+              threshold={0.1}
+              >
               <ImageSlider 
-                  images={[MainImage6, MainImage1]}
+                  images={[Teambuilding1, Teambuilding2]}
                   innerColumn={true}
                   className={'tall-image'}
                   maxHeight={'655px'}
@@ -79,16 +80,25 @@ const AkcePage = ({location}) => {
             </AnimateIn>
             <div className="text-wrapper pt-20 phone:pt-32">
               <AnimateIn>
-                <h5 className='potok uppercase'>    
+                <h3 className='potok uppercase'>    
                   teambuilding
-                </h5>
-                <div className="text-block inner-colum pt-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam ante nibh, nec lacinia libero eleifend nec. Mauris blandit dolor finibus iaculis auctor. Ut eleifend felis in facilisis laoreet. Curabitur eget elit tincidunt, condimentum neque sed, ornare nunc. Aliquam erat volutpat. Integer aliquet nunc id augue consequat convallis. Aliquam urna urna, varius sit amet luctus vel, condimentum nec nisl. Vestibulum tristique auctor massa at dictum. Morbi et quam sapien.
+                </h3>
+                <div className="text-block max-w-sm md:max-w-none pt-12">
+                Uspořádat můžete také sportovní soustředění, víkendovou jógu nebo nejrůznější druhy workshopů. Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne.
                 </div>
               </AnimateIn>
             </div>
                 
           </div>
+        </div>
+
+        <div className="w-full text-block h-half-spacing-top font-medium text-center tracking-wide">
+            <Link
+              to="/rezervace"
+              className="underline uppercase"
+              >
+              rezervujte si termín
+            </Link>
         </div>
 
       </NarrowContainer>

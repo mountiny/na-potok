@@ -1,18 +1,14 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 
-import { MapContainer as Map, TileLayer } from 'react-leaflet'
+import { MapContainer as Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
  
-import ListImage from "../images/list-left.png"
-import MainImage2 from "../images/main_2.png"
-import MainImage3 from "../images/main_3.png"
-import Kontakt1 from "../images/kontakt_1.png"
-import Kontakt2 from "../images/kontakt_2.png"
-import Kontakt3 from "../images/kontakt_3.png"
+import Kontakt1 from "../images/kontakt1.png"
+import Kontakt2 from "../images/kontakt2.png"
+import Kontakt3 from "../images/kontakt3.png"
 
-import WideContainer from "../components/WideContainer"
 import NarrowContainer from "../components/NarrowContainer"
 
 
@@ -20,7 +16,7 @@ const KontaktPage = ({location}) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Náš příběh" />
+      <SEO title="Na Potok - Kontakt" />
 
       <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
@@ -35,7 +31,7 @@ const KontaktPage = ({location}) => {
           <div className="centered-block">
             <AnimateIn>
               <span className='font-medium'>
-              Zavolejte a zeptejte se, napište nám mail, nebo si rovnou rezervujte termín a my se s vámi spojíme.
+              Zavolejte a&nbsp;zeptejte se, napište nám <a href='mailto:info@napotok.cz' className='text-black'>mail</a>, nebo si rovnou rezervujte termín a&nbsp;my se s&nbsp;vámi spojíme.
               <br />
               Potkáme se na chalupě.
               </span>
@@ -70,7 +66,7 @@ const KontaktPage = ({location}) => {
           </div>
         </div>
 
-        <div className="kontakt-wrapper mb-40">
+        <div className="kontakt-wrapper mb-40 phone:mb-0">
           <div className="kontakt-block kontakt-block-image flex justify-center">
             <AnimateIn>
               <img
@@ -86,7 +82,7 @@ const KontaktPage = ({location}) => {
                 src={Kontakt2} 
                 className={`mb-16`}
                 />
-                <span className="kontakt-name">Jan skoumal</span>
+                <span className="kontakt-name">Jan Skoumal</span>
             </AnimateIn>
           </div>
           <div className="kontakt-block kontakt-block-image flex justify-center">
@@ -106,7 +102,7 @@ const KontaktPage = ({location}) => {
         typeof window !== 'undefined' &&
         (
           <Map 
-            center={[50.0, 15.4185]}
+            center={[50.085786, 16.848588]}
             zoom={8}
             minZoom={6}
             maxZoom={18}
@@ -121,21 +117,19 @@ const KontaktPage = ({location}) => {
                   url="https://mapserver.mapy.cz/base-m/{z}-{x}-{y}"
                 />
 
+              <Marker position={[50.085786, 16.848588]}>
+                <Popup>
+                  Chalupa Na Potok.
+                </Popup>
+              </Marker>
+
               
           </Map>
 
         )
 
       } 
-      {/* <TileLayer
-                url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
-              /> */}
-              {/* <Marker key={key} position={[product.latitude, product.longitude]}>
-                <Popup>
-                  <div style={{textAlign: 'left'}}>
-                  </div>
-                </Popup>
-              </Marker> */}
+  
       
     </section>
 

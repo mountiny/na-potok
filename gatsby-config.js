@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Na potok`,
-    description: `Website for hotel in Northern Moravia`,
-    author: `@mountiny`,
+    title: `Na Potok`,
+    description: `Chalupa NA POTOK se těší na nejmenší až po ty života znalé, kteří hledají odpočinek od každodenních povinností, klid, pohodu a kteří chtějí znovu a znovu objevovat Jesenickou přírodu.`,
+    author: `@vitHoracek`,
+    url: "https://www.napotok.cz",
+    image: "/images/thumbnail.png",
+    twitterUsername: "@vitHoracek"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,14 +48,14 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-graphql",
-        options: {
+      options: {
         // The top level query type, can be anything you want!
         typeName: "GCMS",
         // The field you'll query against, can also be anything you want.
         fieldName: "gcms",
         // Your API endpoint, available from the dashboard and settings window.
         // You can use this endpoint that features US mountains for now.
-        url: "https://api-eu-central-1.graphcms.com/v2/ckbwg9i6h01rw01xt4iem5jje/master",
+        endpoint: "https://api-eu-central-1.graphcms.com/v2/ckbwg9i6h01rw01xt4iem5jje/master",
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
