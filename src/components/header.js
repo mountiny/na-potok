@@ -21,7 +21,7 @@ const Header = ({ siteTitle, location }) => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, {passive: true});
 
     return () => window.removeEventListener('scroll', handleScroll);
 
@@ -82,7 +82,7 @@ const Header = ({ siteTitle, location }) => {
           </Link>
         </nav>
         <div 
-          className={`menu-trigger potok tracking-wide hidden phone:block ${menu ? 'z-50' : ''} cursor-pointer`}
+          className={`menu-trigger potok tracking-wide px-12 py-8 hidden phone:block ${menu ? 'z-50' : ''} cursor-pointer`}
           onClick={() => setMenu(!menu)}
           >
           {menu ? "ZAVŘÍT" : "MENU"}
@@ -101,10 +101,10 @@ const Header = ({ siteTitle, location }) => {
           style={{
             backgroundColor: 'hsl(20, 7%, 55%)'
           }}>
-          <nav className="flex flex-col justify-start items-left w-full pt-32">
+          <nav className="flex flex-col justify-start items-left w-full pt-32 landscape:pt-8 landscape:pb-8 landscape:overflow-auto">
             <Link
               to="/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/') {
                   setMenu(!menu)
@@ -116,7 +116,7 @@ const Header = ({ siteTitle, location }) => {
 
             <Link
               to="/nas-pribeh/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/nas-pribeh/') {
                   setMenu(!menu)
@@ -127,7 +127,7 @@ const Header = ({ siteTitle, location }) => {
             </Link>
             <Link
               to="/chalupa/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/chalupa/') {
                   setMenu(!menu)
@@ -138,7 +138,7 @@ const Header = ({ siteTitle, location }) => {
             </Link>
             <Link
               to="/akce/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/akce/') {
                   setMenu(!menu)
@@ -149,7 +149,7 @@ const Header = ({ siteTitle, location }) => {
             </Link>
             <Link
               to="/kontakt/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/kontakt/') {
                   setMenu(!menu)
@@ -160,7 +160,7 @@ const Header = ({ siteTitle, location }) => {
             </Link>
             <Link
               to="/rezervace/"
-              className='mobile-nav-link'
+              className='mobile-nav-link landscape:text-xl'
               onClick={() => {
                 if (location.pathname === '/rezervace/') {
                   setMenu(!menu)

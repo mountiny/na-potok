@@ -38,6 +38,10 @@ module.exports = {
         '6/15': '40%',
         '7/15': '46.666%',
         '8/15': '53.333%',
+      },
+      screens: {
+        'landscape': {'raw': '(orientation: landscape)'},
+        // => @media (orientation: portrait) { ... }
       }
      }
   },
