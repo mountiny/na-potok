@@ -37,7 +37,7 @@ const Header = ({ siteTitle, location }) => {
       }
     }
   }, [menu])
-console.log('Location: ', location)
+
   return (
     <header className={`fixed w-full flex justify-center opacity-100 transition-all ${!visible  && "h-out"} ${location.pathname === "/" ? (prevScrollPos > height  && "h-primary-bg") : (prevScrollPos > (height*0.4)  && "h-primary-bg")}`}>
       <div className='inner-header flex justify-between items-center'>
