@@ -42,25 +42,25 @@ const KontaktPage = ({location}) => {
         <div className="kontakt-wrapper">
           <div className="kontakt-block">
             <AnimateIn>
-              <h5 className="uppercase potok pb-6">
+              <h6 className="uppercase potok pb-6">
                 adresa
-              </h5>
-              <span className='phone:text-xl'>Vysoký potok 33<br />Malá Morava 788 33</span>
+              </h6>
+              <span className='phone:text-xl'>Vysoký potok&nbsp;33<br />Malá&nbsp;Morava 788&nbsp;33</span>
             </AnimateIn>
           </div>
           <div className="kontakt-block">
             <AnimateIn>
-              <h5 className="uppercase potok pb-6">
+              <h6 className="uppercase potok pb-6">
                 telefon
-              </h5>
-              <a className='phone:text-xl' href='tel:+420777123456'>+420 777 441 876</a>
+              </h6>
+              <a className='phone:text-xl' href='tel:+420777123456'>+420&nbsp;777&nbsp;441&nbsp;876</a>
             </AnimateIn>
           </div>
           <div className="kontakt-block">
             <AnimateIn>
-              <h5 className="uppercase potok pb-6">
+              <h6 className="uppercase potok pb-6">
                 e-mail
-              </h5>
+              </h6>
               <a className='phone:text-xl' href='mailto:info@napotok.cz'>info@napotok.cz</a>
             </AnimateIn>
           </div>
@@ -71,7 +71,7 @@ const KontaktPage = ({location}) => {
             <AnimateIn>
               <img
                 src={Kontakt1} 
-                className={`mb-16`}
+                className={`mb-10`}
                 />
               <span className="kontakt-name">Karel Hrušovský</span>
             </AnimateIn>
@@ -80,7 +80,7 @@ const KontaktPage = ({location}) => {
             <AnimateIn>
               <img
                 src={Kontakt2} 
-                className={`mb-16`}
+                className={`mb-10`}
                 />
                 <span className="kontakt-name">Jan Skoumal</span>
             </AnimateIn>
@@ -89,7 +89,7 @@ const KontaktPage = ({location}) => {
             <AnimateIn>
               <img
                 src={Kontakt3} 
-                className={`mb-16`}
+                className={`mb-10`}
                 />
                 <span className="kontakt-name">Jiří Gonda</span>
             </AnimateIn>
@@ -108,6 +108,8 @@ const KontaktPage = ({location}) => {
             maxZoom={18}
             attributionControl={true}
             zoomControl={true}
+            scrollWheelZoom={false}
+            tap={false}
             style={{
               height: "100%"
             }}

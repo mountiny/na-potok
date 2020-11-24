@@ -71,7 +71,7 @@ const IndexPage = ({location}) => {
               </div>
             </AnimateIn>
             <AnimateIn >
-              <div className="text-block inner-column phone:mb-16">
+              <div className="text-block inner-column pt-16 phone:mb-16">
               Přirozené kontury dnešního terénu okolo chalupy jsou nepozměněné a&nbsp;byl by hřích do nich výrazně zasahovat. Na místě v&nbsp;Jeseníkách s&nbsp;perfektními výhledy se malé potůčky vlévají do řeky Moravy pod Hanušovickou vrchovinou a&nbsp;Králickým Sněžníkem. Poznáte zde divokou horskou přírodu, a&nbsp;přitom se budete cítit v&nbsp;pohodlí jako doma ve svých bačkorách.
 
               </div>
@@ -179,12 +179,12 @@ const IndexPage = ({location}) => {
                   theme="dark"
                 />
             </AnimateIn>
-            <div className="text-wrapper pt-20">
+            <div className="text-wrapper pt-16">
               <AnimateIn>
                 <h3 className='potok uppercase'>    
                   svatby
                 </h3>
-                <div className="text-block max-w-sm md:max-w-none pt-12">
+                <div className="text-block max-w-lg md:max-w-none pt-6">
                   NA POTOK může být tím místem, kde si řeknete své ano. Otevřená stodola je ideální pro venkovní svatby až pro 150 osob s přilehlou zahradou.
                 </div>
               </AnimateIn>
@@ -202,12 +202,12 @@ const IndexPage = ({location}) => {
                   theme="dark"
                 />
             </AnimateIn>
-            <div className="text-wrapper pt-20 phone:pt-32">
+            <div className="text-wrapper pt-16 phone:pt-32">
               <AnimateIn>
                 <h3 className='potok uppercase'>    
                   teambuilding
                 </h3>
-                <div className="text-block max-w-sm md:max-w-none pt-12">
+                <div className="text-block max-w-lg md:max-w-none pt-6">
                 Uspořádat můžete také sportovní soustředění, víkendovou jógu nebo nejrůznější druhy workshopů. Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne.
                 </div>
               </AnimateIn>
@@ -314,7 +314,7 @@ const IndexPage = ({location}) => {
                 Jak to celé začalo...
               </h2>
               <div className="w-1/2 md:w-full">
-                <p className="pt-20">
+                <p className="pt-28">
                 Přirostla nám k srdci chalupa NA POTOK s přilehlým torzem stodoly. Většinou jsme slyšeli "je tady nádherně, ale hodně práce…to zbourejte a začněte znovu".  Stávající chalupa je dokonale přirozeně umístěná na terénu okolních luk.  Vyvolává emoce, snad nostalgii po starých časech, zemitosti a&nbsp;opravdovosti. Tyto emoce byly hlavním nástrojem zvyšující atraktivitu a&nbsp;cenu zachovat chalupu. 
                 Současně jevem nejcitlivějším k&nbsp;jakýmkoli novým zásahům či zbourání. Pustili jsme se do kompletní rekonstrukce, začali jsme snít a&nbsp;psát další kapitolu, kterou si tohle místo zaslouží…
                 </p>

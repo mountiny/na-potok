@@ -68,7 +68,7 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
 
   return (
     <div 
-      className={`images-wrapper cursor-pointer ${className} ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
+      className={`images-wrapper grabbable ${className} ${selfEnd && 'self-end'} ${innerColumn && 'inner-column'}`}
       style={{
         height: height && height
       }}

@@ -55,12 +55,12 @@ const AkcePage = ({location}) => {
                   maxHeight={'462px'}
                 />
             </AnimateIn>
-            <div className="text-wrapper pt-20">
+            <div className="text-wrapper pt-16">
               <AnimateIn>
                 <h3 className='potok uppercase'>    
                   svatby
                 </h3>
-                <div className="text-block max-w-sm md:max-w-none pt-12">
+                <div className="text-block max-w-sm md:max-w-none pt-6">
                   NA POTOK může být tím místem, kde si řeknete své ano. Otevřená stodola je ideální pro venkovní svatby až pro 150 osob s přilehlou zahradou.
                 </div>
               </AnimateIn>
@@ -78,12 +78,12 @@ const AkcePage = ({location}) => {
                   maxHeight={'655px'}
                 />
             </AnimateIn>
-            <div className="text-wrapper pt-20 phone:pt-32">
+            <div className="text-wrapper pt-16 phone:pt-32">
               <AnimateIn>
                 <h3 className='potok uppercase'>    
                   teambuilding
                 </h3>
-                <div className="text-block max-w-sm md:max-w-none pt-12">
+                <div className="text-block max-w-sm md:max-w-none pt-6">
                 Uspořádat můžete také sportovní soustředění, víkendovou jógu nebo nejrůznější druhy workshopů. Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne.
                 </div>
               </AnimateIn>
