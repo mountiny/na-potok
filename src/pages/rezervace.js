@@ -15,11 +15,10 @@ import RightArrow from '../components/svg/rightArrow'
 import { useMediaQuery } from 'react-responsive'
 import NarrowContainer from "../components/NarrowContainer"
 
-import Cenik from "../images/cenik.png"
-
 import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
 import Dvere from "../components/svg/dvere";
 
+import Image from '../components/image.js'
 
 function Navbar({
   nextMonth,
@@ -141,12 +140,10 @@ const ReservationPage = ({location}) => {
 
           <div className="right-col flex flex-col">
             <AnimateIn>
-              
-              <img
-                src={Cenik} 
+              <Image
+                filename={"cenik"}
                 className={`mb-16`}
                 />
-
             </AnimateIn>
           </div>
         </div>

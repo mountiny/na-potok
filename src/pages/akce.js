@@ -5,13 +5,6 @@ import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
 import { Link } from "gatsby"
  
-import Svatba1 from "../images/svatba1.png"
-import Svatba2 from "../images/svatba2.png"
-import Svatba3 from "../images/svatba3.png"
-import Svatba4 from "../images/svatba4.png"
-import Svatba5 from "../images/svatba5.png"
-import Teambuilding1 from "../images/teambuilding1.png"
-import Teambuilding2 from "../images/teambuilding2.png"
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
 
@@ -49,7 +42,8 @@ const AkcePage = ({location}) => {
               threshold={0.1}
               >
               <ImageSlider 
-                  images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
+                  // images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
+                  images={['svatba1', 'svatba2', 'svatba3', 'svatba4', 'svatba5']}
                   innerColumn={true}
                   className={'tall-image'}
                   maxHeight={'462px'}
@@ -72,7 +66,8 @@ const AkcePage = ({location}) => {
               threshold={0.1}
               >
               <ImageSlider 
-                  images={[Teambuilding1, Teambuilding2]}
+                  // images={[Teambuilding1, Teambuilding2]}
+                  images={['teambuilding1', 'teambuilding2']}
                   innerColumn={true}
                   className={'tall-image'}
                   maxHeight={'655px'}

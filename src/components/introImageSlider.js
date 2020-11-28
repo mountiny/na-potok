@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 
+import Image from './image.js'
+
 const IntroImageSlider = ({ images }) => {
 
   const [active, setActive] = useState(0)
@@ -42,18 +44,28 @@ const IntroImageSlider = ({ images }) => {
       className={`intro-images-wrapper`}
       > 
       <div 
-        className="intro-images-container flex" 
+        className="intro-images-container" 
         >
         {
           images.map((image, key) => {
             return (
-              <img
-                src={image} 
+              <Image 
+                filename={image} 
                 onLoad={() => !loaded && setLoaded(true)}
+                style={{
+                  position: "absolute"
+                }}
                 className={`intro-slider-image ${active === key ? 'active' : ''} ${leaving === key ? 'leaving' : ''}`}
                 data-position={key}
                 key={key}
-                />
+              />
+              // <img
+              //   src={image} 
+              //   onLoad={() => !loaded && setLoaded(true)}
+              //   className={`intro-slider-image ${active === key ? 'active' : ''} ${leaving === key ? 'leaving' : ''}`}
+              //   data-position={key}
+              //   key={key}
+              //   />
             )
           })
         }

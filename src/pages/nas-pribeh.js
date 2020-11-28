@@ -4,19 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
 
-import Uvodni from "../images/nas_pribeh1.png"
-
-import NasPribeh1 from "../images/nas_pribeh2_1.png"
-import NasPribeh2 from "../images/nas_pribeh2_2.png"
-import NasPribeh3 from "../images/nas_pribeh2_3.png"
-import NasPribeh4 from "../images/nas_pribeh3_1.png"
-import NasPribeh5 from "../images/nas_pribeh3_2.png"
-import NasPribeh6 from "../images/nas_pribeh3_3.png"
-
 import ImageSlider from "../components/imageSlider"
 import WideContainer from "../components/WideContainer"
 
-
+import Image from '../components/image.js'
 
 const NasPribehPage = ({location}) => {
 
@@ -53,10 +44,9 @@ const NasPribehPage = ({location}) => {
           </div>
         </div>
         <div className="w-full relative h-half-spacing-bottom">
-          <img
-              className=''
-              src={Uvodni}
-              />
+          <Image 
+            filename="nas_pribeh1"
+            />
         </div>
 
         <div className="w-full relative">
@@ -69,7 +59,8 @@ const NasPribehPage = ({location}) => {
               <AnimateIn >
                 <div className="images-wrapper inner-column mt-16 phone:mt-12">
                   <ImageSlider 
-                    images={[NasPribeh1, NasPribeh2, NasPribeh3]}
+                    // images={[NasPribeh1, NasPribeh2, NasPribeh3]}
+                    images={['nas_pribeh2_1', 'nas_pribeh2_2', 'nas_pribeh2_3']}
                     innerColumn={true}
                     className={'tall-image'}
                     maxHeight={'655px'}
@@ -82,7 +73,8 @@ const NasPribehPage = ({location}) => {
               <AnimateIn >
                 <div className="images-wrapper inner-column self-end mt-16 phone:mt-16">
                   <ImageSlider 
-                    images={[NasPribeh4, NasPribeh5, NasPribeh6]}
+                    // images={[NasPribeh4, NasPribeh5, NasPribeh6]}
+                    images={['nas_pribeh3_1', 'nas_pribeh3_2', 'nas_pribeh3_3']}
                     innerColumn={true}
                     className={'tall-image'}
                     maxHeight={'655px'}

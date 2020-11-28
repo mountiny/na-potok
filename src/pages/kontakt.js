@@ -5,11 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
  
-import Kontakt1 from "../images/kontakt1.png"
-import Kontakt2 from "../images/kontakt2.png"
-import Kontakt3 from "../images/kontakt3.png"
-
 import NarrowContainer from "../components/NarrowContainer"
+
+import Image from '../components/image.js'
 
 
 const KontaktPage = ({location}) => {
@@ -68,30 +66,30 @@ const KontaktPage = ({location}) => {
 
         <div className="kontakt-wrapper mb-40 phone:mb-0">
           <div className="kontakt-block kontakt-block-image flex justify-center">
-            <AnimateIn>
-              <img
-                src={Kontakt1} 
-                className={`mb-10`}
+            <AnimateIn className={`w-full`}>
+              <Image
+                filename={"kontakt1"}
+                className={`mb-10 w-full`}
                 />
               <span className="kontakt-name">Karel Hrušovský</span>
             </AnimateIn>
           </div>
           <div className="kontakt-block kontakt-block-image flex justify-center">
-            <AnimateIn>
-              <img
-                src={Kontakt2} 
-                className={`mb-10`}
+            <AnimateIn className={`w-full`}>
+              <Image
+                filename={"kontakt2"}
+                className={`mb-10  w-full`}
                 />
-                <span className="kontakt-name">Jan Skoumal</span>
+              <span className="kontakt-name">Jan Skoumal</span>
             </AnimateIn>
           </div>
           <div className="kontakt-block kontakt-block-image flex justify-center">
-            <AnimateIn>
-              <img
-                src={Kontakt3} 
-                className={`mb-10`}
+            <AnimateIn className={`w-full`}>
+              <Image
+                filename={"kontakt3"}
+                className={`mb-10 w-full`}
                 />
-                <span className="kontakt-name">Jiří Gonda</span>
+              <span className="kontakt-name">Jiří Gonda</span>
             </AnimateIn>
           </div>
         </div>

@@ -3,33 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
- 
-import LandingImage1 from "../images/intro1.png"
-import LandingImage2 from "../images/intro2.png"
-
-import LandUvod1 from "../images/land_uvod_1.png"
-import LandUvod2 from "../images/land_uvod_2.png"
-import LandUvod3 from "../images/land_uvod_3.png"
-import LandUvod4 from "../images/land_uvod_4.png"
-import LandUvod5 from "../images/land_uvod_5.png"
-
-import NasPribeh from "../images/nas_pribeh.png"
-
-import NasPribeh1 from "../images/intro_pribeh1_1.png"
-import NasPribeh2 from "../images/intro_pribeh1_2.png"
-import NasPribeh3 from "../images/intro_pribeh1_3.png"
-import NasPribeh4 from "../images/intro_pribeh2_1.png"
-import NasPribeh5 from "../images/intro_pribeh2_2.png"
-import NasPribeh6 from "../images/intro_pribeh2_3.png"
-
-import Svatba1 from "../images/svatba1.png"
-import Svatba2 from "../images/svatba2.png"
-import Svatba3 from "../images/svatba3.png"
-import Svatba4 from "../images/svatba4.png"
-import Svatba5 from "../images/svatba5.png"
-
-import Teambuilding1 from "../images/teambuilding1.png"
-import Teambuilding2 from "../images/teambuilding2.png"
 
 import ImageSlider from "../components/imageSlider"
 import IntroImageSlider from "../components/introImageSlider"
@@ -37,6 +10,8 @@ import WideContainer from "../components/WideContainer"
 import NarrowContainer from "../components/NarrowContainer"
 
 import ChataImg from '../components/svg/chataGrey.js'
+
+import Image from '../components/image.js'
 
 
 const IndexPage = ({location}) => {
@@ -52,13 +27,15 @@ const IndexPage = ({location}) => {
           <h1 className='potok text-center uppercase'>na chalupu</h1>
         </div>
         <IntroImageSlider
-          images={[LandingImage1, LandingImage2]}
+          // images={[LandingImage1, LandingImage2]}
+          images={['intro1', 'intro2']}
           />
       </section>
 
       {/* INTRO PAGE END */}
 
       <WideContainer className='text-primary'>
+        {/* <Image filename="cenik"></Image> */}
         <div className="flex w-full flex-wrap justify-between pt-32 phone:pt-8">
           <div className="left-col flex flex-col">
             <AnimateIn >
@@ -79,9 +56,7 @@ const IndexPage = ({location}) => {
            
             <AnimateIn >
               <div className="images-wrapper inner-column mt-40 phone:mt-20">
-                <img
-                  src={LandUvod1} 
-                  />
+                <Image filename="land_uvod_1"></Image>
               </div>
             </AnimateIn>
           </div>
@@ -89,7 +64,8 @@ const IndexPage = ({location}) => {
           <div className="right-col flex flex-col wider-col phone:mt-20">
             <AnimateIn >
               <ImageSlider 
-                images={[LandUvod2, LandUvod3, LandUvod4]}
+                // images={[LandUvod2, LandUvod3, LandUvod4]}
+                images={['land_uvod_2', 'land_uvod_3', 'land_uvod_4']}
                 selfEnd={true}
                 className={'tall-image'}
                 maxHeight={'1082px'}
@@ -118,9 +94,9 @@ const IndexPage = ({location}) => {
             </AnimateIn>
           </div>
           <AnimateIn  className='centered-image' translateX={'-50'} threshold={0.1}>
-            <img
-              className='centered-image'
-              src={LandUvod5}
+            <Image 
+              filename={"land_uvod_5"}
+              className={"centered-image"}
               />
           </AnimateIn>
         </div>
@@ -143,114 +119,53 @@ const IndexPage = ({location}) => {
 
         <NarrowContainer className='text-white'> 
           <div className="flex w-full flex-wrap justify-between pt-32 pb-56 phone:pb-32">
-            {/* <div className="left-col flex flex-col">
-            <AnimateIn >
-              <div className="images-wrapper inner-column mt-40 phone:mt-12 with-text-overlap">
-                <div className="image-text">
-                  <h3 className="potok uppercase">
+            <div className="w-5/12 md:w-full min-w-xs phone:min-w-full flex flex-col inner-column">
+              <AnimateIn>
+                <ImageSlider 
+                    // images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
+                    images={['svatba1', 'svatba2', 'svatba3', 'svatba4', 'svatba5']}
+                    innerColumn={true}
+                    className={'tall-image'}
+                    maxHeight={'462px'}
+                    theme="dark"
+                  />
+              </AnimateIn>
+              <div className="text-wrapper pt-16">
+                <AnimateIn>
+                  <h3 className='potok uppercase'>    
                     svatby
                   </h3>
-                  <div className="image-description text-block phone:mb-16">
-                  Lorem ipsum dolor sit amet,<br />
-                  consectetur adipiscing elit.<br />
-                  Praesent aliquam ante nibh, nec lacinia.
+                  <div className="text-block max-w-lg md:max-w-none pt-6">
+                    NA POTOK může být tím místem, kde si řeknete své ano. Otevřená stodola je ideální pro venkovní svatby až pro 150 osob s přilehlou zahradou.
                   </div>
-                  <UnderlineLink 
-                    link={'#'}
-                    text={'Zjistit více'}
-                  />
-                </div>
-                <img
-                  src={MainImage4} 
-                  />
-                <div className="description description-left uppercase text-white">
-                  popisek obrázku
-                </div>
-              </div>
-              </AnimateIn>
-            </div> */}
-            <div className="w-5/12 md:w-full min-w-xs phone:min-w-full flex flex-col inner-column">
-            <AnimateIn>
-              <ImageSlider 
-                  images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
-                  innerColumn={true}
-                  className={'tall-image'}
-                  maxHeight={'462px'}
-                  theme="dark"
-                />
-            </AnimateIn>
-            <div className="text-wrapper pt-16">
-              <AnimateIn>
-                <h3 className='potok uppercase'>    
-                  svatby
-                </h3>
-                <div className="text-block max-w-lg md:max-w-none pt-6">
-                  NA POTOK může být tím místem, kde si řeknete své ano. Otevřená stodola je ideální pro venkovní svatby až pro 150 osob s přilehlou zahradou.
-                </div>
-              </AnimateIn>
-            </div>
-          </div>
-
-
-          <div className="w-5/12 md:w-full mr-20 lg:mr-0 min-w-xs phone:min-w-full flex flex-col inner-column phone:mt-20 pt-64 phone:pt-0">
-            <AnimateIn>
-              <ImageSlider 
-                  images={[Teambuilding1, Teambuilding2]}
-                  innerColumn={true}
-                  className={'tall-image'}
-                  maxHeight={'655px'}
-                  theme="dark"
-                />
-            </AnimateIn>
-            <div className="text-wrapper pt-16 phone:pt-32">
-              <AnimateIn>
-                <h3 className='potok uppercase'>    
-                  teambuilding
-                </h3>
-                <div className="text-block max-w-lg md:max-w-none pt-6">
-                Uspořádat můžete také sportovní soustředění, víkendovou jógu nebo nejrůznější druhy workshopů. Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne.
-                </div>
-              </AnimateIn>
-            </div>
-                
-          </div>
-
-            {/* <div className="right-col flex flex-col">
-              <div className="chata-wrapper self-center pr-12 phone:hidden">
-                <AnimateIn >
-                  <ChataGrey 
-                    width={289.866}
-                    height={280.05}
-                    viewBox="0 0 289.866 280.05"
-                    className='chata-img mb-8 md:mt-0 sm:mt-8' />
                 </AnimateIn>
               </div>
-              <AnimateIn >
-                <div className="images-wrapper inner-column self-end mt-40 phone:mt-16 with-text-overlap overlap-right">
-                  <div className="image-text">
-                    <h3 className="potok uppercase">
-                      teambuilding
-                    </h3>
-                    <div className="image-description text-block phone:mb-16">
-                    Lorem ipsum dolor sit amet,<br />
-                    consectetur adipiscing elit.<br />
-                    Praesent aliquam ante nibh, nec lacinia.
-                    </div>
-                    <a href="" className="link-wrapper">
-                      <span  className='uppercase underline-link'>
-                        Zjistit více
-                      </span>
-                    </a>
-                  </div>
-                  <img
-                    src={MainImage5} 
-                    />
-                  <div className="description description-right uppercase text-white">
-                    popisek obrázku
-                  </div>
-              </div>
+            </div>
+
+
+            <div className="w-5/12 md:w-full mr-20 lg:mr-0 min-w-xs phone:min-w-full flex flex-col inner-column phone:mt-20 pt-64 phone:pt-0">
+              <AnimateIn>
+                <ImageSlider 
+                    // images={[Teambuilding1, Teambuilding2]}
+                    images={['teambuilding1', 'teambuilding2']}
+                    innerColumn={true}
+                    className={'tall-image'}
+                    maxHeight={'655px'}
+                    theme="dark"
+                  />
               </AnimateIn>
-            </div> */}
+              <div className="text-wrapper pt-16 phone:pt-32">
+                <AnimateIn>
+                  <h3 className='potok uppercase'>    
+                    teambuilding
+                  </h3>
+                  <div className="text-block max-w-lg md:max-w-none pt-6">
+                  Uspořádat můžete také sportovní soustředění, víkendovou jógu nebo nejrůznější druhy workshopů. Využijte venkovní otevřené stodoly ke kreativní tvorbě, malování, cvičení…cokoliv Vás napadne.
+                  </div>
+                </AnimateIn>
+              </div>
+                  
+            </div>
           </div>
         </NarrowContainer>
 
@@ -259,52 +174,6 @@ const IndexPage = ({location}) => {
       {/* FEATURES CONTAINER END */}
 
       <section className="page-block">
-{/* 
-        <NarrowContainer className=''>
-          <div className="block-heading">
-            <div className="color-block phone:hidden"></div>
-            <AnimateIn 
-               
-              style={{
-                position: 'relative',
-                zIndex: '105'
-                }}>
-              <h3 className='block-heading-text potok uppercase'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula tincidunt mauris sit amet molestie.
-              </h3>
-            </AnimateIn>
-          </div>
-
-          <div className="flex w-full flex-wrap justify-between h-spacing-top h-spacing-bottom">
-            <div className="left-col flex flex-col">
-              <AnimateIn >
-                <ImageSlider 
-                  images={[MainImage1, MainImage6, MainImage1]}
-                  descriptionSide={'description-left'}
-                  innerColumn={true}
-                  className={'tall-image'}
-                  maxHeight={'903px'}
-                />
-              </AnimateIn>
-            </div>
-
-            <div className="right-col flex flex-col pt-56 phone:pt-32">
-              <AnimateIn >
-                <ImageSlider 
-                  images={[MainImage6, MainImage1]}
-                  descriptionSide={'description-right'}
-                  selfEnd={true}
-                  innerColumn={true}
-                  className={'tall-image'}
-                  maxHeight={'903px'}
-                />
-              </AnimateIn>
-             
-            </div>
-          </div>
-        </NarrowContainer> */}
-
-
       <WideContainer className='text-primary'>
 
         <div className="text-block h-half-spacing-bottom">
@@ -324,10 +193,10 @@ const IndexPage = ({location}) => {
           </div>
         </div>
         <div className="w-full relative h-half-spacing-bottom">
-          <img
-              className=''
-              src={NasPribeh}
-              />
+          <Image 
+            filename={"nas_pribeh"}
+            className={"w-full"}
+            />
         </div>
 
         <div className="w-full relative">
@@ -340,7 +209,8 @@ const IndexPage = ({location}) => {
               <AnimateIn >
                 <div className="images-wrapper inner-column mt-16 phone:mt-12">
                   <ImageSlider 
-                    images={[NasPribeh1, NasPribeh2, NasPribeh3]}
+                    // images={[NasPribeh1, NasPribeh2, NasPribeh3]}
+                    images={['intro_pribeh1_1', 'intro_pribeh1_2', 'intro_pribeh1_3']}
                     innerColumn={true}
                     className={'tall-image'}
                     maxHeight={'655px'}
@@ -353,7 +223,8 @@ const IndexPage = ({location}) => {
               <AnimateIn >
                 <div className="images-wrapper inner-column self-end mt-16 phone:mt-16">
                   <ImageSlider 
-                    images={[NasPribeh4, NasPribeh5, NasPribeh6]}
+                    // images={[NasPribeh4, NasPribeh5, NasPribeh6]}
+                    images={['intro_pribeh2_1', 'intro_pribeh2_2', 'intro_pribeh2_3']}
                     innerColumn={true}
                     className={'tall-image'}
                     maxHeight={'655px'}

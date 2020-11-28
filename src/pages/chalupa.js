@@ -4,32 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
 
-import Chalupa1 from "../images/chalupa_pokoje.png"
-import Chalupa2 from "../images/chalupa_spolecenska.png"
-
-import Stodola1 from "../images/chalupa_stodola1.png"
-import Stodola2 from "../images/chalupa_stodola2.png"
-import Stodola3 from "../images/chalupa_stodola3.png"
-import Stodola4 from "../images/chalupa_stodola4.png"
-
-import Voda1 from "../images/chalupa_voda1.png"
-import Voda2 from "../images/chalupa_voda2.png"
-import Voda3 from "../images/chalupa_voda3.png"
-import Voda4 from "../images/chalupa_voda4.png"
-import Voda5 from "../images/chalupa_voda5.png"
-
-import Krajina1 from "../images/chalupa_krajina1.png"
-import Krajina2 from "../images/chalupa_krajina2.png"
-import Krajina3 from "../images/chalupa_krajina3.png"
-
-import LandUvod5 from "../images/land_uvod_5.png"
-
 import ImageSlider from "../components/imageSlider"
 import WideContainer from "../components/WideContainer"
 
 import ChataImg from '../components/svg/chataGrey.js'
 import Piano from '../components/svg/piano.js'
 import Kameny from '../components/svg/kameny.js'
+
+import Image from '../components/image.js'
 
 const Chalupa = ({location}) => {
 
@@ -76,8 +58,8 @@ const Chalupa = ({location}) => {
             </AnimateIn>
           </div>
         <AnimateIn className='w-full'>
-          <img
-            src={LandUvod5}
+          <Image
+            filename={"land_uvod_5"}
             />
         </AnimateIn>
         </div>
@@ -86,8 +68,9 @@ const Chalupa = ({location}) => {
            
             <div className="w-7/15 md:w-full min-w-xs phone:min-w-full flex flex-col">
             <AnimateIn>
-             
-                <img src={Chalupa1} alt="Pokoje"/>
+              <Image
+                filename={"chalupa_pokoje"}
+                />
             </AnimateIn>
             <div className="text-wrapper pt-20 mb-60 phone:mb-0">
               <AnimateIn>
@@ -102,7 +85,8 @@ const Chalupa = ({location}) => {
 
             <AnimateIn className="mt-48 phone:mt-24">
               <ImageSlider 
-                  images={[Stodola1, Stodola2, Stodola3, Stodola4]}
+                  // images={[Stodola1, Stodola2, Stodola3, Stodola4]}
+                  images={['chalupa_stodola1', 'chalupa_stodola2', 'chalupa_stodola3', 'chalupa_stodola4']}
                   innerColumn={true}
                   className={''}
                   height={'562px'}
@@ -133,7 +117,8 @@ const Chalupa = ({location}) => {
 
             <AnimateIn className="mt-32">
               <ImageSlider 
-                  images={[Krajina1, Krajina2, Krajina3]}
+                  // images={[Krajina1, Krajina2, Krajina3]}
+                  images={['chalupa_krajina1', 'chalupa_krajina2', 'chalupa_krajina3']}
                   innerColumn={true}
                   className={''}
                   height={'976px'}
@@ -166,7 +151,9 @@ const Chalupa = ({location}) => {
               </AnimateIn>
             </div>
             <AnimateIn>
-                <img src={Chalupa2} alt="Společenská místnost"/>
+              <Image
+                filename={"chalupa_spolecenska"}
+                />
             </AnimateIn>
             <div className="text-wrapper pt-20 phone:pt-32 mb-60 phone:mb-0">
               <AnimateIn>
@@ -181,7 +168,8 @@ const Chalupa = ({location}) => {
 
             <AnimateIn className="mt-16">
               <ImageSlider 
-                  images={[Voda1, Voda2, Voda3, Voda4, Voda5]}
+                  // images={[Voda1, Voda2, Voda3, Voda4, Voda5]}
+                  images={['chalupa_voda1', 'chalupa_voda2', 'chalupa_voda3', 'chalupa_voda4', 'chalupa_voda5']}
                   innerColumn={true}
                   className={''}
                   height={'562px'}

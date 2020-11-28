@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect, useRef, createRef } from "react"
 import { useSwipeable } from 'react-swipeable'
 
+import Image from './image.js'
+
 const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight, className = '', theme = "light", height = null }) => {
 
   const [count, setCount] = useState(images.length)
@@ -84,13 +86,23 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
         {
           images.map((image, key) => {
             return (
-              <img
-                src={image} 
-                onLoad={() => !loaded && setLoaded(true)}
-                className={`slider-image ${active === key ? 'active' : ''} ${active > key && 'past'} ${active < key && 'before'} ${leaving === key ? 'leaving' : ''}`}
-                data-position={key}
-                key={key}
+                <Image 
+                  filename={image} 
+                  onLoad={() => !loaded && setLoaded(true)}
+                  style={{
+                    position: "absolute"
+                  }}
+                  className={`slider-image ${active === key ? 'active' : ''} ${active > key && 'past'} ${active < key && 'before'} ${leaving === key ? 'leaving' : ''}`}
+                  data-position={key}
+                  key={key}
                 />
+              // <img
+              //   src={image} 
+              //   onLoad={() => !loaded && setLoaded(true)}
+              //   className={`slider-image ${active === key ? 'active' : ''} ${active > key && 'past'} ${active < key && 'before'} ${leaving === key ? 'leaving' : ''}`}
+              //   data-position={key}
+              //   key={key}
+              //   />
             )
           })
         }
