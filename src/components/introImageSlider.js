@@ -52,6 +52,9 @@ const IntroImageSlider = ({ images }) => {
               <Image 
                 filename={image} 
                 onLoad={() => !loaded && setLoaded(true)}
+                // placeholderStyle={{ backgroundColor: `black` }}
+                backgroundColor="lightgray"
+                loading="eager"
                 style={{
                   position: "absolute"
                 }}

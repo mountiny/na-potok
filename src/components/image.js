@@ -19,18 +19,7 @@ export default function Image({filename, ...rest}) {
                 base
                 childImageSharp {
                   fluid {
-                    srcSet
-                    src
-                    srcWebp
-                    base64
-                    originalImg
-                    originalName
-                    presentationHeight
-                    presentationWidth
-                    sizes
-                    srcSetWebp
-                    tracedSVG
-                    aspectRatio
+                    ...GatsbyImageSharpFluid_noBase64
                   }
                 }
               }
@@ -38,11 +27,23 @@ export default function Image({filename, ...rest}) {
           }
         }
       `} 
+                    // srcSet
+                    // src
+                    // srcWebp
+                    // base64
+                    // originalImg
+                    // originalName
+                    // presentationHeight
+                    // presentationWidth
+                    // sizes
+                    // srcSetWebp
+                    // tracedSVG
+                    // aspectRatio
       render={(data) => {
 
         const images  = data.images.edges.map(node => node.node)
         const image = images.filter(img => img.name === filename)[0]
-        
+
         return (
           <Img 
             fluid={image.childImageSharp.fluid}

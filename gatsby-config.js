@@ -34,23 +34,6 @@ module.exports = {
         linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1920,
-            },
-          },
-          `gatsby-remark-lazy-load`,
-        ]
-      }
-    },
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
