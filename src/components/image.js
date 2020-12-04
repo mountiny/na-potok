@@ -19,7 +19,7 @@ export default function Image({filename, ...rest}) {
                 base
                 childImageSharp {
                   fluid {
-                    ...GatsbyImageSharpFluid_noBase64
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
                   }
                 }
               }

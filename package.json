@@ -29,7 +29,6 @@
     "isomorphic-fetch": "^3.0.0",
     "lazysizes": "^5.2.2",
     "leaflet": "^1.7.1",
-    "locomotive-scroll": "^3.6.1",
     "node-sass": "^4.14.1",
     "postcss": "^7.0.35",
     "prop-types": "^15.7.2",
