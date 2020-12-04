@@ -173,13 +173,13 @@ const IndexPage = ({location}) => {
 
       {/* FEATURES CONTAINER END */}
 
-      <section className="page-block">
+      <section className="pt-64">
       <WideContainer className='text-primary'>
 
         <div className="text-block h-half-spacing-bottom">
           <div className="w-full">
             <AnimateIn>
-              <h2 className="potok uppercase">
+              <h2 className="potok uppercase pt-16">
                 Jak to celé začalo...
               </h2>
               <div className="w-1/2 md:w-full">

@@ -27,10 +27,10 @@ const NasPribehPage = ({location}) => {
 
       <WideContainer className='text-primary'>
 
-        <div className="text-block h-spacing-top h-half-spacing-bottom">
+        <div className="text-block pt-60 h-half-spacing-bottom">
           <div className="w-full">
             <AnimateIn>
-              <h2 className="potok uppercase">
+              <h2 className="potok uppercase pt-16">
                 Jak to celé začalo...
               </h2>
               <div className="w-1/2 md:w-full">
