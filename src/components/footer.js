@@ -17,7 +17,7 @@ const Footer = ({ children }) => {
               </div>
               <div className='social leading-normal pb-8'>
                 <a className='social-link underline-link mr-24' target="_blank" href='https://www.instagram.com/na_potok/'>instagram</a>
-                <a className='social-link underline-link' target="_blank" href='#'>facebook</a>
+                <a className='social-link underline-link' target="_blank" href='https://www.facebook.com/ChalupaNapotok'>facebook</a>
               </div>
 
               <div className='address leading-normal'>
