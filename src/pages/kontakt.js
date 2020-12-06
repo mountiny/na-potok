@@ -47,7 +47,7 @@ const KontaktPage = ({location}) => {
           <div className="centered-block">
             <AnimateIn>
               <span className='font-medium'>
-              Zavolejte a&nbsp;zeptejte se, napište nám <a href='mailto:info@napotok.cz' className='text-black'>mail</a>, nebo si rovnou rezervujte termín a&nbsp;my se s&nbsp;vámi spojíme.
+              Zavolejte a&nbsp;zeptejte se, napište nám <a href='mailto:chalupa@napotok.cz' className='text-black'>mail</a>, nebo si rovnou rezervujte termín a&nbsp;my se s&nbsp;vámi spojíme.
               <br />
               Potkáme se na chalupě.
               </span>
@@ -77,7 +77,7 @@ const KontaktPage = ({location}) => {
               <h6 className="uppercase potok pb-6">
                 e-mail
               </h6>
-              <a className='phone:text-xl' href='mailto:info@napotok.cz'>info@napotok.cz</a>
+              <a className='phone:text-xl' href='mailto:chalupa@napotok.cz'>chalupa@napotok.cz</a>
             </AnimateIn>
           </div>
         </div>
