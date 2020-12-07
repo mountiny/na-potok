@@ -39,6 +39,12 @@ img {
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 .grabbable {
   cursor: move; /* fallback if grab cursor is unsupported */
