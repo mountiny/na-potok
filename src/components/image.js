@@ -19,7 +19,7 @@ export default function Image({filename, ...rest}) {
                 base
                 childImageSharp {
                   fluid {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
                   }
                 }
               }
@@ -48,6 +48,7 @@ export default function Image({filename, ...rest}) {
           <Img 
             fluid={image.childImageSharp.fluid}
             alt={image.base.split(".")[0]}
+            loading={"eager"}
             {...rest}
           />
         )

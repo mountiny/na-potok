@@ -27,7 +27,7 @@ const NasPribehPage = ({location}) => {
 
       <WideContainer className='text-primary'>
 
-        <div className="text-block pt-60 h-half-spacing-bottom">
+        <div className="text-block pt-60 phone:pt-24 h-half-spacing-bottom">
           <div className="w-full">
             <AnimateIn>
               <h2 className="potok uppercase pt-16">

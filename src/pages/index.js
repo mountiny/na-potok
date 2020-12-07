@@ -173,7 +173,7 @@ const IndexPage = ({location}) => {
 
       {/* FEATURES CONTAINER END */}
 
-      <section className="pt-64">
+      <section className="pt-64 phone:pt-16">
       <WideContainer className='text-primary'>
 
         <div className="text-block h-half-spacing-bottom">
