@@ -247,12 +247,44 @@ const ReservationPage = ({location}) => {
   )
 }
 
+// const GET_ALL_BOOKINGS = gql`
+//   query content_view_1208136bf41f46798e2b89edf4bcf51a {
+//     page: bookingsConnection {
+//       edges {
+//         node {
+//           id
+//           updatedAt
+//           bookedFrom
+//           bookedTo
+//           createdAt
+//           email
+//           id
+//           mobile
+//           name
+//           publishedAt
+//           updatedAt
+//           documentInStages(includeCurrent: true) {
+//             id
+//             stage
+//             updatedAt
+//             publishedAt
+//           }
+//         }
+//       }
+//       aggregate {
+//         count
+//       }
+//     }
+//   }
+// `
+
 const GET_ALL_BOOKINGS = gql`
-  query content_view_1208136bf41f46798e2b89edf4bcf51a {
+  query content_view_0fc2f40c1e92499d879bb91233fcd086 {
     page: bookingsConnection {
       edges {
         node {
           id
+          stage
           updatedAt
           bookedFrom
           bookedTo
@@ -263,19 +295,22 @@ const GET_ALL_BOOKINGS = gql`
           name
           publishedAt
           updatedAt
+          
           documentInStages(includeCurrent: true) {
             id
             stage
             updatedAt
             publishedAt
+          
           }
         }
       }
-      aggregate {
-        count
-      }
+    aggregate {
+      count
     }
   }
+}
+
 `
 
 export default ReservationPage
