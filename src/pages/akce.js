@@ -46,7 +46,8 @@ const AkcePage = ({location}) => {
                   images={['svatba1', 'svatba2', 'svatba3', 'svatba4', 'svatba5']}
                   innerColumn={true}
                   className={'tall-image'}
-                  maxHeight={'462px'}
+                  // maxHeight={'462px'}
+                  maxHeight={'80vh'}
                 />
             </AnimateIn>
             <div className="text-wrapper pt-16">
@@ -70,7 +71,8 @@ const AkcePage = ({location}) => {
                   images={['teambuilding1', 'teambuilding2']}
                   innerColumn={true}
                   className={'tall-image'}
-                  maxHeight={'655px'}
+                  // maxHeight={'655px'}
+                  maxHeight={'80vh'}
                 />
             </AnimateIn>
             <div className="text-wrapper pt-16 phone:pt-32">

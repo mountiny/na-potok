@@ -90,7 +90,8 @@ const Chalupa = ({location}) => {
                   innerColumn={true}
                   className={''}
                   height={'562px'}
-                  maxHeight={'562px'}
+                  // maxHeight={'562px'}
+                  maxHeight={'80vh'}
                 />
 
             </AnimateIn>
@@ -122,7 +123,8 @@ const Chalupa = ({location}) => {
                   innerColumn={true}
                   className={''}
                   height={'976px'}
-                  maxHeight={'976px'}
+                  // maxHeight={'976px'}
+                  maxHeight={'80vh'}
                 />
 
             </AnimateIn>
@@ -173,7 +175,8 @@ const Chalupa = ({location}) => {
                   innerColumn={true}
                   className={''}
                   height={'562px'}
-                  maxHeight={'562px'}
+                  // maxHeight={'562px'}
+                  maxHeight={'80vh'}
                 />
 
             </AnimateIn>

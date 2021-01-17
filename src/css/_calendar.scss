@@ -2,10 +2,10 @@
 .calendar-wrapper {
 
   --dimension: 60px;
-  .legend-wrapper {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
+  // .legend-wrapper {
+  //   margin-top: 10rem;
+  //   margin-bottom: 10rem;
+  // }
   .legend-block {
     font-size: var(--size-2);
 
@@ -136,17 +136,17 @@
     }
   }
 }
-@media screen and (max-width: 900px) { 
+// @media screen and (max-width: 900px) { 
 
-  .calendar-wrapper {
-    .legend-wrapper {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
+//   .calendar-wrapper {
+//     .legend-wrapper {
+//       margin-top: 4rem;
+//       margin-bottom: 4rem;
+//     }
     
-  }
+//   }
 
-}
+// }
 @media (max-width: 800px) {
   .calendar-wrapper {
 

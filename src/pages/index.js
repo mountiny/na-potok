@@ -68,7 +68,8 @@ const IndexPage = ({location}) => {
                 images={['land_uvod_2', 'land_uvod_3', 'land_uvod_4']}
                 selfEnd={true}
                 className={'tall-image'}
-                maxHeight={'1082px'}
+                maxHeight={'80vh'}
+                // maxHeight={'1082px'}
                 />
             </AnimateIn>
           </div>
@@ -105,7 +106,7 @@ const IndexPage = ({location}) => {
       {/* FEATURES CONTAINER START */}
 
       <section className="features-cont">
-
+{/* 
         <div className="central-text-block text-center h-half-spacing-top h-half-spacing-botzom">
           <div className="w-4/5 max-w-6xl pt-0 phone:pt-32 inline-block tracking-wide potok text-white text-5xl">
             <AnimateIn threshold={0.1}>
@@ -115,7 +116,7 @@ const IndexPage = ({location}) => {
             </AnimateIn>
           </div>
           
-        </div>
+        </div> */}
 
         <NarrowContainer className='text-white'> 
           <div className="flex w-full flex-wrap justify-between pt-32 pb-56 phone:pb-32">
@@ -126,7 +127,8 @@ const IndexPage = ({location}) => {
                     images={['svatba1', 'svatba2', 'svatba3', 'svatba4', 'svatba5']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'462px'}
+                    // maxHeight={'462px'}
+                    maxHeight={'80vh'}
                     theme="dark"
                   />
               </AnimateIn>
@@ -150,7 +152,8 @@ const IndexPage = ({location}) => {
                     images={['teambuilding1', 'teambuilding2']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'655px'}
+                    // maxHeight={'655px'}
+                    maxHeight={'80vh'}
                     theme="dark"
                   />
               </AnimateIn>
@@ -213,7 +216,8 @@ const IndexPage = ({location}) => {
                     images={['intro_pribeh1_1', 'intro_pribeh1_2', 'intro_pribeh1_3']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'655px'}
+                    // maxHeight={'655px'}
+                    maxHeight={'80vh'}
                   />
                 </div>
               </AnimateIn>
@@ -227,7 +231,8 @@ const IndexPage = ({location}) => {
                     images={['intro_pribeh2_1', 'intro_pribeh2_2', 'intro_pribeh2_3']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'655px'}
+                    // maxHeight={'655px'}
+                    maxHeight={'80vh'}
                   />
               </div>
               </AnimateIn>

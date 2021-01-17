@@ -53,8 +53,6 @@ const ReservationPage = ({location}) => {
   let modifiers = {}
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
-  const [season, setSeason] = useState(0)
-
 
   // Load all the bookings
   const { loading, error, data } = useQuery(GET_ALL_BOOKINGS, {});
@@ -173,10 +171,10 @@ const ReservationPage = ({location}) => {
               />
               
 
-            <div className='legend-wrapper relative flex justify-start'>
+            <div className='legend-wrapper my-16 relative flex justify-start'>
               <div className='legend-block free-slot flex justify-start items-center mr-12'>
                 <div className='legend-box'>
-                  19
+                  27
                 </div>
                 <div className='legend-text'>
                   volný termín
@@ -191,7 +189,13 @@ const ReservationPage = ({location}) => {
                 </div>
               </div>
             </div>
+
+            <div className="w-full text-block my-20 font-medium text-center tracking-wide">
+              <a className="text-lg uppercase underline" href='mailto:chalupa@napotok.cz'>rezervujte si termín!</a>
+            </div>
+
           </AnimateIn>
+
         </div>
 
         <div className="flex w-full flex-wrap justify-between h-half-spacing-bottom">
@@ -246,37 +250,6 @@ const ReservationPage = ({location}) => {
     </Layout>
   )
 }
-
-// const GET_ALL_BOOKINGS = gql`
-//   query content_view_1208136bf41f46798e2b89edf4bcf51a {
-//     page: bookingsConnection {
-//       edges {
-//         node {
-//           id
-//           updatedAt
-//           bookedFrom
-//           bookedTo
-//           createdAt
-//           email
-//           id
-//           mobile
-//           name
-//           publishedAt
-//           updatedAt
-//           documentInStages(includeCurrent: true) {
-//             id
-//             stage
-//             updatedAt
-//             publishedAt
-//           }
-//         }
-//       }
-//       aggregate {
-//         count
-//       }
-//     }
-//   }
-// `
 
 const GET_ALL_BOOKINGS = gql`
   query content_view_0fc2f40c1e92499d879bb91233fcd086 {

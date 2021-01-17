@@ -63,7 +63,8 @@ const NasPribehPage = ({location}) => {
                     images={['nas_pribeh2_1', 'nas_pribeh2_2', 'nas_pribeh2_3']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'655px'}
+                    // maxHeight={'655px'}
+                    maxHeight={'80vh'}
                   />
                 </div>
               </AnimateIn>
@@ -77,7 +78,8 @@ const NasPribehPage = ({location}) => {
                     images={['nas_pribeh3_1', 'nas_pribeh3_2', 'nas_pribeh3_3']}
                     innerColumn={true}
                     className={'tall-image'}
-                    maxHeight={'655px'}
+                    // maxHeight={'655px'}
+                    maxHeight={'80vh'}
                   />
               </div>
               </AnimateIn>

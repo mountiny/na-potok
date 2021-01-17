@@ -36,7 +36,7 @@ const Footer = ({ children }) => {
             <div className='contact-block flex items-end leading-normal'>
               <div>
                 <span><a href='tel:+420777123456'>+420 777 441 876</a></span><br />
-                <span>mail : <a href='mailto:chalupa@napotok.cz'>chalupa@napotok.cz</a></span>
+                <span><a href='mailto:chalupa@napotok.cz'>chalupa@napotok.cz</a></span>
               </div>
             </div>
           </div>

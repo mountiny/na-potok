@@ -41,7 +41,7 @@ const Header = ({ siteTitle, location }) => {
   if (!location) return (<></>)
   return (
     <header className={`fixed w-full flex justify-center opacity-100 transition-all ${!visible  && "h-out"} ${location.pathname === "/" ? (prevScrollPos > height  && "h-primary-bg") : (prevScrollPos > (height*0.4)  && "h-primary-bg")}`}>
-      <div className='inner-header flex justify-between items-center'>
+      <div className='inner-header flex justify-between items-center z-50'>
         <div className="logo uppercase potok flex items-center">
           <Link
             to="/"
@@ -50,17 +50,17 @@ const Header = ({ siteTitle, location }) => {
           </Link>
         </div>
         <nav className="flex justify-end items-center phone:hidden">
-        <Link
-            to="/nas-pribeh/"
-            className={`nav-link ${location.pathname === '/nas-pribeh/' && 'active-link'}`}
-          >
-              náš příběh
-          </Link>
           <Link
             to="/chalupa/"
             className={`nav-link ${location.pathname === '/chalupa/' && 'active-link'}`}
           >
             chalupa na potok
+          </Link>
+          <Link
+              to="/nas-pribeh/"
+              className={`nav-link ${location.pathname === '/nas-pribeh/' && 'active-link'}`}
+            >
+            náš příběh
           </Link>
           <Link
             to="/akce/"
@@ -82,21 +82,30 @@ const Header = ({ siteTitle, location }) => {
           </Link>
         </nav>
         <div 
-          className={`menu-trigger potok tracking-wide px-12 py-8 hidden phone:block ${menu ? 'z-50' : ''} cursor-pointer`}
+          className={`menu-trigger potok tracking-wide px-4 py-6 hidden phone:block ${menu ? 'menu-open z-50' : ''} cursor-pointer`}
           onClick={() => setMenu(!menu)}
           >
-          {menu ? "ZAVŘÍT" : "MENU"}
+            <div id="menu">
+              <div id="pencet">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
         </div>
         <div 
           className={`
           mobile-menu 
-          ${menu ? 'block z-40' : 'hidden'} 
+          transition duration-500 transform-gpu
+          ${menu ? 'transform-x-0 opacity-100' : 'translate-x-full opacity-50'} 
           phonemin:hidden
+          block z-40
           fixed 
           top-0 
-          left-0 
-          w-full 
           h-full
+          left-0 
+          pb-8
+          w-full 
           potok`}
           style={{
             backgroundColor: 'hsl(20, 7%, 55%)'
@@ -115,17 +124,6 @@ const Header = ({ siteTitle, location }) => {
             </Link>
 
             <Link
-              to="/nas-pribeh/"
-              className='mobile-nav-link landscape:text-xl'
-              onClick={() => {
-                if (location.pathname === '/nas-pribeh/') {
-                  setMenu(!menu)
-                }
-              }}
-            >
-              náš příběh
-            </Link>
-            <Link
               to="/chalupa/"
               className='mobile-nav-link landscape:text-xl'
               onClick={() => {
@@ -135,6 +133,17 @@ const Header = ({ siteTitle, location }) => {
               }}
             >
               chalupa na potok
+            </Link>
+            <Link
+              to="/nas-pribeh/"
+              className='mobile-nav-link landscape:text-xl'
+              onClick={() => {
+                if (location.pathname === '/nas-pribeh/') {
+                  setMenu(!menu)
+                }
+              }}
+            >
+              náš příběh
             </Link>
             <Link
               to="/akce/"
