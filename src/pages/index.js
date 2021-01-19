@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -41,15 +42,13 @@ const IndexPage = ({location}) => {
             <AnimateIn >
               <div className="heading-wrapper pt-16">
                 <h3 className='potok uppercase'>
-                  Nejkrásnější<br />
-                  výhledy na<br />
-                  dolní moravě
+                  Nejkrásnější výhledy
                 </h3>
               </div>
             </AnimateIn>
             <AnimateIn >
-              <div className="text-block inner-column pt-16 phone:mb-16">
-              Přirozené kontury dnešního terénu okolo chalupy jsou nepozměněné a&nbsp;byl by hřích do nich výrazně zasahovat. Na místě v&nbsp;Jeseníkách s&nbsp;perfektními výhledy se malé potůčky vlévají do řeky Moravy pod Hanušovickou vrchovinou a&nbsp;Králickým Sněžníkem. Poznáte zde divokou horskou přírodu, a&nbsp;přitom se budete cítit v&nbsp;pohodlí jako doma ve svých bačkorách.
+              <div className="text-block inner-column pt-8 phone:mb-16">
+                Přirozené kontury dnešního terénu okolo chalupy jsou nepozměněné a&nbsp;byl by hřích do nich výrazně zasahovat. Na místě v&nbsp;Jeseníkách s&nbsp;perfektními výhledy se malé potůčky vlévají do řeky Moravy pod Hanušovickou vrchovinou a&nbsp;Králickým Sněžníkem. Poznáte zde divokou horskou přírodu, a&nbsp;přitom se budete cítit v&nbsp;pohodlí jako doma ve svých bačkorách.
 
               </div>
             </AnimateIn>
@@ -207,7 +206,7 @@ const IndexPage = ({location}) => {
             Příběh chalupy
           </h2>
 
-          <div className="flex w-full flex-wrap justify-between pb-56 phone:pb-32">
+          <div className="flex w-full flex-wrap justify-between pb-56 phone:pb-36">
             <div className="w-5/12 md:w-full flex flex-col min-w-xs">
               <AnimateIn >
                 <div className="images-wrapper inner-column mt-16 phone:mt-12">
@@ -238,6 +237,10 @@ const IndexPage = ({location}) => {
               </AnimateIn>
             </div>
           </div>
+        </div>
+
+        <div className="w-full text-block mb-28 md-m:mb-44 font-medium text-center tracking-wide">
+          <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
         </div>
 
       </WideContainer>

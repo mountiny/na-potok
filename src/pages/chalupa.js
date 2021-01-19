@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,10 +24,17 @@ const Chalupa = ({location}) => {
     <Layout location={location}>
       <SEO title="Chalupa Na Potok" />
 
-      <section className="top-block">
+      {/* <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
           <h2 className='potok text-center uppercase'>chalupa</h2>
         </div>
+      </section> */}
+      <section className="top-block flex justify-center items-end content-center">
+        <Image 
+          filename="strecha"
+          className="w-48 pb-44"
+          imgStyle={{ objectFit: 'contain' }}
+          />
       </section>
 
       <WideContainer className='text-primary'>
@@ -64,7 +72,7 @@ const Chalupa = ({location}) => {
         </AnimateIn>
         </div>
 
-        <div className="flex w-full flex-wrap justify-between pt-32 pb-56 phone:pb-32">
+        <div className="flex w-full flex-wrap justify-between pt-32 pb-44 phone:pb-32">
            
             <div className="w-7/15 md:w-full min-w-xs phone:min-w-full flex flex-col">
             <AnimateIn>
@@ -193,6 +201,10 @@ const Chalupa = ({location}) => {
               </AnimateIn>
             </div>
                 
+          </div>
+
+          <div className="w-full text-block mt-44 font-medium text-center tracking-wide">
+            <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
           </div>
 
         </div> 

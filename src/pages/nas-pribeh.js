@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -19,10 +20,12 @@ const NasPribehPage = ({location}) => {
     <Layout location={location}>
       <SEO title="Na Potok - Náš příběh" />
 
-      <section className="top-block">
-        <div className="title-top absolute flex justify-center items-end content-center">
-          <h2 className='potok text-center uppercase'>náš příběh</h2>
-        </div>
+      <section className="top-block flex justify-center items-end content-center">
+        <Image 
+          filename="strecha"
+          className="w-48 pb-44"
+          imgStyle={{ objectFit: 'contain' }}
+          />
       </section>
 
       <WideContainer className='text-primary'>
@@ -90,6 +93,10 @@ const NasPribehPage = ({location}) => {
 
         <div className="w-full text-block h-half-spacing-bottom font-medium text-center tracking-wide">
           Celý příběh rekonstrukce chalupy i fotky z akcí najdete na <a href="https://www.instagram.com/na_potok/" target="_blank" className="underline">instagramu</a>.
+        </div>
+
+        <div className="w-full text-block mb-44 mt-16 font-medium text-center tracking-wide">
+          <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
         </div>
 
       </WideContainer>

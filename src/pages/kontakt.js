@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { MapContainer as Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Layout from "../components/layout"
@@ -34,10 +35,17 @@ const KontaktPage = ({location}) => {
     <Layout location={location}>
       <SEO title="Na Potok - Kontakt" />
 
-      <section className="top-block">
+      {/* <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
           <h2 className='potok text-center uppercase'>Kontakt</h2>
         </div>
+      </section> */}
+      <section className="top-block flex justify-center items-end content-center">
+        <Image 
+          filename="strecha"
+          className="w-48 pb-44"
+          imgStyle={{ objectFit: 'contain' }}
+          />
       </section>
 
       <NarrowContainer className='text-primary h-half-spacing-bottom'>
@@ -111,6 +119,9 @@ const KontaktPage = ({location}) => {
             </AnimateIn>
           </div>
         </div>
+        <div className="w-full text-block mt-24 md-m:mt-44 mb-24 md-m:mb-0 font-medium text-center tracking-wide">
+            <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
+          </div>
       </NarrowContainer>
     
     <section className="mapa">

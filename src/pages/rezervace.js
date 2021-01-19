@@ -78,10 +78,17 @@ const ReservationPage = ({location}) => {
     <Layout location={location}>
       <SEO title="Na Potok - Ceník a rezervace" />
 
-      <section className="top-block">
+      {/* <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
           <h2 className='potok text-center uppercase'>Ceník a rezervace</h2>
         </div>
+      </section> */}
+      <section className="top-block flex justify-center items-end content-center">
+        <Image 
+          filename="strecha"
+          className="w-48 pb-44"
+          imgStyle={{ objectFit: 'contain' }}
+          />
       </section>
 
       <NarrowContainer className='text-primary'>
@@ -190,8 +197,8 @@ const ReservationPage = ({location}) => {
               </div>
             </div>
 
-            <div className="w-full text-block my-20 font-medium text-center tracking-wide">
-              <a className="text-lg uppercase underline" href='mailto:chalupa@napotok.cz'>rezervujte si termín!</a>
+            <div className="w-full text-block my-32 font-medium text-center tracking-wide">
+              <a className="text-3xl uppercase underline" href='mailto:chalupa@napotok.cz'>rezervujte si termín!</a>
             </div>
 
           </AnimateIn>

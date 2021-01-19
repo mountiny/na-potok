@@ -1,12 +1,13 @@
 import React, { useEffect } from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
-import { Link } from "gatsby"
  
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
+import Image from '../components/image.js'
 
 const AkcePage = ({location}) => {
 
@@ -18,11 +19,17 @@ const AkcePage = ({location}) => {
     <Layout location={location}>
       <SEO title="Na Potok - Akce" />
 
-      <section className="top-block">
+      {/* <section className="top-block">
         <div className="title-top absolute flex justify-center items-end content-center">
           <h2 className='potok text-center uppercase'>Akce a události</h2>
         </div>
-        
+      </section> */}
+      <section className="top-block flex justify-center items-end content-center">
+        <Image 
+          filename="strecha"
+          className="w-48 pb-44"
+          imgStyle={{ objectFit: 'contain' }}
+          />
       </section>
 
       <NarrowContainer className='text-primary h-half-spacing-bottom'>
@@ -89,13 +96,8 @@ const AkcePage = ({location}) => {
           </div>
         </div>
 
-        <div className="w-full text-block h-half-spacing-top font-medium text-center tracking-wide">
-            <Link
-              to="/rezervace"
-              className="underline uppercase"
-              >
-              rezervujte si termín
-            </Link>
+        <div className="w-full text-block mt-44 mb-16 font-medium text-center tracking-wide">
+          <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
         </div>
 
       </NarrowContainer>
