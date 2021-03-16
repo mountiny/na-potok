@@ -14,6 +14,16 @@ import ChataImg from '../components/svg/chataGrey.js'
 
 import Image from '../components/image.js'
 
+/**
+ * založky
+ * chalupa
+ * pokoje
+ * radosti
+ * kontakt
+ * ceník
+ * 
+ * 
+ */
 
 const IndexPage = ({location}) => {
 
