@@ -92,12 +92,12 @@ const IntroImageSlider = ({ images }) => {
               )
             })
           }
-          <div className="intro-image-indicator">
+          {/* <div className="intro-image-indicator">
             {active > 8 
               ? `${active+1}` 
               : `0${active+1}` 
             }
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

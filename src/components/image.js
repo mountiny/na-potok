@@ -18,7 +18,7 @@ export default function Image({filename, ...rest}) {
                 name
                 base
                 childImageSharp {
-                  fluid {
+                  fluid(maxWidth: 2560, quality: 100) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                   }
                 }
