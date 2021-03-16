@@ -19,14 +19,16 @@ export default function Image({filename, ...rest}) {
                 base
                 childImageSharp {
                   fluid(maxWidth: 2560, quality: 100) {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluidLimitPresentationSize
                   }
                 }
               }
             }
           }
         }
-      `} 
+      `}
+      //...GatsbyImageSharpFluid_withWebp_tracedSVG
                     // srcSet
                     // src
                     // srcWebp
