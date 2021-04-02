@@ -11,8 +11,8 @@ import WideContainer from "../components/WideContainer"
 import NarrowContainer from "../components/NarrowContainer"
 
 import Voda from '../components/svg/voda.js'
-import Krajina from '../components/svg/krajina.js'
-import Dvere from '../components/svg/Dvere.js'
+import Lipa from '../components/svg/lipa.js'
+import Dvere from '../components/svg/dvere.js'
 
 // import ChataImg from '../components/svg/chataGrey.js'
 
@@ -69,11 +69,10 @@ const IndexPage = ({location}) => {
               <div className="flex flex-col justify-start items-center px-16 lg:mb-20">
                 <div className="h-72 w-full flex justify-center items-center">
                   
-                    <Krajina 
-                    width={300}
-                    // height={200}
-                    // viewBox="0 0 186.38 412.32"
+                  <Lipa 
+                    width={160}
                     className='chata-img mb-12' />
+                    
                 </div>
                 <span className="text-center potok text-3xl font-bold py-8">
                   Nádherné místo
