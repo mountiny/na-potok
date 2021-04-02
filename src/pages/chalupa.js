@@ -7,7 +7,7 @@ import AnimateIn from '../components/AnimateIn'
 
 import ImageSlider from "../components/imageSlider"
 
-import ChataImg from '../components/svg/chataGrey.js'
+import ChataImg from '../components/svg/chata.js'
 import Piano from '../components/svg/piano.js'
 import Kameny from '../components/svg/kameny.js'
 
@@ -24,7 +24,7 @@ const Chalupa = ({location}) => {
               <ChataImg 
                 width={289.87}
                 height={280.05}
-                viewBox="0 0 289.87 280.05"
+                // viewBox="0 0 289.87 280.05"
                 className='chata-img phone:mt-16' />
             </div>
       </section>
@@ -58,7 +58,7 @@ const Chalupa = ({location}) => {
                   <ChataImg 
                   width={206.87}
                   height={200.05}
-                  viewBox="0 0 289.87 280.05"
+                  // viewBox="0 0 289.87 280.05"
                     className='chata-img' />
                 </div>
                 <span className="text-center potok text-3xl font-bold py-16">
@@ -73,7 +73,7 @@ const Chalupa = ({location}) => {
                   <Piano 
                     width={238.68}
                     height={160.25}
-                    viewBox="0 0 263.68 202.25"
+                    // viewBox="0 0 263.68 202.25"
                     className='chata-img mt-8' />
                 </div>
                 <span className="text-center potok text-3xl font-bold py-16">
@@ -88,7 +88,7 @@ const Chalupa = ({location}) => {
                     <Kameny 
                       width={90}
                       height={200}
-                      viewBox="0 0 186.38 412.32"
+                      // viewBox="0 0 186.38 412.32"
                       className='chata-img' />
                   </div>
                   <span className="text-center potok text-3xl font-bold py-16">

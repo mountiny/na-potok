@@ -46,7 +46,7 @@ const Footer = ({ children }) => {
             // height={231.879}
             width={186}
             height={180}
-            viewBox="0 0 240.006 231.879"
+            // viewBox="0 0 240.006 231.879"
             // viewBox="0 0 186 180"
             className='chata-img md:mt-16 md:self-center' />
         </div>

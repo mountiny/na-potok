@@ -6,13 +6,6 @@ import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
 
 import ImageSlider from "../components/imageSlider"
-import WideContainer from "../components/WideContainer"
-
-import ChataImg from '../components/svg/chataGrey.js'
-import Piano from '../components/svg/piano.js'
-import Kameny from '../components/svg/kameny.js'
-
-import Image from '../components/image.js'
 import NarrowContainer from "../components/NarrowContainer"
 
 const Radosti = ({location}) => {

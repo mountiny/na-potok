@@ -242,11 +242,6 @@ Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku
                 </div>
               </div>
             </div>
-{/* 
-            <div className="w-full text-block my-32 font-medium text-center tracking-wide">
-              <a className="text-3xl uppercase underline" href='mailto:chalupa@napotok.cz'>rezervujte si termín!</a>
-            </div> */}
-
           </AnimateIn>
 
         </div>
@@ -266,49 +261,6 @@ Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku
             +420 777 441 876
           </a>
         </div>
-{/* 
-        <div className="flex w-full flex-wrap justify-between h-half-spacing-bottom">
-          <div className="left-col flex flex-col phone:order-2">
-            <AnimateIn>
-             
-               <div className="text-block">
-               
-                  <p className="pb-8">
-                    <strong>Cena zahrnuje</strong> <br />
-                    lůžkoviny, ručníky, vířivku, saunu, venkovní gril a&nbsp;ohniště, dřevo (pro ohniště a&nbsp;vnitřní krb), spotřebu elektrické energie a&nbsp;vody, skladovací prostory pro sportovní vybavení, závěrečný úklid.
-                  </p>
-                  <p className="pb-8">
-                    <strong className="line-through">Cena nezahrnuje</strong> <br />
-                    Vratnou kauci ve výši 5 000 Kč, kterou host zaplatí při příjezdu hotově. Kauce je vrácena při předání Chalupy v&nbsp;den odjezdu v&nbsp;plné výši, v&nbsp;případě, že nedošlo ke škodě. <br />
-                    Poplatek za psa 250 Kč/noc.
-                  </p>
-                  <p className="pb-8">
-                    <strong>Příjezd a odjezd</strong> <br />
-                    Příjezd: od 16 hod. do 20 hod.<br />
-                    Odjezd: do 10 hod.
-                  </p>
-                  <p className="pb-8 underline">
-                    Vzhledem k tomu, že Chalupa nedisponuje recepcí budeme rádi, když nám dáte vědět předpokládaný čas příjezdu.
-                  </p>
-
-               </div>
-            </AnimateIn>
-           
-
-          </div>
-
-          <div className="right-col flex flex-col phone:order-1 phone:py-16">
-            <AnimateIn>
-                <div className="flex justify-end phone:justify-center">
-
-                  <Dvere 
-                    className="align-end phone:align-center"
-                  />
-                </div>
-
-            </AnimateIn>
-          </div>
-        </div> */}
 
       </NarrowContainer>
         

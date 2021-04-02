@@ -10,24 +10,11 @@ import IntroImageSlider from "../components/introImageSlider"
 import WideContainer from "../components/WideContainer"
 import NarrowContainer from "../components/NarrowContainer"
 
-import ChataImg from '../components/svg/chataGrey.js'
-import Piano from '../components/svg/piano.js'
-import Kameny from '../components/svg/kameny.js'
+import Voda from '../components/svg/voda.js'
+import Krajina from '../components/svg/krajina.js'
+import Dvere from '../components/svg/Dvere.js'
 
 // import ChataImg from '../components/svg/chataGrey.js'
-
-import Image from '../components/image.js'
-
-/**
- * založky
- * chalupa
- * pokoje
- * radosti
- * kontakt
- * ceník
- * 
- * 
- */
 
 const IndexPage = ({location}) => {
 
@@ -81,10 +68,11 @@ const IndexPage = ({location}) => {
             <div className="grid grid-cols-3 lg:grid-cols-1">
               <div className="flex flex-col justify-start items-center px-16 lg:mb-20">
                 <div className="h-72 w-full flex justify-center items-center">
-                  <ChataImg 
-                    width={206.87}
-                    height={200.05}
-                    viewBox="0 0 289.87 280.05"
+                  
+                    <Krajina 
+                    width={300}
+                    // height={200}
+                    // viewBox="0 0 186.38 412.32"
                     className='chata-img mb-12' />
                 </div>
                 <span className="text-center potok text-3xl font-bold py-8">
@@ -95,11 +83,12 @@ const IndexPage = ({location}) => {
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-16 lg:mb-20">
-                <div className="h-72 w-full flex justify-center items-center">
-                  <Piano 
-                    width={238.68}
-                    height={160.25}
-                    viewBox="0 0 263.68 202.25"
+                  <div className="h-72 w-full flex justify-center items-center">
+                    
+                  <Dvere 
+                    width={200}
+                    // height={160.25}
+                    // viewBox="0 0 263.68 202.25"
                     className='chata-img mb-16 mt-8' />
                 </div>
                 <span className="text-center potok text-3xl font-bold py-8">
@@ -111,14 +100,14 @@ const IndexPage = ({location}) => {
               </div>
                 <div className="flex flex-col  justify-start items-center px-16">
                   <div className="h-72 w-full flex justify-center items-center">
-                  <Kameny 
-                    width={90}
-                    height={200}
-                    viewBox="0 0 186.38 412.32"
-                    className='chata-img mb-12' />
+                  <Voda 
+                    width={200}
+                    // height={200.05}
+                    // viewBox="0 0 289.87 280.05"
+                      className='chata-img mb-12' />
                   </div>
                   <span className="text-center potok text-3xl font-bold py-8">
-                    Nekonečné vyžité
+                    Nekonečné vyžití
                   </span>
                   <div className="text-block w-full pt-6 text-center">
                     Jaro - léto - podzim - zima... Na ročním období nezáleží. Na naší chalupě je pořád co dělat a&nbsp;kam v&nbsp;okolí se vydat.
