@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect, useRef, createRef } from "react"
 import { useSwipeable } from 'react-swipeable'
 
+import RightArrow from "./svg/rightArrow"
+import LeftArrow from "./svg/leftArrow"
+
 import Image from './image.js'
 
 const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight, className = '', theme = "light", height = null }) => {
@@ -97,17 +100,32 @@ const ImageSlider = ({ images, descriptionSide, selfEnd, innerColumn, maxHeight,
                   data-position={key}
                   key={key}
                 />
-              // <img
-              //   src={image} 
-              //   onLoad={() => !loaded && setLoaded(true)}
-              //   className={`slider-image ${active === key ? 'active' : ''} ${active > key && 'past'} ${active < key && 'before'} ${leaving === key ? 'leaving' : ''}`}
-              //   data-position={key}
-              //   key={key}
-              //   />
             )
           })
         }
       </div>
+      {
+        active !== 0 && (
+          <div 
+            className="h-full absolute flex justify-center items-center w-28 bg-transparent z-50 left-0 top-0 cursor-pointer" 
+            style={{zIndex:"10000"}}
+            onClick={() => switchClicked(active-1)}
+            >
+            <RightArrow />
+          </div>
+        ) 
+      }
+      {
+        active !== count - 1 && (
+          <div 
+            className="h-full absolute flex justify-center items-center w-28 bg-transparent z-50 right-0 top-0 cursor-pointer" 
+            style={{zIndex:"10000"}}
+            onClick={() => switchClicked(active+1)}
+            >
+            <LeftArrow />
+          </div>
+        )
+      }
       {
         descriptionSide &&
         (

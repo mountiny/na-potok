@@ -40,7 +40,8 @@ const Header = ({ siteTitle, location }) => {
 
   if (!location) return (<></>)
   return (
-    <header className={`fixed w-full flex justify-center opacity-100 transition-all ${!visible  && "h-out"} ${location.pathname === "/" ? (prevScrollPos > height  && "h-primary-bg") : (prevScrollPos > (height*0.4)  && "h-primary-bg")}`}>
+    <header className={`fixed w-full flex justify-center opacity-100 transition-all ${!visible && "h-out"} ${location.pathname === "/" ? (prevScrollPos > height && "h-primary-bg") : "h-primary-bg"}`}>
+      {/* (prevScrollPos > (height*0.4)  && "h-primary-bg")} */}
       <div className='inner-header flex justify-between items-center z-50'>
         <div className="logo uppercase potok flex items-center">
           <Link
@@ -54,15 +55,40 @@ const Header = ({ siteTitle, location }) => {
             to="/chalupa/"
             className={`nav-link ${location.pathname === '/chalupa/' && 'active-link'}`}
           >
-            chalupa na potok
+            Chalupa
           </Link>
           <Link
+            to="/pokoje/"
+            className={`nav-link ${location.pathname === '/pokoje/' && 'active-link'}`}
+          >
+            Pokoje
+          </Link>
+          <Link
+            to="/radosti/"
+            className={`nav-link ${location.pathname === '/radosti/' && 'active-link'}`}
+          >
+            Radosti
+          </Link>
+
+           <Link
+            to="/kontakt/"
+            className={`nav-link ${location.pathname === '/kontakt/' && 'active-link'}`}
+          >
+            Kontakt
+          </Link>
+           <Link
+            to="/cenik/"
+            className={`nav-link ${location.pathname === '/cenik/' && 'active-link'}`}
+          >
+            Ceník
+          </Link>
+          {/* <Link
               to="/nas-pribeh/"
               className={`nav-link ${location.pathname === '/nas-pribeh/' && 'active-link'}`}
             >
             náš příběh
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             to="/akce/"
             className={`nav-link ${location.pathname === '/akce/' && 'active-link'}`}
           >
@@ -79,7 +105,7 @@ const Header = ({ siteTitle, location }) => {
             className={`nav-link ${location.pathname === '/rezervace/' && 'active-link'}`}
           >
             ceník a rezervace
-          </Link>
+          </Link> */}
         </nav>
         <div 
           className={`menu-trigger potok tracking-wide px-4 py-6 hidden phone:block ${menu ? 'menu-open z-50' : ''} cursor-pointer`}
@@ -108,7 +134,8 @@ const Header = ({ siteTitle, location }) => {
           w-full 
           potok`}
           style={{
-            backgroundColor: 'hsl(20, 7%, 55%)'
+            // backgroundColor: 'hsl(20, 7%, 55%)'
+            backgroundColor: '#EFE9E6'
           }}>
           <nav className="flex flex-col justify-start items-left w-full pt-32 landscape:pt-8 landscape:pb-8 landscape:overflow-auto">
             <Link
@@ -120,7 +147,7 @@ const Header = ({ siteTitle, location }) => {
                 }
               }}
             >
-              na potok
+              Na potok
             </Link>
 
             <Link
@@ -132,9 +159,53 @@ const Header = ({ siteTitle, location }) => {
                 }
               }}
             >
-              chalupa na potok
+              Chalupa
             </Link>
             <Link
+              to="/pokoje/"
+              className='mobile-nav-link landscape:text-xl'
+              onClick={() => {
+                if (location.pathname === '/pokoje/') {
+                  setMenu(!menu)
+                }
+              }}
+            >
+              Pokoje
+            </Link>
+            <Link
+              to="/radosti/"
+              className='mobile-nav-link landscape:text-xl'
+              onClick={() => {
+                if (location.pathname === '/radosti/') {
+                  setMenu(!menu)
+                }
+              }}
+            >
+              Radosti
+            </Link>
+            <Link
+              to="/kontakt/"
+              className='mobile-nav-link landscape:text-xl'
+              onClick={() => {
+                if (location.pathname === '/kontakt/') {
+                  setMenu(!menu)
+                }
+              }}
+            >
+              Kontakt
+            </Link>
+            <Link
+              to="/cenik/"
+              className='mobile-nav-link landscape:text-xl'
+              onClick={() => {
+                if (location.pathname === '/cenik/') {
+                  setMenu(!menu)
+                }
+              }}
+            >
+              Ceník
+            </Link>
+            {/* <Link
               to="/nas-pribeh/"
               className='mobile-nav-link landscape:text-xl'
               onClick={() => {
@@ -177,7 +248,7 @@ const Header = ({ siteTitle, location }) => {
               }}
             >
               ceník a rezervace
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </div>

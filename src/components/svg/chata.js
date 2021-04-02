@@ -5,7 +5,7 @@ function Chata(props) {
     <svg
       {...props}
     >
-      <g data-name="Group 7" fill="#fff">
+      <g data-name="Group 7" fill="#79736f">
         <path
           data-name="Path 19"
           d="M82.231 82.591v45.63h20.695v-45.63H82.231z"

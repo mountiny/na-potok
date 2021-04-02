@@ -14,21 +14,23 @@
       height: var(--dimension);
       border-radius: 0px;
       border: 1px solid var(--primaryLight);
-      color: var(--primary);
+      color: var(--primary3);
+      // color: black;
       line-height: var(--dimension);
       vertical-align: middle;
       text-align: center;
 
     }
     .legend-text {
-      color: var(--primary);
+      // color: var(--primary3);
+      color: black;
       text-transform: uppercase;
       padding-left: 2rem;
       letter-spacing: 0.12em;
     }
     &.booked-slot {
       .legend-box {
-        background-color: var(--primary);
+        background-color: var(--primary3);
         color: white;
       }
     }
@@ -65,7 +67,7 @@
       }
     }
     .DayPicker-Day--booked {
-      background-color: var(--primary);
+      background-color: var(--primary3);
       color: white;
     }
     .DayPicker-Day--outside {

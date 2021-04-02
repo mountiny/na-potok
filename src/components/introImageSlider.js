@@ -56,7 +56,8 @@ const IntroImageSlider = ({ images }) => {
                 backgroundColor="lightgray"
                 loading="eager"
                 style={{
-                  position: "absolute"
+                  position: "absolute",
+                  maxHeight: "100vh !important"
                 }}
                 className={`intro-slider-image ${active === key ? 'active' : ''} ${leaving === key ? 'leaving' : ''}`}
                 data-position={key}

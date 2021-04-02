@@ -35,63 +35,69 @@ const KontaktPage = ({location}) => {
     <Layout location={location}>
       <SEO title="Na Potok - Kontakt" />
 
-      {/* <section className="top-block">
-        <div className="title-top absolute flex justify-center items-end content-center">
-          <h2 className='potok text-center uppercase'>Kontakt</h2>
-        </div>
-      </section> */}
-      <section className="top-block flex justify-center items-end content-center">
+      {/* <section className="top-block flex justify-center items-end content-center">
         <Image 
           filename="strecha"
           className="w-48 pb-44"
           imgStyle={{ objectFit: 'contain' }}
           />
+      </section> */}
+       <section className="bg-primary flex justify-center items-end pt-72 pb-48 content-center">
+        <AnimateIn >
+          <div className="central-text-block text-center">  
+            <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
+              <h3 className="potok">
+                Potkáme se na chalupě!<br/>
+                Těšíme se na Vás!
+              </h3>
+            </div>
+          </div>
+        </AnimateIn>
       </section>
 
       <NarrowContainer className='text-primary h-half-spacing-bottom'>
-
-
-        <div className="central-text-block text-center h-half-spacing-top">
-          <div className="centered-block">
-            <AnimateIn>
-              <span className='font-medium'>
-              Zavolejte a&nbsp;zeptejte se, napište nám <a href='mailto:chalupa@napotok.cz' className='text-black'>mail</a>, nebo si rovnou rezervujte termín a&nbsp;my se s&nbsp;vámi spojíme.
-              <br />
-              Potkáme se na chalupě.
-              </span>
-            </AnimateIn>
-          </div>
+        <div className="relative w-full mt-32 text-black">
+          <AnimateIn>
+            <div className="grid grid-cols-3 lg:grid-cols-1 justify-center content-center">
+              <div className="flex flex-col justify-start items-center justify-self-center px-8 max-w-lg lg:mb-20">
+                <span className="text-center potok text-3xl font-bold py-8">
+                  Telefon
+                </span>
+                <div className="text-block w-full pt-6 text-center h-40">
+                  Volejte kdykoliv 9-18 hodin. Pokud nás nezastihnete, určitě zavoláme zpět!
+                </div>
+                <a href="tel:+420777441876" className="text-center potok text-3xl font-bold pt-16 pb-8">
+                  +420 777 441 876
+                </a>
+              </div>
+              <div className="flex flex-col  justify-start items-center justify-self-center px-8 max-w-lg lg:mb-20">
+                <span className="text-center potok text-3xl font-bold py-8">
+                  Adresa
+                </span>
+                <div className="text-block w-full pt-6 text-center h-40">
+                  Cest k nám vede několik, tak proo jistotu nesledujete jen navigaci, ale i šipky, které Vás k nám navedou!
+                </div>
+                <a target="_blank" href="https://en.mapy.cz/zakladni?x=16.8486096&y=50.0858129&z=17&source=addr&id=9666105" className="text-center leading-relaxed potok text-3xl font-bold pt-16 pb-8">
+                  Vysoký Potok 33,<br />
+                  Malá Morava, 788 33
+                </a>
+              </div>
+                <div className="flex flex-col  justify-start items-center justify-self-center px-8 max-w-lg px-20">
+                  <span className="text-center potok text-3xl font-bold py-8">
+                    Email
+                  </span>
+                  <div className="text-block w-full pt-6 text-center h-40">
+                  Na emaily odepisujeme okamžitě a těšíme se, až se spojíme!
+                  </div>
+                <a href="mailto:chalupa@napotok.cz" className="text-center potok text-3xl font-bold pt-16 pb-8">
+                  chalupa@napotok.cz
+                </a>
+              </div>
+            </div>
+          </AnimateIn>
         </div>
 
-        <div className="kontakt-wrapper">
-          <div className="kontakt-block">
-            <AnimateIn>
-              <h6 className="uppercase potok pb-6">
-                adresa
-              </h6>
-              <span className='phone:text-xl'>Vysoký potok&nbsp;33<br />Malá&nbsp;Morava 788&nbsp;33</span>
-            </AnimateIn>
-          </div>
-          <div className="kontakt-block">
-            <AnimateIn>
-              <h6 className="uppercase potok pb-6">
-                telefon
-              </h6>
-              <a className='phone:text-xl' href='tel:+420777123456'>+420&nbsp;777&nbsp;441&nbsp;876</a>
-            </AnimateIn>
-          </div>
-          <div className="kontakt-block">
-            <AnimateIn>
-              <h6 className="uppercase potok pb-6">
-                e-mail
-              </h6>
-              <a className='phone:text-xl' href='mailto:chalupa@napotok.cz'>chalupa@napotok.cz</a>
-            </AnimateIn>
-          </div>
-        </div>
-
-        <div className="kontakt-wrapper mb-40 phone:mb-0">
-          <div className="kontakt-block kontakt-block-image flex justify-center">
+         {/* <div className="w-full relative flex justify-center">
             <AnimateIn className={`w-full`}>
               <Image
                 filename={"kontakt1"}
@@ -99,29 +105,12 @@ const KontaktPage = ({location}) => {
                 />
               <span className="kontakt-name">Karel Hrušovský</span>
             </AnimateIn>
-          </div>
-          <div className="kontakt-block kontakt-block-image flex justify-center">
-            <AnimateIn className={`w-full`}>
-              <Image
-                filename={"kontakt2"}
-                className={`mb-10  w-full`}
-                />
-              <span className="kontakt-name">Jan Skoumal</span>
-            </AnimateIn>
-          </div>
-          <div className="kontakt-block kontakt-block-image flex justify-center">
-            <AnimateIn className={`w-full`}>
-              <Image
-                filename={"kontakt3"}
-                className={`mb-10 w-full`}
-                />
-              <span className="kontakt-name">Jiří Gonda</span>
-            </AnimateIn>
-          </div>
+          </div> */}
+        
+        <div className="w-full text-block pt-28 pb-12 font-medium text-center tracking-wide flex justify-center items-center">
+          <Link className="text-2xl text-black font-normal border border-black px-5 py-4 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
         </div>
-        <div className="w-full text-block mt-24 md-m:mt-44 mb-24 md-m:mb-0 font-medium text-center tracking-wide">
-            <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
-          </div>
+        
       </NarrowContainer>
     
     <section className="mapa">
@@ -143,7 +132,7 @@ const KontaktPage = ({location}) => {
             >
               <TileLayer
                   attribution='&copy; <a href="https://en.mapy.cz/">Mapy.cz</a>'
-                  url="https://mapserver.mapy.cz/base-m/{z}-{x}-{y}"
+                  url="https://mapserver.mapy.cz/winter-m/{z}-{x}-{y}"
                 />
 
               <Marker position={[50.085786, 16.848588]}>

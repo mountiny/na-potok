@@ -4,6 +4,7 @@ header {
   color: white;
   top: 0px;
   left: 0px;
+  font-family: Helvetica;
 }
 .inner-header {
   width: var(--outer);
@@ -20,24 +21,26 @@ nav {
 }
 .nav-link {
   padding: 20px 10px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: var(--size-3);
   display: inline-block;
   margin-left: 20px;
   position: relative;
   overflow: hidden;
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    background-color: white;
-    height: 2px;
-    bottom: 8px;
-    right: 0px;
-    border-bottom-right-radius: 0px;
-    opacity: 0;
-    transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
-  }
+  font-family: Helvetica;
+  font-weight: 300;
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 0%;
+  //   background-color: white;
+  //   height: 2px;
+  //   bottom: 8px;
+  //   right: 0px;
+  //   border-bottom-right-radius: 0px;
+  //   opacity: 0;
+  //   transition: width 0.3s var(--curve), opacity 0.3s var(--curve);
+  // }
   &:hover, &:focus, &:active {
     &:after {
       width: 100%;
@@ -48,13 +51,14 @@ nav {
     }
   }
   &.active-link {
-    &:after {
-      width: 100%;
-      bottom: 8px;
-      left: 0px;
-      right: auto;
-      opacity: 1;
-    }
+    font-weight: 700;
+    // &:after {
+    //   width: 100%;
+    //   bottom: 8px;
+    //   left: 0px;
+    //   right: auto;
+    //   opacity: 1;
+    // }
   }
 }
 .menu-trigger {
@@ -69,7 +73,7 @@ nav {
 }
 
 #pencet span{
-  background-color:ghostwhite;
+  background-color:black;
   width:2em;
   height:.2em;
   margin:0.26em 0;
@@ -92,11 +96,13 @@ nav {
 
 .mobile-nav-link {
   padding: 16px 10px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 4.6vw;
   display: inline-block;
   margin-left: 30px;
   position: relative;
+  font-family: Helvetica;
+  font-weight: 300;
   overflow: hidden;
   &:after {
     content: '';
@@ -130,7 +136,7 @@ footer {
   padding-top: 30px;
   padding-bottom: 60px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   letter-spacing: 0.1em;
   font-size: var(--size-3);
   .chata-img {
@@ -155,7 +161,7 @@ footer {
     left: 0px;
     opacity: 1;
     
-    background-color: white;
+    background-color: black;
     height: 2px;
     bottom: 0px;
     border-bottom-right-radius: 0px;
@@ -174,6 +180,11 @@ footer {
       background-color: var(--textColor);
     }
   }
+   &.text-black {
+     &:after {
+       background-color: black;
+     }
+   }
 
   &.selection {
 

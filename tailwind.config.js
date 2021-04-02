@@ -29,6 +29,10 @@ module.exports = {
       },
     // },
     extend: {
+      colors: {
+        primary: 'var(--primary)',
+        'primary2': 'var(--primary-2)'
+      },
       width: {
         '1/15': '6.666%',
         '2/15': '13.333%',

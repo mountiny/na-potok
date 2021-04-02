@@ -92,7 +92,8 @@ img {
   color: var(--textColor);
 }
 .h-primary-bg {
-  background-color: var(--primary);
+  background-color: white;//var(--primary);
+  color: black;
 }
 .text-white {
   color: var(--white);
@@ -456,7 +457,8 @@ main {
   display: inline-block;
   letter-spacing: 0.05em;
   width: 100%;
-  max-width: 816px;
+  // max-width: 816px;
+  // max-width: 1200px;
   line-height: 28px;
   font-size: var(--size-4);
   &.quote {
