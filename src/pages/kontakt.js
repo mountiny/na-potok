@@ -76,7 +76,7 @@ const KontaktPage = ({location}) => {
                   Adresa
                 </span>
                 <div className="text-block w-full pt-6 text-center h-40">
-                  Cest k nám vede několik, tak pro jistotu nesledujete jen navigaci, ale i šipky, které Vás k nám navedou!
+                  Cest k&nbsp;nám vede několik, tak pro jistotu nesledujete jen navigaci, ale i&nbsp;šipky, které Vás k&nbsp;nám navedou!
                 </div>
                 <a target="_blank" href="https://en.mapy.cz/zakladni?x=16.8486096&y=50.0858129&z=17&source=addr&id=9666105" className="text-center leading-relaxed potok text-3xl font-bold pt-16 pb-8">
                   Vysoký Potok 33,<br />
@@ -88,7 +88,7 @@ const KontaktPage = ({location}) => {
                     Email
                   </span>
                   <div className="text-block w-full pt-6 text-center h-40">
-                    Na emaily odepisujeme hned jak je to možné a těšíme se, až se spojíme!
+                    Na emaily odepisujeme hned jak je to možné a&nbsp;těšíme se, až se spojíme!
                   </div>
                 <a href="mailto:chalupa@napotok.cz" className="text-center potok text-3xl font-bold pt-16 pb-8">
                   chalupa@napotok.cz

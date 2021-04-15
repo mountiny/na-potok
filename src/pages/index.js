@@ -106,7 +106,7 @@ const IndexPage = ({location}) => {
                     // viewBox="0 0 289.87 280.05"
                       className='chata-img mb-12' />
                   </div>
-                  <span className="text-center potok text-3xl font-bold py-8">
+                  <span className="text-center potok text-3xl font-bold py-8 uppercase">
                     Nekonečné vyžití
                   </span>
                   <div className="text-block w-full pt-6 text-center">

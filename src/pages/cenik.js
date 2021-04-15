@@ -110,18 +110,18 @@ const Cenik = ({location}) => {
         <div className="relative w-full mt-16 md:mt-8 text-black">
           <AnimateIn>
             <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 justify-center content-center leading-relaxed">
-              <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+              <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                 <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na sezónu
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
                   Prosinec, leden, únor, březen, červen, červenec, srpen a září. Během těchto měsíců k nám můžete přijet na týden od soboty do soboty.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
+                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
                   40.000,- Kč / týden
                 </span>
               </div>
-              <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+              <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                 <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na klídek
                 </span>
@@ -132,7 +132,7 @@ const Cenik = ({location}) => {
                   33.000,- Kč / týden
                 </span>
               </div>
-                <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+                <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                   <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                     Na pár dní
                   </span>
@@ -144,7 +144,7 @@ const Cenik = ({location}) => {
                   </span>
               </div>
 
-              <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+              <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                 <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na Vánoce
                 </span>
@@ -155,7 +155,7 @@ const Cenik = ({location}) => {
                  43.000,- Kč / 4 noci
                 </span>
               </div>
-              <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+              <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                 <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na Silvestra
                 </span>
@@ -166,7 +166,7 @@ const Cenik = ({location}) => {
                   60.000,- Kč / týden
                 </span>
               </div>
-                <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
+                <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                   <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                     Na Velikonoce
                   </span>
