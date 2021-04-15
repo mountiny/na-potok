@@ -16,6 +16,7 @@ import LeftArrow from '../components/svg/leftArrow'
 import RightArrow from '../components/svg/rightArrow'
 import { useMediaQuery } from 'react-responsive'
 import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
 import Dvere from "../components/svg/dvere";
@@ -86,16 +87,16 @@ const Cenik = ({location}) => {
         <AnimateIn >
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
-              <h3 className="potok">
+              <h4 className="potok uppercase">
                 Kdy a na jak dlouho<br/>
                 se Na Potok chystáte?
-              </h3>
+              </h4>
             </div>
           </div>
         </AnimateIn>
       </section>
 
-      <NarrowContainer className='text-primary h-half-spacing-bottom'>
+      <NarrowContainer className='text-primary'>
          <AnimateIn >
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 text-black">
@@ -110,73 +111,71 @@ const Cenik = ({location}) => {
           <AnimateIn>
             <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 justify-center content-center leading-relaxed">
               <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na sezónu
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
-                  Prosinec, leden, únor, březen / červen, červenec, srpen a září! Během těchto vytížených měsíců k nám můžete přijet na týden od neděle do neděle.
+                  Prosinec, leden, únor, březen, červen, červenec, srpen a září. Během těchto měsíců k nám můžete přijet na týden od soboty do soboty.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  40.000,- Kč
+                <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
+                  40.000,- Kč / týden
                 </span>
               </div>
               <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na klídek
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
-                 Klidné měsíce mimo sezónu mají svou neopakovatelnou atmosféru. Užít si ji Na Potoku určitě stojí za to! Sluncem zalité dny neslibujeme, ale klid a pohodu ano!
+                 Duben, květen, říjen a listopad. Týden na chalupě v období mimo sezónu má svou neopakovatelnou atmosféru. Sluncem zalité dny neslibujeme, ale klid a pohodu ano.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  35.000,- Kč
+                <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
+                  33.000,- Kč / týden
                 </span>
               </div>
                 <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                  <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                  <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                     Na pár dní
                   </span>
                   <div className="text-block w-full pt-6 text-center h-auto">
-                  Během kvetoucího jara nebo malebného podzim k nám můžete přijet i od pondělí do středy, od středy do pátku nebo od pátku do neděle.
+                    Během kvetoucího jara nebo malebného podzimu k nám můžete přijet pár dní. Minimálně dvě noci si u nás určíte skvěle užijete a každá další bude o to příjemnější.
                   </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  18.000,- Kč
-                </span>
+                  <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
+                    17.000,- Kč / 2 noci
+                  </span>
               </div>
 
               <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na Vánoce
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
-                  Pro Vaše Vánoční svátky plné klidu a pohody, s rodinou nebo přáteli bude chalupa Na Potok připravena od 23.-27.12.
+                  Pro Vaše Vánoční svátky plné klidu a pohody, s rodinou nebo přáteli bude chalupa Na Potok připravena od 22.-26.12.
                 </div>
                 <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                 45.000,- Kč
+                 43.000,- Kč / 4 noci
                 </span>
               </div>
               <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                   Na Silvestra
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
-                  3! 2! 1! Šťastný nový rok!!!
-
-Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku od 28.12.-2.12.
+                  3! 2! 1! Šťastný nový rok!!! Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku od 27.12.-2.12.
                 </div>
                 <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  60.000,- Kč
+                  60.000,- Kč / týden
                 </span>
               </div>
                 <div className="flex flex-col justify-start items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
-                  <span className="text-center potok text-3xl font-bold pt-8 pb-2">
+                  <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
                     Na Velikonoce
                   </span>
                   <div className="text-block w-full pt-6 text-center h-auto">
-                  Ať už si přejete trávit Velikonoce jakkoliv, chalupa Na Potok je Vám k dispozici od Zeleného čtvrtka do Velikonočního pondělí.
+                    Ať už si přejete trávit Velikonoce jakkoliv, chalupa Na Potok je Vám k dispozici od Zeleného čtvrtka do Velikonočního pondělí.
                   </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  24.000,-
-                </span>
+                  <span className="text-center potok text-3xl font-bold pt-16 pb-8">
+                    30.000,- / 4 noci
+                  </span>
               </div>
             </div>
           </AnimateIn>
@@ -197,7 +196,7 @@ Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku
           </div> */}
       </NarrowContainer>
 
-      <NarrowContainer className='text-black'>
+      <NarrowContainer className='text-black pt-12'>
           
         <div className='calendar-wrapper'>
           <div className="heading-wrapper pb-12 phone:pb-0">
@@ -246,9 +245,19 @@ Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku
 
         </div>
 
-        <div className="w-full text-block pt-20 pb-32 font-medium text-center tracking-wide flex justify-center items-center">
+        {/* <div className="w-full text-block pt-20 pb-32 font-medium text-center tracking-wide flex justify-center items-center">
           <Link className="text-2xl font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/ubytovaci-podminky/'>Chci vědět víc o cenách, termínech a ubytovacích podmínkách!</Link>
+        </div> */}
+
+        <div className="relative w-full mt-20 mb-32 text-black">
+          <AnimateIn>
+            <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
+              <UnderlineLinkInter link="/ubytovaci-podminky/" text={`Chci vědět víc...`} />
+            </span>
+          </AnimateIn>
         </div>
+        
+
         <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center items-center">
           <a 
             className="text-2xl potok font-normal px-8 py-4 transition-colors duration-200" 

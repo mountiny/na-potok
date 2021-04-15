@@ -145,6 +145,7 @@ footer {
   background-color: var(--primary);
   width: 100%;
   position: relative;
+  font-family: Helvetica;
   padding-top: 30px;
   padding-bottom: 60px;
   text-transform: uppercase;
@@ -178,7 +179,7 @@ footer {
     opacity: 0;
     
     background-color: black;
-    height: 2px;
+    height: 3px;
     bottom: 0px;
     border-bottom-right-radius: 0px;
     transition: width 0.3s var(--curve), opacity 0.3s var(--curve);

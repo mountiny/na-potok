@@ -7,6 +7,7 @@ import AnimateIn from '../components/AnimateIn'
 
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 const Pokoje = ({location}) => {
 
@@ -17,11 +18,11 @@ const Pokoje = ({location}) => {
       <section className="bg-primary flex justify-center items-end pt-72 pb-48 content-center">
           <AnimateIn >
             <div className="central-text-block text-center">  
-              <div className="centered-block inline-block leading-loose text-center max-w-5xl text-black">
-                <h3 className="potok uppercase">
+              <div className="centered-block inline-block leading-loose text-center max-w-6xl text-black">
+                <h4 className="potok uppercase">
                   Jak si ustelete, tak si lehnete...<br/>
                   a&nbsp;kde usnete?
-                </h3>
+                </h4>
               </div>
             </div>
           </AnimateIn>
@@ -39,8 +40,8 @@ const Pokoje = ({location}) => {
                   Velká společenská místnost s&nbsp;kuchyní a&nbsp;jídelnou.<br />
                   Krb pro atmosféru a&nbsp;domácí pohodu.<br />
                   Herna pro nejmenší a&nbsp;sklípek pro ty větší.<br />
-                  Sauna pro uvolnění a &nbsp;ezírko pro otužení.<br />
-                  Terasa pro pohodu a&nbsp;bývalá stodola na párty.
+                  Sauna pro uvolnění a&nbsp;jezírko pro otužení.<br />
+                  Terasa na pohodu a&nbsp;bývalá stodola na párty.
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-12 md:px-4 lg:mb-20">
@@ -48,11 +49,12 @@ const Pokoje = ({location}) => {
                   Pokoje
                 </span>
                 <div className="text-block w-full pt-6 text-center">
-                  16 míst na osmnácti postelích.<br />
-                  Dva apartmány dvoulůžkové a<br />
-                  tři apartmány jsou čtyřlůžkové (2+2).<br />
+                  16 míst na osmi postelích.<br />
+                  Dva pokoje máme dvoulůžkové<br />
+                  a tři pokoje jsou čtyřlůžkové (2+2).<br />
                   V nich sociální zázemí, wc, sprcha,<br />
                   kniha a&nbsp;výhled, který neomrzí.
+                 
                 </div>
               </div>
             </div>
@@ -64,7 +66,7 @@ const Pokoje = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
           
             <ImageSlider 
-              images={['uvodni1', 'uvodni2']}
+              images={['pudorys1', 'pudorys2']}
               className={''}
               height={'780px'}
               maxHeight={'782px'}
@@ -74,15 +76,22 @@ const Pokoje = ({location}) => {
 
             <div className="relative w-full mt-24 text-black">
               <AnimateIn>
-                <h3 className="pt-16 pb-0 potok w-full text-center">
+                <h4 className="pt-16 pb-0 potok w-full text-center uppercase">
                     5 apartmánů / 16 postelí / nekonečno zážitků
-                </h3>
+                </h4>
               </AnimateIn>
             </div>
           
-            <div className="w-full text-block pt-20 pb-40 font-medium text-center tracking-wide flex justify-center items-center">
+            {/* <div className="w-full text-block pt-20 pb-40 font-medium text-center tracking-wide flex justify-center items-center">
               <Link className="text-2xl text-black font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-          </div>
+          </div> */}
+        <div className="relative w-full my-32 text-black">
+          <AnimateIn>
+            <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
+              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+            </span>
+          </AnimateIn>
+        </div>
 {/* 
         <div className="central-text-block pb-16 text-center h-half-spacing-top">  
           <div className="centered-block inline-block leading-normal max-w-md pb-32">

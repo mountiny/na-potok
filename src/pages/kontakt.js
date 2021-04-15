@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
  
 import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 import Image from '../components/image.js'
 import L from 'leaflet';
@@ -46,10 +47,10 @@ const KontaktPage = ({location}) => {
         <AnimateIn >
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
-              <h3 className="potok">
+              <h4 className="potok uppercase">
                 Potkáme se na chalupě!<br/>
                 Těšíme se na Vás!
-              </h3>
+              </h4>
             </div>
           </div>
         </AnimateIn>
@@ -60,22 +61,22 @@ const KontaktPage = ({location}) => {
           <AnimateIn>
             <div className="grid grid-cols-3 lg:grid-cols-1 justify-center content-center">
               <div className="flex flex-col justify-start items-center justify-self-center px-8 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold py-8">
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Telefon
                 </span>
                 <div className="text-block w-full pt-6 text-center h-40">
-                  Volejte kdykoliv 9-18 hodin. Pokud nás nezastihnete, určitě zavoláme zpět!
+                  Volejte kdykoliv! Pokud nás nezastihnete, určitě se Vám co nejdříve ozveme.
                 </div>
                 <a href="tel:+420777441876" className="text-center potok text-3xl font-bold pt-16 pb-8">
                   +420 777 441 876
                 </a>
               </div>
               <div className="flex flex-col  justify-start items-center justify-self-center px-8 max-w-lg lg:mb-20">
-                <span className="text-center potok text-3xl font-bold py-8">
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Adresa
                 </span>
                 <div className="text-block w-full pt-6 text-center h-40">
-                  Cest k nám vede několik, tak proo jistotu nesledujete jen navigaci, ale i šipky, které Vás k nám navedou!
+                  Cest k nám vede několik, tak pro jistotu nesledujete jen navigaci, ale i šipky, které Vás k nám navedou!
                 </div>
                 <a target="_blank" href="https://en.mapy.cz/zakladni?x=16.8486096&y=50.0858129&z=17&source=addr&id=9666105" className="text-center leading-relaxed potok text-3xl font-bold pt-16 pb-8">
                   Vysoký Potok 33,<br />
@@ -83,11 +84,11 @@ const KontaktPage = ({location}) => {
                 </a>
               </div>
                 <div className="flex flex-col  justify-start items-center justify-self-center px-8 max-w-lg px-20">
-                  <span className="text-center potok text-3xl font-bold py-8">
+                  <span className="text-center potok text-3xl font-bold py-8 uppercase">
                     Email
                   </span>
                   <div className="text-block w-full pt-6 text-center h-40">
-                  Na emaily odepisujeme okamžitě a těšíme se, až se spojíme!
+                    Na emaily odepisujeme hned jak je to možné a těšíme se, až se spojíme!
                   </div>
                 <a href="mailto:chalupa@napotok.cz" className="text-center potok text-3xl font-bold pt-16 pb-8">
                   chalupa@napotok.cz
@@ -106,9 +107,16 @@ const KontaktPage = ({location}) => {
               <span className="kontakt-name">Karel Hrušovský</span>
             </AnimateIn>
           </div> */}
-        
+{/*         
         <div className="w-full text-block pt-28 pb-12 font-medium text-center tracking-wide flex justify-center items-center">
           <Link className="text-2xl text-black font-normal border border-black px-5 py-4 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
+        </div> */}
+         <div className="relative w-full mt-32 mb-16 text-black">
+          <AnimateIn>
+            <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
+              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+            </span>
+          </AnimateIn>
         </div>
         
       </NarrowContainer>

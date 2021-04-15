@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 import ImageSlider from "../components/imageSlider"
 
@@ -35,14 +36,14 @@ const Chalupa = ({location}) => {
         
           <div className="centered-block inline-block leading-loose max-w-4xl pb-40 pt-8 text-black">
             <AnimateIn >
-              Chalupa Na Potok je skvělé místo pro všechny, kteří hledají odpočinek od každodenních povinností, klid, pohodu a&nbsp;chtějí znovu a&nbsp;znovu objevovat Jesenickou přírodu i&nbsp;zákoutí Králického sněžníku. Na Potok může být tím místem, kde si, stejně jako my, připomenete, jak důležité je zpomalit, načerpat energii a&nbsp;odpočívat. Ať už fandíte spíše zahálce s&nbsp;knihou v&nbsp;ruce nebo se svůj čas rozhodnete strávit aktivně a&nbsp;dobrodružně, chalupa, její perfektní zázemí a&nbsp;nekonečné okolní vyžití je Vám plně k&nbsp;dispozici.
+              Chalupa Na Potok je skvělé místo pro všechny, kteří hledají odpočinek od každodenních povinností, klid a&nbsp;pohodu. Pro ty, kteří chtějí znovu a&nbsp;znovu objevovat Jesenickou přírodu i&nbsp;zákoutí Králického sněžníku nebo Orlických hor. Na Potok může být tím místem, kde si připomenete, jak důležité je zpomalit, načerpat energii a&nbsp;odpočívat. Ať už fandíte spíše zahálce s&nbsp;knihou v&nbsp;ruce nebo se svůj čas rozhodnete strávit aktivně, naše chalupa je Vám plně k&nbsp;dispozici.
             </AnimateIn>
           </div>
           <div className="relative flex justify-center items-center">
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
 
               <ImageSlider 
-                  images={['chalupa1', 'chalupa2', 'chalupa3', 'chalupa4']}
+                  images={['uvodni2', 'chalupa2', 'chalupa3', 'chalupa4', 'chalupa5', 'chalupa6', 'chalupa7']}
                   className={''}
                   height={'780px'}
                   maxHeight={'782px'}
@@ -61,11 +62,11 @@ const Chalupa = ({location}) => {
                   // viewBox="0 0 289.87 280.05"
                     className='chata-img' />
                 </div>
-                <span className="text-center potok text-3xl font-bold py-16">
+                <span className="text-center potok text-3xl font-bold py-16 uppercase">
                   150 let historie
                 </span>
                 <div className="text-block w-full text-center">
-                  Chalupa Na Potok byla postavena takřka před 150 lety. Po dlouhých letech chátrání a&nbsp;nevyužívání jejího potenciálu se opět snažíme dostat do stavení život a&nbsp;dětský smích. Věříme, že nám v&nbsp;tom pomůžete!
+                  Chalupa Na Potok byla postavena před více než 120 lety. Po dlouhých a&nbsp;dlouhých letech chátrání se opět snažíme přivést na toto kouzelné místo život a&nbsp;dětský smích. Věříme, že nám v&nbsp;tom pomůžete!
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-16 lg:mb-20">
@@ -76,7 +77,7 @@ const Chalupa = ({location}) => {
                     // viewBox="0 0 263.68 202.25"
                     className='chata-img mt-8' />
                 </div>
-                <span className="text-center potok text-3xl font-bold py-16">
+                <span className="text-center potok text-3xl font-bold py-16 uppercase">
                   Respekt
                 </span>
                 <div className="text-block w-full text-center">
@@ -91,7 +92,7 @@ const Chalupa = ({location}) => {
                       // viewBox="0 0 186.38 412.32"
                       className='chata-img' />
                   </div>
-                  <span className="text-center potok text-3xl font-bold py-16">
+                  <span className="text-center potok text-3xl font-bold py-16 uppercase">
                     Materiály
                   </span>
                   <div className="text-block w-full text-center">
@@ -101,10 +102,17 @@ const Chalupa = ({location}) => {
             </div>
           </AnimateIn>
           
-
+          <div className="relative w-full my-32 text-black">
+            <AnimateIn>
+              <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
+                <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+              </span>
+            </AnimateIn>
+          </div>
+{/* 
           <div className="w-full text-block py-44 font-medium text-center tracking-wide">
             <Link className="text-2xl font-normal border border-black px-5 py-4 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-          </div>
+          </div> */}
         </div>
 {/* 
         <div className="flex w-full flex-wrap justify-between pt-32 pb-44 phone:pb-32">

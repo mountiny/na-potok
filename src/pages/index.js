@@ -63,7 +63,7 @@ const IndexPage = ({location}) => {
         <WideContainer className="text-black">
            <div className="relative w-full mt-32 text-black">
             <AnimateIn>
-               <h3 className="pt-16 pb-32 potok w-full text-center">
+               <h3 className="pt-16 pb-32 potok w-full text-center uppercase">
                 Co je Na Potok?
               </h3>
             <div className="grid grid-cols-3 lg:grid-cols-1">
@@ -130,14 +130,14 @@ const IndexPage = ({location}) => {
 
             <div className="relative w-full my-32 text-black">
               <AnimateIn>
-                <h3 className="pt-16 pb-0 potok w-full text-center">
+                <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
                   {/* <Link to='/cenik/'> */}
                     {/* Zarezervujte si u nás termín! */}
                   {/* </Link> */}
                   <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`}>
                       
                     </UnderlineLinkInter>
-                </h3>
+                </span>
               </AnimateIn>
             </div>
 {/*           

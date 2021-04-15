@@ -18,12 +18,12 @@ const KontaktPage = ({location}) => {
        <section className="bg-primary flex justify-center items-end pt-72 pb-48 content-center">
         <AnimateIn >
           <div className="central-text-block text-center">  
-            <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
-              <h3 className="potok">
+            <div className="centered-block inline-block text-center max-w-7xl text-black px-4">
+              <h4 className="potok uppercase">
                 Co zahrnuje cena, jaké jsou ubytovací<br />
-                podmínky, provozní řád a další formality...
+                podmínky, provozní řád a&nbsp;další formality...
                 <br/>
-              </h3>
+              </h4>
             </div>
           </div>
         </AnimateIn>
@@ -36,14 +36,14 @@ const KontaktPage = ({location}) => {
             Cena ubytování ZAHRNUJE:
           </h3>
           <p className="leading-loose text-xl py-8">
-            Využití lůžkovin, ručníků, sauny, venkovního grilu a ohniště, spotřebu dřeva pro užívání krbu a ohniště, spotřebu elektrické energie a vody, užívání skladovacích prostor a dalšího vybavení chalupy i ubytovací poplatek obci.
+            Využití lůžkovin, ručníků, sauny, venkovního grilu a ohniště, spotřebu dřeva pro užívání krbu a ohniště, spotřebu elektrické energie a vody i ubytovací poplatek obci.
           </p>
           <h3 className="potok font-bold text-2xl pt-6 pb-0">
             Cena ubytování NEZAHRNUJE:
           </h3>
           <p className="leading-loose text-xl py-8">
             Vratnou kauci ve výši 5 000 Kč/os, která bude zaplacena dle domluvy při předání a vrácena při přebírání chalupy.<br />
-Poplatek za psa je 250 Kč/noc. Psi máme moc rádi, ale musíme upozornit, že pozemek chalupy Na Potok není oplocen a v těsné blízkosti zahrady se pasou krávy, koně i ovce. Doporučujeme proto promyslet, zda Vašeho čtyřnohého miláčka opravu chcete vzít a být zodpovědní za případně nepříjemnosti.
+            Poplatek za psa je 250 Kč/noc. Psi máme moc rádi, ale musíme upozornit, že pozemek chalupy Na Potok není oplocen a v těsné blízkosti zahrady se pasou krávy, koně i ovce. Doporučujeme proto promyslet, zda Vašeho čtyřnohého miláčka opravu chcete vzít a být zodpovědní za případné nepříjemnosti.
           </p>
           <h3 className="potok font-bold text-2xl pt-6 pb-0">
             Jak to u nás chodí:

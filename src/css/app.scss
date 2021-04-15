@@ -27,8 +27,9 @@ h3 {
 }
 h4 {
   font-size: var(--size-9);
-  line-height: 90px;
+  line-height: 70px;
 }
+
 h5 {
   font-size: var(--size-7);
   line-height: 50px;
@@ -458,7 +459,7 @@ main {
   width: 100%;
   // max-width: 816px;
   // max-width: 1200px;
-  line-height: 28px;
+  // line-height: 28px;
   font-size: var(--size-4);
   &.quote {
     max-width: 978px;
@@ -671,11 +672,11 @@ main {
     line-height: 10vw;
   }
   h4 {
-    font-size: var(--size-9);
-    line-height: 90px;
+    font-size: var(--size-7);
+    line-height: 70px;
   }
   h5 {
-    font-size: var(--size-7);
+    font-size: var(--size-6);
     line-height: 50px;
   }
   .list-top {

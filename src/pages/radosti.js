@@ -7,6 +7,7 @@ import AnimateIn from '../components/AnimateIn'
 
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 const Radosti = ({location}) => {
 
@@ -21,10 +22,10 @@ const Radosti = ({location}) => {
         <AnimateIn >
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
-              <h3 className="potok">
-                Na Potok není jen chalupa k&nbsp;pronájmu...<br/>
+              <h4 className="potok uppercase">
+                Na Potok není jen chalupa k&nbsp;pronájmu...
                 Je to místo setkávání, zážitků a&nbsp;radosti!
-              </h3>
+              </h4>
             </div>
           </div>
         </AnimateIn>
@@ -35,8 +36,7 @@ const Radosti = ({location}) => {
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 text-black">
               <p className="leading-loose">
-                Naše chalupa neslouží jen jako místo oddechu od hektického života ve městech, jako cíl dovolených a&nbsp;prodloužených víkendů, nebo rodinných rekreací.<br />
-                Díky členitému pozemku s&nbsp;mnohými zákoutími, prostoru bývalé stodoly a&nbsp;perfektnímu zázemí může chalupa Na Potok hostit všechny možné příležitosti setkávání, zážitků a&nbsp;radostí, které Vás jen napadnou!<br />
+                Díky členitému pozemku s&nbsp;mnohými zákoutími, bývalou stodolou a&nbsp;perfektnímu zázemí, může chalupa Na Potok hostit všechny možné příležitosti setkávání, zážitků a&nbsp;radostí, které Vás jen napadnou!
                </p>   
             </div>
           </div>
@@ -60,14 +60,13 @@ const Radosti = ({location}) => {
           <AnimateIn >
             <div className="central-text-block pt-16 text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
-                <h3 className="pt-16 pb-16 potok">
+                <h4 className="pt-16 pb-16 potok uppercase">
                   Svatební veselí
-                </h3>
+                </h4>
               
                 <p className="leading-loose">
-                  Chalupa Na Potok je díky nádhernému okolí a&nbsp;nekončícím výhledům vyhledávaným místem pro trávení speciálních okamžiků... a&nbsp;svatební dny jsou jedněmi z&nbsp;nich.<br />
-                  Rádi bychom vyhověli všem nevěstám a&nbsp;ženichům, ale bohužel je počet svateb i&nbsp;svatebních hostů omezen tak, abychom nerušili příjemnou ospalou atmosféru zdejších kopců.<br />
-                  Pokud je Vaším snem menší svatba (cca 40 hostů), dejte nám vědět a&nbsp;určitě se nějak domluvíme.<br />
+                  Chalupa Na Potok je díky nádhernému okolí a nekončícím výhledům oblíbeným místem pro trávení speciálních okamžiků... a&nbsp;svatební den je jistě jedním z nich.<br />
+                  Rádi bychom vyhověli všem nevěstám a&nbsp;ženichům, ale bohužel je počet svateb i&nbsp;svatebních hostů omezen tak, abychom nerušili příjemnou klidnou atmosféru zdejších kopců. Dejte nám vědět a&nbsp;zkusíme něco vymyslet.<br />
                   Dlouhodobě spolupracujeme s&nbsp;osvědčenými svatebními koordinátory a&nbsp;květinovými studii, které Vám rádi doporučíme a&nbsp;zajistíme hladký průběh výjimečného dne.<br />
                 </p>   
               </div>
@@ -77,13 +76,13 @@ const Radosti = ({location}) => {
           <AnimateIn >
             <div className="central-text-block text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
-                <h3 className="pt-16 pb-16 potok">
+                <h4 className="pt-16 pb-16 potok uppercase">
                   Teambuildingy a&nbsp;workshopy
-                </h3>
+                </h4>
               
                 <p className="leading-loose">
                   Prostředí naší chalupy je jako stvořené pro odpočinek i&nbsp;soustředění. Díky různým zákoutím a&nbsp;kapacitě prostor je zde možné pořádat workshopy, přednášky, školení, nebo soustředění a&nbsp;teambuildingy.<br />
-Pokud chcete Vašim kolegům, zaměstnancům nebo spolupracovníkům dopřát pár dní úlevy od hektického pracovního života, utužit kolektiv nebo si jen tak odpočinout a&nbsp;zadovádět, dejte nám vědět! Budeme se snažit najít ideální termní i&nbsp;prostředí pro veškeré Vaše aktivit.
+                  Pokud chcete Vašim kolegům, zaměstnancům nebo spolupracovníkům dopřát pár dní úlevy od hektického pracovního života, utužit kolektiv nebo si jen tak odpočinout a&nbsp;zadovádět, dejte nám vědět! Budeme se snažit najít ideální termín i&nbsp;prostředí pro veškeré Vaše aktivity.
                  </p>   
               </div>
             </div>
@@ -92,14 +91,14 @@ Pokud chcete Vašim kolegům, zaměstnancům nebo spolupracovníkům dopřát p�
           <AnimateIn >
             <div className="central-text-block text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
-                <h3 className="pt-16 pb-16 potok">
+                <h4 className="pt-16 pb-16 potok uppercase">
                   Oslavy a&nbsp;jiná mecheche
-                </h3>
+                </h4>
               
                 <p className="leading-loose">
                   Nejen svatby si zaslouží malebné prostředí jesenické přírody. Chalupa Na Potok je připravena i&nbsp;pro další druhy oslav a&nbsp;veselí.<br />
-Přijeďte k nám oslavit výročí, narozeniny, nebo si jen tak užít s&nbsp;přáteli nebo rodinou pár dní volna. K dispozici budete mít vinný sklípek, pípu a&nbsp;můžeme Vám zajistit pivo od místních dodavatelů dle libosti.<br />
-K&nbsp;posezení či tanci Vám bude sloužit jak posezení u&nbsp;chalupy, tak terasa na místě bývalé stodoly... Jak si to užijete je už na Vás.
+                  Přijeďte k nám oslavit výročí, narozeniny, nebo si jen tak užít s&nbsp;přáteli nebo rodinou pár dní volna. K dispozici budete mít vinný sklípek nebo pípa s&nbsp;pivem od místních dodavatelů.<br />
+                  K&nbsp;tanci Vám může sloužit terasa na místě bývalé stodoly, k&nbsp;posezení prostorná terasa... Jak si to užijete je už jen a&nbsp;jen na Vás.
                  </p>   
               </div>
             </div>
@@ -107,9 +106,9 @@ K&nbsp;posezení či tanci Vám bude sloužit jak posezení u&nbsp;chalupy, tak 
           <AnimateIn >
             <div className="central-text-block text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
-                <h3 className="pt-16 pb-16 potok">
+                <h4 className="pt-16 pb-16 potok uppercase">
                   Homeoffice a&nbsp;co-work
-                </h3>
+                </h4>
               
                 <p className="leading-loose">
                 Dnešní doba má svá specifika... Práce z&nbsp;domova může být náročná a&nbsp;ne každému vyhovuje. Díky naší chalupě, jejímu zázemí a&nbsp;místům, které se dají snadno proměnit v&nbsp;pracovní kout, zasedací místnost nebo klidné kreativní prostředí, si můžete homeoffice užít a&nbsp;spojit ho s&nbsp;příjemným a&nbsp;inspirativním prostředím zdejších kopců.<br />
@@ -118,10 +117,17 @@ Podporujeme podnikání a&nbsp;veškerým kreativním počinům, které dělají
               </div>
             </div>
           </AnimateIn>
-          
+{/*           
             <div className="w-full text-block pt-20 pb-40 font-medium text-center tracking-wide flex justify-center items-center">
               <Link className="text-2xl text-black font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-            </div>
+            </div> */}
+         <div className="relative w-full my-32 text-black">
+          <AnimateIn>
+            <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
+              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+            </span>
+          </AnimateIn>
+        </div>
 
       </NarrowContainer>
 
