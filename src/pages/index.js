@@ -9,6 +9,7 @@ import ImageSlider from "../components/imageSlider"
 import IntroImageSlider from "../components/introImageSlider"
 import WideContainer from "../components/WideContainer"
 import NarrowContainer from "../components/NarrowContainer"
+import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 import Voda from '../components/svg/voda.js'
 import Lipa from '../components/svg/lipa.js'
@@ -40,7 +41,7 @@ const IndexPage = ({location}) => {
           <AnimateIn >
             <div className="central-text-block pb-16 text-center">  
             <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-24 pt-8 text-black">
-              <h3 className="pt-32 pb-16 potok">
+              <h3 className="pt-32 pb-16 potok uppercase">
                 Náš příběh
               </h3>
                 
@@ -74,11 +75,11 @@ const IndexPage = ({location}) => {
                     className='chata-img mb-12' />
                     
                 </div>
-                <span className="text-center potok text-3xl font-bold py-8">
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Nádherné místo
                 </span>
                 <div className="text-block w-full pt-6 text-center">
-                  150 let staré stavení, torzo bývalé stodoly, linoucí se potůček a&nbsp;úchvatné výhledy na kopce Jeseníků a&nbsp;Králického sněžníku.
+                  150 let staré stavení, torzo bývalé stodoly, linoucí se potůček a&nbsp;úchvatné výhledy na kopce Jeseníků, Králického sněžníku a&nbsp;Orlických hor.
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-16 lg:mb-20">
@@ -90,11 +91,11 @@ const IndexPage = ({location}) => {
                     // viewBox="0 0 263.68 202.25"
                     className='chata-img mb-16 mt-8' />
                 </div>
-                <span className="text-center potok text-3xl font-bold py-8">
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Pohodlné ubytování
                 </span>
                 <div className="text-block w-full pt-6 text-center">
-                  Chceme, abyste se u&nbsp;nás měli jako v&nbsp;bavlnce! Máme 5&nbsp;apartmánů, 16&nbsp;lůžek a&nbsp;spousty místa pro relax i&nbsp;zábavu.
+                  Máme 5&nbsp;apartmánů, 16&nbsp;lůžek a&nbsp;spousty místa pro relax i&nbsp;zábavu. A&nbsp;chceme, abyste se u&nbsp;nás měli jako v&nbsp;bavlnce!
                 </div>
               </div>
                 <div className="flex flex-col  justify-start items-center px-16">
@@ -127,19 +128,24 @@ const IndexPage = ({location}) => {
               </AnimateIn>
             </div>
 
-            <div className="relative w-full mt-32 text-black">
+            <div className="relative w-full my-32 text-black">
               <AnimateIn>
                 <h3 className="pt-16 pb-0 potok w-full text-center">
-                    Zarezervujte si u&nbsp;nás termín!
+                  {/* <Link to='/cenik/'> */}
+                    {/* Zarezervujte si u nás termín! */}
+                  {/* </Link> */}
+                  <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`}>
+                      
+                    </UnderlineLinkInter>
                 </h3>
               </AnimateIn>
             </div>
-          
+{/*           
 
             <div className="w-full text-block pt-28 pb-44 font-medium text-center tracking-wide flex justify-center items-center">
               <Link className="text-2xl text-black font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
               <Link className="text-2xl text-black font-normal border border-black px-5 py-4 ml-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/kontakt/'>Kontakt</Link>
-          </div>
+          </div> */}
         </div>
         </WideContainer>
       </section>

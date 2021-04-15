@@ -18,7 +18,7 @@ const Pokoje = ({location}) => {
           <AnimateIn >
             <div className="central-text-block text-center">  
               <div className="centered-block inline-block leading-loose text-center max-w-5xl text-black">
-                <h3 className="potok">
+                <h3 className="potok uppercase">
                   Jak si ustelete, tak si lehnete...<br/>
                   a&nbsp;kde usnete?
                 </h3>
@@ -32,7 +32,7 @@ const Pokoje = ({location}) => {
           <AnimateIn>
             <div className="grid leading-loose grid-cols-2 lg:grid-cols-1">
               <div className="flex flex-col justify-start items-center px-12 md:px-4 lg:mb-20">
-                <span className="text-center potok text-3xl font-bold py-8">
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Společné prostory
                 </span>
                 <div className="text-block w-full pt-6 text-center">
@@ -44,8 +44,8 @@ const Pokoje = ({location}) => {
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-12 md:px-4 lg:mb-20">
-                <span className="text-center potok text-3xl font-bold py-8">
-                  Apartmány
+                <span className="text-center potok text-3xl font-bold py-8 uppercase">
+                  Pokoje
                 </span>
                 <div className="text-block w-full pt-6 text-center">
                   16 míst na osmnácti postelích.<br />
