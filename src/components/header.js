@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
+import Strecha from './svg/strecha.js'
 import useWindowDimensions from '../hooks/useWindowDimensions.js';  
 
 const Header = ({ siteTitle, location }) => {
@@ -46,9 +47,18 @@ const Header = ({ siteTitle, location }) => {
         <div className="logo uppercase potok flex items-center">
           <Link
             to="/"
+            className="flex items-center justify-center content-center"
           >
-            na potok
-          </Link>
+            <span>
+              na potok
+            </span>
+             
+            <Strecha 
+              width={40}
+              height={30}
+              fill={`${location.pathname === "/" ? (prevScrollPos > height ? "#000" : "#fff") : "#000"}`}
+              className='block ml-4 pb-2' />
+            </Link>
         </div>
         <nav className="flex justify-end items-center phone:hidden">
           <Link
@@ -113,9 +123,9 @@ const Header = ({ siteTitle, location }) => {
           >
             <div id="menu">
               <div id="pencet">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span className={`${menu ? "bg-black" : location.pathname === "/" ? (prevScrollPos > height ? "bg-black" : "bg-white") : "bg-black"}`}></span>
+                <span className={`${menu ? "bg-black" : location.pathname === "/" ? (prevScrollPos > height ? "bg-black" : "bg-white") : "bg-black"}`}></span>
+                <span className={`${menu ? "bg-black" : location.pathname === "/" ? (prevScrollPos > height ? "bg-black" : "bg-white") : "bg-black"}`}></span>
               </div>
             </div>
         </div>
