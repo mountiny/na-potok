@@ -131,21 +131,12 @@ const IndexPage = ({location}) => {
             <div className="relative w-full my-32 text-black">
               <AnimateIn>
                 <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
-                  {/* <Link to='/cenik/'> */}
-                    {/* Zarezervujte si u nás termín! */}
-                  {/* </Link> */}
                   <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`}>
                       
                     </UnderlineLinkInter>
                 </span>
               </AnimateIn>
             </div>
-{/*           
-
-            <div className="w-full text-block pt-28 pb-44 font-medium text-center tracking-wide flex justify-center items-center">
-              <Link className="text-2xl text-black font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-              <Link className="text-2xl text-black font-normal border border-black px-5 py-4 ml-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/kontakt/'>Kontakt</Link>
-          </div> */}
         </div>
         </WideContainer>
       </section>

@@ -105,14 +105,10 @@ const Chalupa = ({location}) => {
           <div className="relative w-full my-32 text-black">
             <AnimateIn>
               <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
-                <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+                <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`} />
               </span>
             </AnimateIn>
           </div>
-{/* 
-          <div className="w-full text-block py-44 font-medium text-center tracking-wide">
-            <Link className="text-2xl font-normal border border-black px-5 py-4 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-          </div> */}
         </div>
 {/* 
         <div className="flex w-full flex-wrap justify-between pt-32 pb-44 phone:pb-32">

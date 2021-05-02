@@ -260,12 +260,12 @@ const Cenik = ({location}) => {
 
         <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center flex-wrap items-center">
           <a 
-            className="text-2xl potok font-normal px-8 py-4 transition-colors duration-200" 
+            className="text-2xl helvetica font-normal px-8 py-4 transition-colors duration-200" 
             href="mailto:chalupa@napotok.cz">
             chalupa@napotok.cz
           </a>
           <a 
-            className="text-2xl potok font-normal px-8 py-4 transition-colors duration-200" 
+            className="text-2xl helvetica font-normal px-8 py-4 transition-colors duration-200" 
             href="tel:+420777441876">
             +420 777 441 876
           </a>

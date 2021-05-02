@@ -108,7 +108,7 @@ const Pokoje = ({location}) => {
         <div className="relative w-full my-32 text-black">
           <AnimateIn>
             <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
-              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`} />
             </span>
           </AnimateIn>
         </div>

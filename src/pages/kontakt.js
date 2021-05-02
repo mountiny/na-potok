@@ -49,7 +49,7 @@ const KontaktPage = ({location}) => {
             <div className="centered-block inline-block leading-normal text-center max-w-7xl text-black px-4">
               <h4 className="potok uppercase">
                 Potkáme se na chalupě.<br/>
-                Těšíme se na Vás.
+                Těšíme se na Vás!
               </h4>
             </div>
           </div>
@@ -65,7 +65,7 @@ const KontaktPage = ({location}) => {
                   Telefon
                 </span>
                 <div className="text-block w-full pt-6 text-center h-40">
-                  Volejte kdykoliv! Pokud nás nezastihnete, určitě se Vám co nejdříve ozveme.
+                  Volejte kdykoliv. Pokud nás nezastihnete, určitě se Vám co nejdříve ozveme.
                 </div>
                 <a href="tel:+420777441876" className="text-center helvetica text-3xl font-bold pt-16 pb-8">
                   +420 777 441 876
@@ -88,7 +88,7 @@ const KontaktPage = ({location}) => {
                     Email
                   </span>
                   <div className="text-block w-full pt-6 text-center h-40">
-                    Na emaily odepisujeme hned jak je to možné a&nbsp;těšíme se, až se spojíme!
+                    Na emaily odepisujeme hned jak je to možné a&nbsp;těšíme se, až se spojíme.
                   </div>
                 <a href="mailto:chalupa@napotok.cz" className="text-center helvetica text-3xl font-bold pt-16 pb-8">
                   chalupa@napotok.cz
@@ -114,7 +114,7 @@ const KontaktPage = ({location}) => {
          <div className="relative w-full mt-32 mb-16 text-black">
           <AnimateIn>
             <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
-              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`} />
+              <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`} />
             </span>
           </AnimateIn>
         </div>
