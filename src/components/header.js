@@ -57,7 +57,7 @@ const Header = ({ siteTitle, location }) => {
               width={40}
               height={30}
               fill={`${location.pathname === "/" ? (prevScrollPos > height ? "#000" : "#fff") : "#000"}`}
-              className='block ml-4 pb-2' />
+              className='block ml-4 pb-1' />
             </Link>
         </div>
         <nav className="flex justify-end items-center phone:hidden">

@@ -16,7 +16,7 @@ const Footer = ({ children }) => {
           <div className='footer-text flex relative justify-start'>
             <div className='flex flex-col justify-between mr-32 md:mr-16'>
               <div className='potok'>
-                <h4 className='potok kontakt-heading'>zůstaňte v kontaktu</h4>
+                <h4 className='potok kontakt-heading'>zůstaňte v&nbsp;kontaktu</h4>
               </div>
               <div className='flex items-center leading-normal pb-8'>
                 <a className='social-link mr-12' target="_blank" href='https://www.facebook.com/ChalupaNapotok'>

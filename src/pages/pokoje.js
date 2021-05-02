@@ -8,6 +8,7 @@ import AnimateIn from '../components/AnimateIn'
 import ImageSlider from "../components/imageSlider"
 import NarrowContainer from "../components/NarrowContainer"
 import UnderlineLinkInter from "../components/UnderlineLinkInter"
+import Image from '../components/image'
 
 const Pokoje = ({location}) => {
 
@@ -38,7 +39,7 @@ const Pokoje = ({location}) => {
                 </span>
                 <div className="text-block w-full pt-6 text-center">
                   Velká společenská místnost s&nbsp;kuchyní a&nbsp;jídelnou.<br />
-                  Krb pro atmosféru a&nbsp;domácí pohodu.<br />
+                  Krb pro zahřátí, atmosféru i&nbsp;domácí pohodu.<br />
                   Herna pro nejmenší a&nbsp;sklípek pro ty větší.<br />
                   Sauna pro uvolnění a&nbsp;jezírko pro otužení.<br />
                   Terasa na pohodu a&nbsp;bývalá stodola na párty.
@@ -52,7 +53,7 @@ const Pokoje = ({location}) => {
                   16 míst na osmi postelích.<br />
                   Dva pokoje máme dvoulůžkové<br />
                   a tři pokoje jsou čtyřlůžkové (2+2).<br />
-                  V nich sociální zázemí, wc, sprcha,<br />
+                  V každém z nich pak sociální zázemí, wc, sprcha,<br />
                   kniha a&nbsp;výhled, který neomrzí.
                  
                 </div>
@@ -62,7 +63,7 @@ const Pokoje = ({location}) => {
         </div>
 
          
-        <div className="relative flex justify-center items-center mt-48">
+        {/* <div className="relative flex justify-center items-center mt-48">
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
           
             <ImageSlider 
@@ -73,11 +74,30 @@ const Pokoje = ({location}) => {
             />
           </AnimateIn>
         </div>
+         */}
+        <div className="relative flex justify-center items-center mt-48">
+          <AnimateIn className='w-full flex justify-between flex-wrap mx-auto relative' style={ {maxWidth: "1400px"}}>
+            <Image 
+              filename={'pudorys1'}
+              className="lg:w-full w-1/2"
+            />
+            <Image 
+              filename={'pudorys2'}
+              className="lg:w-full w-1/2"
+                />
+            {/* <ImageSlider 
+              images={['pudorys1', 'pudorys2']}
+              className={''}
+              height={'780px'}
+              maxHeight={'782px'}
+            /> */}
+          </AnimateIn>
+        </div>
 
             <div className="relative w-full mt-24 text-black">
               <AnimateIn>
                 <h4 className="pt-16 pb-0 potok w-full text-center uppercase">
-                    5 apartmánů / 16 postelí / nekonečno zážitků
+                    5 pokojů / 16 míst / nekonečno zážitků
                 </h4>
               </AnimateIn>
             </div>

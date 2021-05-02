@@ -32,20 +32,20 @@ const KontaktPage = ({location}) => {
       <div className="px-4 w-full max-w-5xl mx-auto relative py-32" >
         <div className="relative w-full text-black">
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
-            Cena ubytování ZAHRNUJE:
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
+            Cena ubytování <span className="underline">ZAHRNUJE</span>:
           </h3>
           <p className="leading-loose text-xl py-8">
             Využití lůžkovin, ručníků, sauny, venkovního grilu a ohniště, spotřebu dřeva pro užívání krbu a ohniště, spotřebu elektrické energie a vody i ubytovací poplatek obci.
           </p>
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
-            Cena ubytování NEZAHRNUJE:
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
+            Cena ubytování <span className="underline">NEZAHRNUJE</span>:
           </h3>
           <p className="leading-loose text-xl py-8">
-            Vratnou kauci ve výši 5 000 Kč/os, která bude zaplacena dle domluvy při předání a vrácena při přebírání chalupy.<br />
+            Vratnou kauci ve výši 5 000 Kč, která bude zaplacena dle domluvy při předání a vrácena při přebírání chalupy.<br />
             Poplatek za psa je 250 Kč/noc. Psi máme moc rádi, ale musíme upozornit, že pozemek chalupy Na Potok není oplocen a v těsné blízkosti zahrady se pasou krávy, koně i ovce. Doporučujeme proto promyslet, zda Vašeho čtyřnohého miláčka opravu chcete vzít a být zodpovědní za případné nepříjemnosti.
           </p>
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Jak to u nás chodí:
           </h3>
           <p className="leading-loose text-xl py-8">
@@ -58,10 +58,10 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-          <h2 className="potok font-bold text-2xl pt-16 pb-8">
+          <h2 className="potok font-bold text-2xl pt-16 pb-8 uppercase">
             VŠEOBECNÉ PODMÍNKY
           </h2>
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Provozovatel
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -76,7 +76,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Popis
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -88,7 +88,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Smysl těchto všeobecných podmínek
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -100,7 +100,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Vznik smluvního vztahu - rezervace
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -115,7 +115,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Vratná kauce​
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -133,7 +133,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Psi
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -146,7 +146,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           </p>
 
           
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Poplatek z pobytu v obci
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -159,7 +159,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Storno podmínky
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -193,7 +193,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-             <h3 className="potok font-bold text-2xl pt-6 pb-0">
+             <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Co je potřeba dodržovat?
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -218,7 +218,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-             <h3 className="potok font-bold text-2xl pt-6 pb-0">
+             <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Sauna
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -236,7 +236,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Předání chalupy
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -257,7 +257,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
           </p>
 
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Předání chalupy
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -270,7 +270,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           </p>
 
 
-          <h3 className="potok font-bold text-2xl pt-6 pb-0">
+          <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Bezpečnost
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">
@@ -322,7 +322,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           </p>
 
           
-           <h3 className="potok font-bold text-2xl pt-6 pb-0">
+           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Na závěr
           </h3>
           <p className="leading-loose text-xl py-8 pl-8">

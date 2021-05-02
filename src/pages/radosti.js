@@ -48,7 +48,7 @@ const Radosti = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
           
             <ImageSlider 
-              images={['radosti1', 'radosti2', 'radosti3', 'radosti4', 'radosti5']}
+              images={['radosti1', 'radosti5', 'radosti2', 'radosti3', 'radosti4']}
               className={''}
               height={'600px'}
               maxHeight={'782px'}
@@ -66,8 +66,7 @@ const Radosti = ({location}) => {
               
                 <p className="leading-loose">
                   Chalupa Na Potok je díky nádhernému okolí a nekončícím výhledům oblíbeným místem pro trávení speciálních okamžiků... a&nbsp;svatební den je jistě jedním z nich.<br />
-                  Rádi bychom vyhověli všem nevěstám a&nbsp;ženichům, ale bohužel je počet svateb i&nbsp;svatebních hostů omezen tak, abychom nerušili příjemnou klidnou atmosféru zdejších kopců. Dejte nám vědět a&nbsp;zkusíme něco vymyslet.<br />
-                  Dlouhodobě spolupracujeme s&nbsp;osvědčenými svatebními koordinátory a&nbsp;květinovými studii, které Vám rádi doporučíme a&nbsp;zajistíme hladký průběh výjimečného dne.<br />
+                  Rádi bychom vyhověli všem nevěstám a&nbsp;ženichům, ale bohužel je počet svateb i&nbsp;svatebních hostů omezen tak, abychom nerušili příjemnou klidnou atmosféru zdejších kopců. Dejte nám vědět, jakou představu o&nbsp;svatebním dni máte Vy!<br />
                 </p>   
               </div>
             </div>
@@ -95,10 +94,12 @@ const Radosti = ({location}) => {
                   Oslavy a&nbsp;jiná mecheche
                 </h4>
               
-                <p className="leading-loose">
-                  Nejen svatby si zaslouží malebné prostředí jesenické přírody. Chalupa Na Potok je připravena i&nbsp;pro další druhy oslav a&nbsp;veselí.<br />
+              <p className="leading-loose">
+                Přijeďte k&nbsp;nám oslavit výročí, narozeniny, nebo si jen tak užít pár dní volna. K&nbsp;dispozici budete mít vinný sklípek nebo skvělé pivo od místních dodavatelů.<br />
+                K&nbsp;tanci Vám může sloužit dřevěný parket v&nbsp;místě bývalé stodoly a&nbsp;k&nbsp;posezení prostorná terasa před chalupou. Jak si to užijete je už jen a&nbsp;jen na Vás.
+                  {/* Nejen svatby si zaslouží malebné prostředí jesenické přírody. Chalupa Na Potok je připravena i&nbsp;pro další druhy oslav a&nbsp;veselí.<br />
                   Přijeďte k nám oslavit výročí, narozeniny, nebo si jen tak užít s&nbsp;přáteli nebo rodinou pár dní volna. K dispozici budete mít vinný sklípek nebo pípa s&nbsp;pivem od místních dodavatelů.<br />
-                  K&nbsp;tanci Vám může sloužit terasa na místě bývalé stodoly, k&nbsp;posezení prostorná terasa... Jak si to užijete je už jen a&nbsp;jen na Vás.
+                  K&nbsp;tanci Vám může sloužit terasa na místě bývalé stodoly, k&nbsp;posezení prostorná terasa... Jak si to užijete je už jen a&nbsp;jen na Vás. */}
                  </p>   
               </div>
             </div>
@@ -110,9 +111,12 @@ const Radosti = ({location}) => {
                   Homeoffice a&nbsp;co-work
                 </h4>
               
-                <p className="leading-loose">
-                Dnešní doba má svá specifika... Práce z&nbsp;domova může být náročná a&nbsp;ne každému vyhovuje. Díky naší chalupě, jejímu zázemí a&nbsp;místům, které se dají snadno proměnit v&nbsp;pracovní kout, zasedací místnost nebo klidné kreativní prostředí, si můžete homeoffice užít a&nbsp;spojit ho s&nbsp;příjemným a&nbsp;inspirativním prostředím zdejších kopců.<br />
-Podporujeme podnikání a&nbsp;veškerým kreativním počinům, které dělají náš svět lepším, fandíme! Takže pokud hledáte ideální místo pro práci v malebné přírodě, dejte nám vědět!
+              <p className="leading-loose">
+                Dnešní doba má svá specifika... Práce z&nbsp;domova může být náročná a&nbsp;ne každému vyhovuje. Díky zázemí a&nbsp;místům, které se dají snadno proměnit v&nbsp;pracovní kout, zasedací místnost nebo klidné kreativní prostředí, je naše chalupa pro homeoffice jako stvořená. Ve spojení s&nbsp;příjemným a&nbsp;inspirativním prostředím zdejších kopců si to opravdu užijete.<br />
+Podporujeme podnikání a&nbsp;veškerým kreativním počinům, které dělají náš svět lepším, fandíme! Takže pokud hledáte ideální místo pro práci v&nbsp;malebné přírodě, dejte nám vědět!
+
+                {/* Dnešní doba má svá specifika... Práce z&nbsp;domova může být náročná a&nbsp;ne každému vyhovuje. Díky naší chalupě, jejímu zázemí a&nbsp;místům, které se dají snadno proměnit v&nbsp;pracovní kout, zasedací místnost nebo klidné kreativní prostředí, si můžete homeoffice užít a&nbsp;spojit ho s&nbsp;příjemným a&nbsp;inspirativním prostředím zdejších kopců.<br />
+Podporujeme podnikání a&nbsp;veškerým kreativním počinům, které dělají náš svět lepším, fandíme! Takže pokud hledáte ideální místo pro práci v malebné přírodě, dejte nám vědět! */}
                   </p>   
               </div>
             </div>

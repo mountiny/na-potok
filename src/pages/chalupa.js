@@ -66,7 +66,7 @@ const Chalupa = ({location}) => {
                   150 let historie
                 </span>
                 <div className="text-block w-full text-center">
-                  Chalupa Na Potok byla postavena před více než 120 lety. Po dlouhých a&nbsp;dlouhých letech chátrání se opět snažíme přivést na toto kouzelné místo život a&nbsp;dětský smích. Věříme, že nám v&nbsp;tom pomůžete!
+                  Chalupa Na Potok byla postavena před více než 150 lety. Po dlouhých a&nbsp;dlouhých letech chátrání se opět snažíme přivést na toto kouzelné místo život a&nbsp;dětský smích. Věříme, že nám v&nbsp;tom pomůžete!
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-16 lg:mb-20">
@@ -96,7 +96,7 @@ const Chalupa = ({location}) => {
                     Materiály
                   </span>
                   <div className="text-block w-full text-center">
-                    Na pozemek chalupy jsme nedovezli jediný kámen... Všechny ty nádherné kusy skal zde již byly a&nbsp;my se je snažili znovu využít jak nejlépe to šlo. Stejně jako prostor bývalé stodoly, který čeká na další kapitolu.
+                    Na pozemek chalupy jsme nedovezli jediný kámen. Všechny ty nádherné kusy skal zde již byly a&nbsp;my se je snažili znovu využít jak nejlépe to šlo. Stejně jako prostor bývalé stodoly, který čeká na další kapitolu.
                   </div>
                 </div>
             </div>

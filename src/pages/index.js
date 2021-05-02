@@ -95,7 +95,7 @@ const IndexPage = ({location}) => {
                   Pohodlné ubytování
                 </span>
                 <div className="text-block w-full pt-6 text-center">
-                  Máme 5&nbsp;apartmánů, 16&nbsp;lůžek a&nbsp;spousty místa pro relax i&nbsp;zábavu. A&nbsp;chceme, abyste se u&nbsp;nás měli jako v&nbsp;bavlnce!
+                  Máme 5&nbsp;pokojů, 16&nbsp;lůžek a&nbsp;spousty místa pro relax i&nbsp;zábavu. A&nbsp;chceme, abyste se u&nbsp;nás měli jako v&nbsp;bavlnce!
                 </div>
               </div>
                 <div className="flex flex-col  justify-start items-center px-16">
@@ -134,7 +134,7 @@ const IndexPage = ({location}) => {
                   {/* <Link to='/cenik/'> */}
                     {/* Zarezervujte si u nás termín! */}
                   {/* </Link> */}
-                  <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín!`}>
+                  <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`}>
                       
                     </UnderlineLinkInter>
                 </span>

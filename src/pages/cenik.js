@@ -97,7 +97,7 @@ const Cenik = ({location}) => {
       </section>
 
       <NarrowContainer className='text-primary'>
-         <AnimateIn >
+        {/* <AnimateIn>
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 text-black">
               <p className="leading-loose">
@@ -106,9 +106,9 @@ const Cenik = ({location}) => {
                </p>   
             </div>
           </div>
-        </AnimateIn>
-        <div className="relative w-full mt-16 md:mt-8 text-black">
-          <AnimateIn>
+        </AnimateIn> */}
+        <div className="relative w-full mt-32 md:mt-16 text-black">
+          <AnimateIn threshold={0}>
             <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 justify-center content-center leading-relaxed">
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
                 <span className="text-center potok text-3xl font-bold pt-8 pb-2 uppercase">
@@ -117,8 +117,8 @@ const Cenik = ({location}) => {
                 <div className="text-block w-full pt-6 text-center h-auto">
                   Prosinec, leden, únor, březen, červen, červenec, srpen a září. Během těchto měsíců k nám můžete přijet na týden od soboty do soboty.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  40.000,- Kč / týden
+                <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
+                  40.000 Kč / týden
                 </span>
               </div>
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -128,8 +128,8 @@ const Cenik = ({location}) => {
                 <div className="text-block w-full pt-6 text-center h-auto">
                  Duben, květen, říjen a listopad. Týden na chalupě v období mimo sezónu má svou neopakovatelnou atmosféru. Sluncem zalité dny neslibujeme, ale klid a pohodu ano.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
-                  33.000,- Kč / týden
+                <span className="text-center helvetica text-3xl font-bold pt-16 pb-8 ">
+                  33.000 Kč / týden
                 </span>
               </div>
                 <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -137,10 +137,10 @@ const Cenik = ({location}) => {
                     Na pár dní
                   </span>
                   <div className="text-block w-full pt-6 text-center h-auto">
-                    Během kvetoucího jara nebo malebného podzimu k nám můžete přijet pár dní. Minimálně dvě noci si u nás určíte skvěle užijete a každá další bude o to příjemnější.
+                    Během kvetoucího jara nebo malebného podzimu k nám můžete přijet na pár dní. Minimálně dvě noci si u nás určitě skvěle užijete a každá další bude o to příjemnější.
                   </div>
-                  <span className="text-center potok text-3xl font-bold pt-16 pb-8 ">
-                    17.000,- Kč / 2 noci
+                  <span className="text-center helvetica text-3xl font-bold pt-16 pb-8 ">
+                    17.000 Kč / 2 noci
                   </span>
               </div>
 
@@ -149,10 +149,10 @@ const Cenik = ({location}) => {
                   Na Vánoce
                 </span>
                 <div className="text-block w-full pt-6 text-center h-auto">
-                  Pro Vaše Vánoční svátky plné klidu a pohody, s rodinou nebo přáteli bude chalupa Na Potok připravena od 22.-26.12.
+                  Pro Vaše vánoční svátky plné klidu a pohody, s rodinou nebo přáteli bude chalupa Na Potok připravena od 22.-26.12.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                 43.000,- Kč / 4 noci
+                <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
+                 43.000 Kč / 4 noci
                 </span>
               </div>
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -162,8 +162,8 @@ const Cenik = ({location}) => {
                 <div className="text-block w-full pt-6 text-center h-auto">
                   3! 2! 1! Šťastný nový rok!!! Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku od 27.12.-2.12.
                 </div>
-                <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                  60.000,- Kč / týden
+                <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
+                  60.000 Kč / týden
                 </span>
               </div>
                 <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -173,8 +173,8 @@ const Cenik = ({location}) => {
                   <div className="text-block w-full pt-6 text-center h-auto">
                     Ať už si přejete trávit Velikonoce jakkoliv, chalupa Na Potok je Vám k dispozici od Zeleného čtvrtka do Velikonočního pondělí.
                   </div>
-                  <span className="text-center potok text-3xl font-bold pt-16 pb-8">
-                    30.000,- / 4 noci
+                  <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
+                    30.000 Kč / 4 noci
                   </span>
               </div>
             </div>
@@ -184,7 +184,7 @@ const Cenik = ({location}) => {
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 md:py-16 text-black">
               <p className="leading-loose">
-                Podívejte se, jestli je Váš žádaný termín volný a ozvěte se nám! Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech! Těšíme se!
+                Podívejte se, jestli je Váš žádaný termín volný a ozvěte se nám. Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech. Těšíme se!
 
                </p>   
             </div>
@@ -224,11 +224,11 @@ const Cenik = ({location}) => {
               
 
             <div className='legend-wrapper my-16 relative flex justify-start text-black'>
-              <div className='legend-block free-slot flex justify-start items-center mr-12'>
+              <div className='legend-block free-slot flex justify-start items-center mr-12 md:mr-2'>
                 <div className='legend-box'>
                   27
                 </div>
-                <div className='legend-text'>
+                <div className='legend-text md:pl-2 pl-8'>
                   volný termín
                 </div>
               </div>
@@ -236,7 +236,7 @@ const Cenik = ({location}) => {
                 <div className='legend-box'>
                   27
                 </div>
-                <div className='legend-text'>
+                <div className='legend-text md:pl-2 pl-8'>
                   rezervovaný termín
                 </div>
               </div>
@@ -252,13 +252,13 @@ const Cenik = ({location}) => {
         <div className="relative w-full mt-20 mb-32 text-black">
           <AnimateIn>
             <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
-              <UnderlineLinkInter link="/ubytovaci-podminky/" text={`Chci vědět víc...`} />
+              <UnderlineLinkInter link="/ubytovaci-podminky/" text={`Chci vědět víc o podmínkách ubytování`} />
             </span>
           </AnimateIn>
         </div>
         
 
-        <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center items-center">
+        <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center flex-wrap items-center">
           <a 
             className="text-2xl potok font-normal px-8 py-4 transition-colors duration-200" 
             href="mailto:chalupa@napotok.cz">
