@@ -49,7 +49,7 @@ const IndexPage = ({location}) => {
                   Jsme parta přátel, která miluje úniky do přírody, klidu a&nbsp;našich oblíbených kopců.<br />
 
                   Před nedávnem nám padla do oka chalupa na krásné polosamotě, jejíž atmosféru perfektně vystihuje jednoduchý popis - ticho, klid a&nbsp;hory. <br />
-                  Nádherné stavení, linoucí se potůček, staleté lípy a&nbsp;přítomnost kamenných pilířů bývalé stodoly dotváří obraz, kterému jen těžko odolat. Spolu s&nbsp;pozadím, které malují kopce Jeseníků a&nbsp;Králického sněžníku, je historická chalupa
+                  Nádherné stavení, linoucí se potůček, staleté lípy a&nbsp;přítomnost kamenných pilířů bývalé stodoly dotváří obraz, kterému jen těžko odolat. Spolu s&nbsp;pozadím, které malují kopce Jeseníků a&nbsp;Králického Sněžníku, je historická chalupa
                   jen posledním dílkem skládačky, který jsme hledali... a&nbsp;pustili se do rekonstrukce...<br />
 
                   Po tisících odvezených a&nbsp;přivezených kolečkách, stovkách hodin práce, měsících ladění, vymýšlení a&nbsp;přemýšlení, nekonečné trpělivosti všech zúčastněných a&nbsp;nezměrné ochoty pomocníků a&nbsp;kamarádů jsme chalupě vdechli nový život, náboj a&nbsp;atmosféru, o&nbsp;kterou bychom se s&nbsp;Vámi chtěli podělit...
@@ -79,7 +79,7 @@ const IndexPage = ({location}) => {
                   Nádherné místo
                 </span>
                 <div className="text-block w-full pt-6 text-center">
-                  150 let staré stavení, torzo bývalé stodoly, linoucí se potůček a&nbsp;úchvatné výhledy na kopce Jeseníků, Králického sněžníku a&nbsp;Orlických hor.
+                  150 let staré stavení, torzo bývalé stodoly, linoucí se potůček a&nbsp;úchvatné výhledy na kopce Jeseníků, Králického Sněžníku a&nbsp;Orlických hor.
                 </div>
               </div>
               <div className="flex flex-col  justify-start items-center px-16 lg:mb-20">

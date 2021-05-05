@@ -53,7 +53,7 @@ const KontaktPage = ({location}) => {
 
 Příjezd si naplánujte mezi 16-19h, odjezd do 10h<br />
 
-Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dodržet domluvený čas příjezdu a odjezdu<br />
+Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dodržet domluvený čas příjezdu a odjezdu.<br />
 
 
           </p>
@@ -94,7 +94,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           <p className="leading-loose text-xl py-8 pl-8">
             <ul className="list-disc list-outside">
               <li>
-                Smyslem je naplnit literu zákona a informovat, jaká práva máte a jaká práva máme zase my tak, abyste si váš pobyt u nás užili naplno.
+                Smyslem je naplnit literu zákona a informovat, jaká práva máte a jaká práva máme zase my tak, abyste si Váš pobyt u nás užili naplno.
               </li>
             </ul>
 
@@ -106,7 +106,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           <p className="leading-loose text-xl py-8 pl-8">
             <ul className="list-disc list-outside">
               <li>
-                Na základě souhlasu se Všeobecnými podmínkami chalupy při rezervaci ubytování provozovatel poskytne ubytovanému (hostovi) přechodně ubytování (právo užívat prostor vyhrazený mu k ubytování, jakož i další ubytovací prostory u chalupy) na sjednanou dobu a za předem stanovenou cenu.
+                Na základě souhlasu se všeobecnými podmínkami chalupy při rezervaci ubytování provozovatel poskytne ubytovanému (hostovi) přechodně ubytování (právo užívat prostor vyhrazený mu k ubytování, jakož i další ubytovací prostory u chalupy) na sjednanou dobu a za předem stanovenou cenu.
               </li>
               <li>
                 Objednávky na rezervaci chalupy se zasílají emailem nebo telefonicky. Potvrzení provede ubytovatel písemně na Váš email nebo telefonicky. Ihned po rezervaci na základě vystavené faktury ubytovatelem uhradí objednatel zálohu 50 % z ceny pobytu. Zbylou cenu pobytu uhradí objednatel 1 měsíc před nástupem na pobyt zase na základě faktury. Pokud objednatel provede storno objednávku, ubytovatel si ponechá z celkové ceny storno podmínky viz níže. Začíná-li Váš pobyt za 30 dní a méně, hradí se po potvrzení rezervace celá částka za ubytování naráz.
@@ -121,13 +121,13 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           <p className="leading-loose text-xl py-8 pl-8">
             <ul className="list-disc list-outside">
               <li>
-                Ubytovaný host je povinen provozovateli zaplatit při příjezdu na chalupu NA POTOK částku ve výši 5.000 Kč v hotovosti, oproti předání klíčů a potřebných informací pro hosty o chalupě a jejím provozu.
+                Ubytovaný host je povinen provozovateli zaplatit při příjezdu na chalupu NA POTOK částku ve výši 5 000 Kč v hotovosti, oproti předání klíčů a potřebných informací pro hosty o chalupě a jejím provozu.
               </li>
               <li>
-                Bude-li pozemek, chalupa a její vybavení předáno provozovateli beze škod, kauce bude vrácena v plné výši. Ztráta klíčů je za poplatek 2 000,- Kč.
+                Bude-li pozemek, chalupa a její vybavení předáno provozovateli beze škod, kauce bude vrácena v plné výši. Ztráta klíčů je za poplatek 2 000 Kč.
               </li>
               <li>
-                Ubytovaný host přebírá chalupu včetně příslušenství bez závad. Případné závady je povinen neprodleně nahlásit provozovateli. Při nástupu na pobyt předloží hosté doklady totožnosti
+                Ubytovaný host přebírá chalupu včetně příslušenství bez závad. Případné závady je povinen neprodleně nahlásit provozovateli. Při nástupu na pobyt předloží hosté doklady totožnosti.
               </li>
             </ul>
 
@@ -152,7 +152,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
           <p className="leading-loose text-xl py-8 pl-8">
             <ul className="list-disc list-outside">
               <li>
-                V ceně ubytování je zahrnut poplatek z ubytování obci. Výše poplatku je 10 Kč/osoba/noc
+                V ceně ubytování je zahrnut poplatek z ubytování obci. Výše poplatku je 10 Kč/osoba/noc.
 
               </li>
             </ul>
@@ -251,7 +251,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Nadprůměrné znečištění není v ceně standardního úklidu např. bláto na podlaze, špinavá lednice, neumyté nádobí (nezapnutá/nevyklizená myčka), špinavé zdi, nepořádek a odpadky kolem chalupy apod.
               </li>
               <li>
-                V případě neuvedení do pořádku, bude účtována smluvní pokuta ve výši 2 000,- Kč a uhrazeno v hotovosti před odjezdem provozovateli.
+                V případě neuvedení do pořádku, bude účtována smluvní pokuta ve výši 2 000 Kč a uhrazeno v hotovosti před odjezdem provozovateli.
               </li>
             </ul>
 

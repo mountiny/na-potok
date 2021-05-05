@@ -64,9 +64,9 @@ const Radosti = ({location}) => {
                   Svatební veselí
                 </h4>
               
-                <p className="leading-loose">
-                  Chalupa Na Potok je díky nádhernému okolí a nekončícím výhledům oblíbeným místem pro trávení speciálních okamžiků... a&nbsp;svatební den je jistě jedním z nich.<br />
-                  Rádi bychom vyhověli všem nevěstám a&nbsp;ženichům, ale bohužel je počet svateb i&nbsp;svatebních hostů omezen tak, abychom nerušili příjemnou klidnou atmosféru zdejších kopců. Dejte nám vědět, jakou představu o&nbsp;svatebním dni máte Vy!<br />
+              <p className="leading-loose">
+                Chalupa Na Potok je díky nádhernému okolí a&nbsp;nekončícím výhledům oblíbeným místem pro trávení speciálních okamžiků jako je svatba.<br />
+                Dejte nám vědět, jakou představu o&nbsp;svatebním dni máte a&nbsp;budeme se snažit najít ideální řešení.
                 </p>   
               </div>
             </div>

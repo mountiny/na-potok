@@ -36,7 +36,7 @@ const Chalupa = ({location}) => {
         
           <div className="centered-block inline-block leading-loose max-w-4xl pb-40 pt-8 text-black">
             <AnimateIn >
-              Chalupa Na Potok je skvělé místo pro všechny, kteří hledají odpočinek od každodenních povinností, klid a&nbsp;pohodu. Pro ty, kteří chtějí znovu a&nbsp;znovu objevovat Jesenickou přírodu i&nbsp;zákoutí Králického sněžníku nebo Orlických hor. Na Potok může být tím místem, kde si připomenete, jak důležité je zpomalit, načerpat energii a&nbsp;odpočívat. Ať už fandíte spíše zahálce s&nbsp;knihou v&nbsp;ruce nebo se svůj čas rozhodnete strávit aktivně, naše chalupa je Vám plně k&nbsp;dispozici.
+              Chalupa Na Potok je skvělé místo pro všechny, kteří hledají odpočinek od každodenních povinností, klid a&nbsp;pohodu. Pro ty, kteří chtějí znovu a&nbsp;znovu objevovat jesenickou přírodu i&nbsp;zákoutí Králického Sněžníku nebo Orlických hor. Na Potok může být tím místem, kde si připomenete, jak důležité je zpomalit, načerpat energii a&nbsp;odpočívat. Ať už fandíte spíše zahálce s&nbsp;knihou v&nbsp;ruce nebo se svůj čas rozhodnete strávit aktivně, naše chalupa je Vám plně k&nbsp;dispozici.
             </AnimateIn>
           </div>
           <div className="relative flex justify-center items-center">
