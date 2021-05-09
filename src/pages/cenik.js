@@ -118,7 +118,8 @@ const Cenik = ({location}) => {
                   Prosinec, leden, únor, březen, červen, červenec, srpen a září. Během těchto měsíců k nám můžete přijet na týden od soboty do soboty.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
-                  40.000 Kč / týden
+                  40.000 Kč / týden <br />
+                  (od 357 Kč / os. / noc)
                 </span>
               </div>
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -129,7 +130,8 @@ const Cenik = ({location}) => {
                  Duben, květen, říjen a listopad. Týden na chalupě v období mimo sezónu má svou neopakovatelnou atmosféru. Sluncem zalité dny neslibujeme, ale klid a pohodu ano.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8 ">
-                  33.000 Kč / týden
+                  33.000 Kč / týden<br />
+                  (od 295 Kč / os. / noc)
                 </span>
               </div>
                 <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
