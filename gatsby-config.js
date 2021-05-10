@@ -4,7 +4,7 @@ module.exports = {
     description: `Chalupa NA POTOK se těší na nejmenší až po ty života znalé, kteří hledají odpočinek od každodenních povinností, klid, pohodu a kteří chtějí znovu a znovu objevovat Jesenickou přírodu.`,
     author: `@vitHoracek`,
     url: "https://www.napotok.cz",
-    image: "/images/thumbnail.png",
+    image: "/images/thumbnail.jpg",
     twitterUsername: "@vitHoracek"
   },
   plugins: [
