@@ -30,7 +30,7 @@ const Layout = ({ children, location }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Na potok</title>
-        <script async defer data-website-id="92582900-5748-4394-bc99-aaf9a8b6722c" src="https://napotok-umami.vercel.app/umami.js"></script>
+        <script async defer data-website-id="76652b12-8e84-45bf-9ca2-680cb1c53369" src="https://napotok-umami.vercel.app/umami.js"></script>
         </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} location={location} />
 
