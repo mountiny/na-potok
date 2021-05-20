@@ -43,7 +43,7 @@ const KontaktPage = ({location}) => {
           </h3>
           <p className="leading-loose text-xl py-8">
             Vratnou kauci ve výši 5 000 Kč, která bude zaplacena dle domluvy při předání a vrácena při přebírání chalupy.<br />
-            Poplatek za psa je 250 Kč/noc. Psi máme moc rádi, ale musíme upozornit, že pozemek chalupy Na Potok není oplocen a v těsné blízkosti zahrady se pasou krávy, koně i ovce. Doporučujeme proto promyslet, zda Vašeho čtyřnohého miláčka opravu chcete vzít a být zodpovědní za případné nepříjemnosti.
+            Poplatek za psa je 250 Kč/noc. Psy máme moc rádi, ale musíme upozornit, že pozemek chalupy Na Potok není oplocen a v těsné blízkosti zahrady se pasou krávy, koně i ovce. Doporučujeme proto promyslet, zda Vašeho čtyřnohého miláčka opravu chcete vzít a být zodpovědní za případné nepříjemnosti.
           </p>
           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Jak to u nás chodí:
