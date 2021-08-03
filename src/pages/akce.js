@@ -43,6 +43,7 @@ const AkcePage = ({location}) => {
             </div>
           </AnimateIn>
         </div>
+        
         <div className="flex w-full flex-wrap justify-between text-primary">
           <div className="left-col flex flex-col inner-column">
             <AnimateIn

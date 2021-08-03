@@ -43,7 +43,7 @@ const Chalupa = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
 
               <ImageSlider 
-                  images={['uvodni2', 'chalupa2', 'chalupa3', 'chalupa4', 'chalupa5', 'chalupa6', 'chalupa7']}
+                  images={['35', '32', 'uvodni2', '56', '42', '57', '39']}
                   className={''}
                   height={'780px'}
                   maxHeight={'782px'}

@@ -30,7 +30,7 @@ const IndexPage = ({location}) => {
           <h1 className='potok text-center uppercase'>na chalupu</h1>
         </div> */}
         <IntroImageSlider
-          images={['intro1', 'intro2', 'intro3']}
+          images={['34', '43', 'intro3']}
           />
       </section>
 

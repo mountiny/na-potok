@@ -48,7 +48,7 @@ const Radosti = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
           
             <ImageSlider 
-              images={['radosti1', 'radosti5', 'radosti2', 'radosti3', 'radosti4']}
+              images={['radosti1', 'radosti5', 'radosti2', 'radosti4']}
               className={''}
               height={'600px'}
               maxHeight={'782px'}
@@ -58,7 +58,7 @@ const Radosti = ({location}) => {
 
 
           <AnimateIn >
-            <div className="central-text-block pt-16 text-center">  
+            <div className="central-text-block py-8 text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
                 <h4 className="pt-16 pb-16 potok uppercase">
                   Svatební veselí
@@ -72,8 +72,20 @@ const Radosti = ({location}) => {
             </div>
           </AnimateIn>
 
+        <div className="relative flex justify-center items-center">
+          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
+          
+            <ImageSlider 
+              images={['01_NA POTOK HQ-36', '01_NA POTOK HQ-38', '45', '58', '40']}
+              className={''}
+              height={'600px'}
+              maxHeight={'782px'}
+            />
+          </AnimateIn>
+        </div>
+
           <AnimateIn >
-            <div className="central-text-block text-center">  
+            <div className="central-text-block py-8 text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
                 <h4 className="pt-16 pb-16 potok uppercase">
                   Teambuildingy a&nbsp;workshopy
@@ -85,10 +97,22 @@ const Radosti = ({location}) => {
                  </p>   
               </div>
             </div>
+        </AnimateIn>
+        
+        <div className="relative flex justify-center items-center">
+          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
+          
+            <ImageSlider 
+              images={['36', '25', '28', '32']}
+              className={''}
+              height={'600px'}
+              maxHeight={'782px'}
+            />
           </AnimateIn>
+        </div>
 
           <AnimateIn >
-            <div className="central-text-block text-center">  
+            <div className="central-text-block py-8 text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
                 <h4 className="pt-16 pb-16 potok uppercase">
                   Oslavy a&nbsp;jiná mecheche
@@ -103,9 +127,22 @@ const Radosti = ({location}) => {
                  </p>   
               </div>
             </div>
+        </AnimateIn>
+        
+        <div className="relative flex justify-center items-center">
+          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
+          
+            <ImageSlider 
+              images={['54', '106', '56', '29', '46']}
+              className={''}
+              height={'600px'}
+              maxHeight={'782px'}
+            />
           </AnimateIn>
+        </div>
+
           <AnimateIn >
-            <div className="central-text-block text-center">  
+            <div className="central-text-block py-8 text-center">  
               <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-12 pt-8 text-black">
                 <h4 className="pt-16 pb-16 potok uppercase">
                   Homeoffice a&nbsp;co-work
