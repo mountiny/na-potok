@@ -35,9 +35,9 @@ const Pokoje = ({location}) => {
          
         <div className="relative flex flex-col justify-center items-center text-black">
 
-          <AnimateIn >
+          <AnimateIn className='my-16' >
 
-              <div className="flex flex-col justify-start items-center px-12 py-16 md:px-4 lg:mb-20">
+              <div className="flex flex-col justify-start items-center px-12 md:px-4 lg:mb-20">
                 <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Společné prostory
                 </span>
@@ -54,7 +54,7 @@ const Pokoje = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
           
             <ImageSlider 
-              images={['26', '27', '24', '113', '109', '107', '100', '103', '105', '102', '110', '84']}
+              images={['113', '109', '107', '100', '103', '105', '102', '110', '84', '26', '27', '24',]}
               className={''}
               height={'600px'}
               maxHeight={'782px'}
@@ -62,9 +62,9 @@ const Pokoje = ({location}) => {
           </AnimateIn>
 
 
-          <AnimateIn >
+          <AnimateIn className='my-20' >
 
-              <div className="flex flex-col justify-start items-center px-12 py-20 md:px-4 lg:mb-20">
+              <div className="flex flex-col justify-start items-center px-12 md:px-4 lg:mb-20">
                 <span className="text-center potok text-3xl font-bold py-8 uppercase">
                   Pokoje
                 </span>
@@ -81,7 +81,7 @@ const Pokoje = ({location}) => {
           <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
           
             <ImageSlider 
-              images={['79', '81', '80', '77', '75', '83', '74', '72', 'pudorys1', 'pudorys2']}
+              images={['81', '79', '80', '77', '75', '83', 'KOUPELNA']}
               className={''}
               height={'600px'}
               maxHeight={'782px'}
@@ -124,18 +124,6 @@ const Pokoje = ({location}) => {
 
          
         {/* <div className="relative flex justify-center items-center mt-48">
-          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
-          
-            <ImageSlider 
-              images={['pudorys1', 'pudorys2']}
-              className={''}
-              height={'780px'}
-              maxHeight={'782px'}
-            />
-          </AnimateIn>
-        </div>
-         */}
-        {/* <div className="relative flex justify-center items-center mt-48">
           <AnimateIn className='w-full flex justify-between flex-wrap mx-auto relative' style={ {maxWidth: "1400px"}}>
             <Image 
               filename={'pudorys1'}
@@ -154,7 +142,20 @@ const Pokoje = ({location}) => {
                     5 pokojů / 16 míst / nekonečno zážitků
                 </h4>
               </AnimateIn>
-            </div>
+        </div>
+        
+           <div className="relative flex justify-center items-center mt-4">
+          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "600px"}}>
+          
+            <ImageSlider 
+              images={['pudorys1', 'pudorys2']}
+              className={''}
+              height={'780px'}
+              maxHeight={'782px'}
+            />
+          </AnimateIn>
+        </div>
+        
           
             {/* <div className="w-full text-block pt-20 pb-40 font-medium text-center tracking-wide flex justify-center items-center">
               <Link className="text-2xl text-black font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>

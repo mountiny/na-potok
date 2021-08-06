@@ -20,7 +20,7 @@ export default function Image({filename, ...rest}) {
                 childImageSharp {
                   fluid(maxWidth: 2560, quality: 100) {
                     ...GatsbyImageSharpFluid_withWebp
-                    ...GatsbyImageSharpFluidLimitPresentationSize
+                    # ...GatsbyImageSharpFluidLimitPresentatio nSize
                   }
                 }
               }

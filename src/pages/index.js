@@ -30,7 +30,7 @@ const IndexPage = ({location}) => {
           <h1 className='potok text-center uppercase'>na chalupu</h1>
         </div> */}
         <IntroImageSlider
-          images={['34', '43', 'intro3']}
+          images={['34', '43', '40intro']}
           />
       </section>
 
@@ -120,7 +120,7 @@ const IndexPage = ({location}) => {
               <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
               
                 <ImageSlider 
-                  images={['uvodni1', 'uvodni2', 'uvodni3', 'uvodni4', 'uvodni5', 'uvodni6', 'uvodni7', 'uvodni8']}
+                  images={['62', '28', '42', '2', '19']}
                   className={''}
                   height={'780px'}
                   maxHeight={'782px'}
