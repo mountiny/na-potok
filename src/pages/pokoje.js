@@ -145,7 +145,7 @@ const Pokoje = ({location}) => {
         </div>
         
            <div className="relative flex justify-center items-center mt-4">
-          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "600px"}}>
+          <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "900px"}}>
           
             <ImageSlider 
               images={['pudorys1', 'pudorys2']}
