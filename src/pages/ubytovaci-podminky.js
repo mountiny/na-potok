@@ -214,6 +214,10 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Není dovoleno přemisťovat nábytek, vybavení, provádět jakékoliv úpravy a zasahovat do elektrické sítě a jiných instalací. Nábytek z chalupy též není možné přesouvat do venkovních prostor.
 
               </li>
+              <li>
+                Zákaz létání s drony a bezpilotními letouny nad chalupou a přilehlými pozemky. Jelikož chalupa Na Potok není úplně na samotě a chceme mít dobré sousedské vztahy, nenarušovat harmonii přírody, nerušit koně, ptactvo a další zvířata, nepřejeme si, aby se zde létalo s drony či jinými bezpilotními letouny.
+
+              </li>
             </ul>
 
           </p>
