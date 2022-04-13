@@ -118,8 +118,8 @@ const Cenik = ({location}) => {
                   Prosinec, leden, únor, březen, červen, červenec, srpen a září. Během těchto měsíců k nám můžete přijet na týden od soboty do soboty.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
-                  54.000 Kč / týden <br />
-                  (od 482 Kč / os. / noc)
+                  58.000 Kč / týden <br />
+                  (od 518 Kč / os. / noc)
                 </span>
               </div>
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -130,8 +130,8 @@ const Cenik = ({location}) => {
                  Duben, květen, říjen a listopad. Týden na chalupě v období mimo sezónu má svou neopakovatelnou atmosféru. Sluncem zalité dny neslibujeme, ale klid a pohodu ano.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8 ">
-                  44.000 Kč / týden<br />
-                  (od 393 Kč / os. / noc)
+                  48.000 Kč / týden<br />
+                  (od 429 Kč / os. / noc)
                 </span>
               </div>
                 <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -142,7 +142,7 @@ const Cenik = ({location}) => {
                     Během kvetoucího jara nebo malebného podzimu k nám můžete přijet na pár dní. Minimálně dvě noci si u nás určitě skvěle užijete a každá další bude o to příjemnější.
                   </div>
                   <span className="text-center helvetica text-3xl font-bold pt-16 pb-8 ">
-                    22.000 Kč / 2 noci
+                    25.000 Kč / 2 noci
                   </span>
               </div>
 
@@ -154,7 +154,7 @@ const Cenik = ({location}) => {
                   Pro Vaše vánoční svátky plné klidu a pohody, s rodinou nebo přáteli bude chalupa Na Potok připravena od 22.-26.12.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
-                 60.000 Kč / 4 noci
+                 65.000 Kč / 4 noci
                 </span>
               </div>
               <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -165,7 +165,7 @@ const Cenik = ({location}) => {
                   3! 2! 1! Šťastný nový rok!!! Užít si poslední dny v roce starém a přivítat rok nový můžete Na Potoku od 27.12.-2.12.
                 </div>
                 <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
-                  80.000 Kč / týden
+                  90.000 Kč / týden
                 </span>
               </div>
                 <div className="flex flex-col justify-between items-center justify-self-center px-4 pb-16 md:pb-4 max-w-lg lg:mb-20">
@@ -176,7 +176,7 @@ const Cenik = ({location}) => {
                     Ať už si přejete trávit Velikonoce jakkoliv, chalupa Na Potok je Vám k dispozici od Zeleného čtvrtka do Velikonočního pondělí.
                   </div>
                   <span className="text-center helvetica text-3xl font-bold pt-16 pb-8">
-                    40.000 Kč / 4 noci
+                    44.000 Kč / 4 noci
                   </span>
               </div>
             </div>
