@@ -31,7 +31,7 @@
     "isomorphic-fetch": "^3.0.0",
     "lazysizes": "^5.3.2",
     "leaflet": "^1.7.1",
-    "node-sass": "^4.14.1",
+    "node-addon-api": "^5.0.0",
     "postcss": "^7.0.35",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
@@ -42,6 +42,7 @@
     "react-leaflet": "^3.1.0",
     "react-responsive": "^8.2.0",
     "react-swipeable": "^5.5.1",
+    "sass": "^1.57.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
   },
   "devDependencies": {
@@ -51,6 +52,9 @@
   "keywords": [
     "gatsby"
   ],
+  "engines": {
+    "node": "14.x"
+  },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -67,5 +71,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "resolutions": {
+    "sharp": "^0.29.0"
   }
 }
