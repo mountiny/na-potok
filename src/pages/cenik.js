@@ -1,6 +1,4 @@
-import React, { useEffect, useState} from "react"
-
-import { Link } from "gatsby"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,9 +6,7 @@ import AnimateIn from '../components/AnimateIn'
 
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
-import DayPicker from 'react-day-picker';
-
-import 'react-day-picker/lib/style.css';
+import { DayPicker } from 'react-day-picker';
 
 import LeftArrow from '../components/svg/leftArrow'
 import RightArrow from '../components/svg/rightArrow'
@@ -19,21 +15,12 @@ import NarrowContainer from "../components/NarrowContainer"
 import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
 import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
-import Dvere from "../components/svg/dvere";
-
-import Image from '../components/image.js'
 
 function Navbar({
-  nextMonth,
-  previousMonth,
   onPreviousClick,
   onNextClick,
   className,
-  localeUtils,
 }) {
-  const months = localeUtils.getMonths();
-  const prev = months[previousMonth.getMonth()];
-  const next = months[nextMonth.getMonth()];
   return (
     <div className={className}>
       <LeftArrow 
@@ -57,27 +44,27 @@ const Cenik = ({location}) => {
   let bookings = []
   let modifiers = {}
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
-
+  console.log("data: ");
 
   // Load all the bookings
-  const { loading, error, data } = useQuery(GET_ALL_BOOKINGS, {});
+  // const { loading, error, data } = useQuery(GET_ALL_BOOKINGS, {});
 
-  if (!loading) {
-    if (error) return `Error! ${error.message}`;
+  // if (!loading && data) {
+  //   if (error) return `Error! ${error.message}`;
 
-    bookings = data.page.edges.map((node) => {
-      return node.node
-    })
+  //   bookings = data.page.edges.map((node) => {
+  //     return node.node
+  //   })
 
-    modifiers = {
-      booked: bookings.map((booking) => {
-        return {
-          from: new Date(booking.bookedFrom),
-          to: new Date(booking.bookedTo)
-        }
-      })
-    }
-  }
+  //   modifiers = {
+  //     booked: bookings.map((booking) => {
+  //       return {
+  //         from: new Date(booking.bookedFrom),
+  //         to: new Date(booking.bookedTo)
+  //       }
+  //     })
+  //   }
+  // }
 
   return (
     <Layout location={location}>
@@ -97,16 +84,6 @@ const Cenik = ({location}) => {
       </section>
 
       <NarrowContainer className='text-primary'>
-        {/* <AnimateIn>
-          <div className="central-text-block text-center">  
-            <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 text-black">
-              <p className="leading-loose">
-                Naše chalupa neslouží jen jako místo oddechu od hektického života ve městech, jako cíl dovolených a&nbsp;prodloužených víkendů, nebo rodinných rekreací.<br />
-                Díky členitému pozemku s&nbsp;mnohými zákoutími, prostoru bývalé stodoly a&nbsp;perfektnímu zázemí může chalupa Na Potok hostit všechny možné příležitosti setkávání, zážitků a&nbsp;radostí, které Vás jen napadnou!<br />
-               </p>   
-            </div>
-          </div>
-        </AnimateIn> */}
         <div className="relative w-full mt-32 md:mt-16 text-black">
           <AnimateIn threshold={0}>
             <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 justify-center content-center leading-relaxed">
@@ -186,71 +163,64 @@ const Cenik = ({location}) => {
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 md:py-16 text-black">
               <p className="leading-loose">
-                Podívejte se, jestli je Váš žádaný termín volný a ozvěte se nám. Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech. Těšíme se!
+                Ozvěte se nám, zda-li je Váš termín volný. Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech. Těšíme se!
 
                </p>   
             </div>
           </div>
         </AnimateIn>
-{/* 
-          <div className="w-full text-block pt-28 pb-12 font-medium text-center tracking-wide flex justify-center items-center">
-            <Link className="text-2xl font-normal border border-black px-5 py-4 hover:text-primary hover:bg-black transition-colors duration-200" to='/cenik/'>Chci přijet!</Link>
-          </div> */}
       </NarrowContainer>
 
       <NarrowContainer className='text-black pt-12'>
-          
-        <div className='calendar-wrapper'>
-          <div className="heading-wrapper pb-12 phone:pb-0">
-            <AnimateIn>
-              <h4 className='potok uppercase'>    
-                volné termíny
-              </h4>
-            </AnimateIn>
-          </div>
-
-          <AnimateIn>
-            <DayPicker 
-              numberOfMonths={isMobile ? 1 : 3}
-              locale={locale}
-              months={MONTHS[locale]}
-              weekdaysLong={WEEKDAYS_LONG[locale]}
-              weekdaysShort={WEEKDAYS_SHORT[locale]}
-              firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
-              labels={LABELS[locale]}
-              showOutsideDays
-              modifiers={loading ? {} : modifiers}
-              navbarElement={<Navbar />}
-        
-              />
-              
-
-            <div className='legend-wrapper my-16 relative flex justify-start text-black'>
-              <div className='legend-block free-slot flex justify-start items-center mr-12 md:mr-2'>
-                <div className='legend-box'>
-                  27
-                </div>
-                <div className='legend-text md:pl-2 pl-8'>
-                  volný termín
-                </div>
+        {/* {
+          data ? (
+            <div className='calendar-wrapper'>
+              <div className="heading-wrapper pb-12 phone:pb-0">
+                <AnimateIn>
+                  <h4 className='potok uppercase'>    
+                    volné termíny
+                  </h4>
+                </AnimateIn>
               </div>
-              <div className='legend-block booked-slot flex justify-start items-center'>
-                <div className='legend-box'>
-                  27
+
+              <AnimateIn>
+                <DayPicker 
+                  numberOfMonths={isMobile ? 1 : 3}
+                  locale={locale}
+                  months={MONTHS[locale]}
+                  weekdaysLong={WEEKDAYS_LONG[locale]}
+                  weekdaysShort={WEEKDAYS_SHORT[locale]}
+                  firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
+                  labels={LABELS[locale]}
+                  showOutsideDays
+                  modifiers={loading ? {} : modifiers}
+                  navbarElement={<Navbar />}
+            
+                  />
+                  
+                <div className='legend-wrapper my-16 relative flex justify-start text-black'>
+                  <div className='legend-block free-slot flex justify-start items-center mr-12 md:mr-2'>
+                    <div className='legend-box'>
+                      27
+                    </div>
+                    <div className='legend-text md:pl-2 pl-8'>
+                      volný termín
+                    </div>
+                  </div>
+                  <div className='legend-block booked-slot flex justify-start items-center'>
+                    <div className='legend-box'>
+                      27
+                    </div>
+                    <div className='legend-text md:pl-2 pl-8'>
+                      rezervovaný termín
+                    </div>
+                  </div>
                 </div>
-                <div className='legend-text md:pl-2 pl-8'>
-                  rezervovaný termín
-                </div>
-              </div>
+              </AnimateIn>
             </div>
-          </AnimateIn>
-
-        </div>
-
-        {/* <div className="w-full text-block pt-20 pb-32 font-medium text-center tracking-wide flex justify-center items-center">
-          <Link className="text-2xl font-normal border border-black px-5 py-4 mr-12 hover:text-primary hover:bg-black transition-colors duration-200" to='/ubytovaci-podminky/'>Chci vědět víc o cenách, termínech a ubytovacích podmínkách!</Link>
-        </div> */}
-
+          ) : null
+        } */}
+        
         <div className="relative w-full mt-20 mb-32 text-black">
           <AnimateIn>
             <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
@@ -259,7 +229,6 @@ const Cenik = ({location}) => {
           </AnimateIn>
         </div>
         
-
         <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center flex-wrap items-center">
           <a 
             className="text-2xl helvetica font-normal px-8 py-4 transition-colors duration-200" 
@@ -272,47 +241,44 @@ const Cenik = ({location}) => {
             +420 777 441 876
           </a>
         </div>
-
       </NarrowContainer>
-        
-
     </Layout>
   )
 }
 
-const GET_ALL_BOOKINGS = gql`
-  query content_view_0fc2f40c1e92499d879bb91233fcd086 {
-    page: bookingsConnection {
-      edges {
-        node {
-          id
-          stage
-          updatedAt
-          bookedFrom
-          bookedTo
-          createdAt
-          email
-          id
-          mobile
-          name
-          publishedAt
-          updatedAt
+// const GET_ALL_BOOKINGS = gql`
+//   query content_view_0fc2f40c1e92499d879bb91233fcd086 {
+//     page: bookingsConnection {
+//       edges {
+//         node {
+//           id
+//           stage
+//           updatedAt
+//           bookedFrom
+//           bookedTo
+//           createdAt
+//           email
+//           id
+//           mobile
+//           name
+//           publishedAt
+//           updatedAt
           
-          documentInStages(includeCurrent: true) {
-            id
-            stage
-            updatedAt
-            publishedAt
+//           documentInStages(includeCurrent: true) {
+//             id
+//             stage
+//             updatedAt
+//             publishedAt
           
-          }
-        }
-      }
-    aggregate {
-      count
-    }
-  }
-}
+//           }
+//         }
+//       }
+//     aggregate {
+//       count
+//     }
+//   }
+// }
 
-`
+// `
 
 export default Cenik
