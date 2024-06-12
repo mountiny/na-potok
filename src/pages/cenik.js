@@ -44,7 +44,6 @@ const Cenik = ({location}) => {
   let bookings = []
   let modifiers = {}
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
-  console.log("data: ");
 
   // Load all the bookings
   // const { loading, error, data } = useQuery(GET_ALL_BOOKINGS, {});
