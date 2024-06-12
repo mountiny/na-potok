@@ -57,9 +57,13 @@
     "gatsby-plugin-utils/graphql": "16.8.2",
     "gatsby-transformer-sharp/graphql": "16.8.2",
     "gatsby/graphql": "16.8.2",
-    "leaflet": "1.9.3"
+    "leaflet": "1.9.3",
+    "sharp": "^0.29.0"
   },
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "build": "gatsby build",
@@ -77,7 +81,4 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "resolutions": {
-    "sharp": "^0.29.0"
-  }
 }
