@@ -28,7 +28,6 @@
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "graphql": "16.8.2",
-    "graphql-tag": "^2.12.6",
     "isomorphic-fetch": "^3.0.0",
     "lazysizes": "^5.3.2",
     "leaflet": "^1.9.3",

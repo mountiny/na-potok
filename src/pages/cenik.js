@@ -3,68 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AnimateIn from '../components/AnimateIn'
-
-import gql from 'graphql-tag';
-import { useQuery } from '@apollo/react-hooks';
-import { DayPicker } from 'react-day-picker';
-
-import LeftArrow from '../components/svg/leftArrow'
-import RightArrow from '../components/svg/rightArrow'
-import { useMediaQuery } from 'react-responsive'
 import NarrowContainer from "../components/NarrowContainer"
 import UnderlineLinkInter from "../components/UnderlineLinkInter"
 
-import { WEEKDAYS_LONG, WEEKDAYS_SHORT, FIRST_DAY_OF_WEEK, LABELS, MONTHS } from '../config/locale'
-
-function Navbar({
-  onPreviousClick,
-  onNextClick,
-  className,
-}) {
-  return (
-    <div className={className}>
-      <LeftArrow 
-        className='DayPicker-NavButton--Next' 
-        onClick={() => onNextClick()} 
-        fill={"#707070"}
-        />
-      <RightArrow 
-        className='DayPicker-NavButton--Previous' 
-        onClick={() => onPreviousClick()}
-        fill={"#707070"}
-        />
-    </div>
-  );
-}
-
 const Cenik = ({location}) => {
-
-  const locale = 'cs'
-
-  let bookings = []
-  let modifiers = {}
-  const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
-
-  // Load all the bookings
-  // const { loading, error, data } = useQuery(GET_ALL_BOOKINGS, {});
-
-  // if (!loading && data) {
-  //   if (error) return `Error! ${error.message}`;
-
-  //   bookings = data.page.edges.map((node) => {
-  //     return node.node
-  //   })
-
-  //   modifiers = {
-  //     booked: bookings.map((booking) => {
-  //       return {
-  //         from: new Date(booking.bookedFrom),
-  //         to: new Date(booking.bookedTo)
-  //       }
-  //     })
-  //   }
-  // }
-
   return (
     <Layout location={location}>
       <SEO title="Na Potok - Ceník a rezervace" />
@@ -171,55 +113,6 @@ const Cenik = ({location}) => {
       </NarrowContainer>
 
       <NarrowContainer className='text-black pt-12'>
-        {/* {
-          data ? (
-            <div className='calendar-wrapper'>
-              <div className="heading-wrapper pb-12 phone:pb-0">
-                <AnimateIn>
-                  <h4 className='potok uppercase'>    
-                    volné termíny
-                  </h4>
-                </AnimateIn>
-              </div>
-
-              <AnimateIn>
-                <DayPicker 
-                  numberOfMonths={isMobile ? 1 : 3}
-                  locale={locale}
-                  months={MONTHS[locale]}
-                  weekdaysLong={WEEKDAYS_LONG[locale]}
-                  weekdaysShort={WEEKDAYS_SHORT[locale]}
-                  firstDayOfWeek={FIRST_DAY_OF_WEEK[locale]}
-                  labels={LABELS[locale]}
-                  showOutsideDays
-                  modifiers={loading ? {} : modifiers}
-                  navbarElement={<Navbar />}
-            
-                  />
-                  
-                <div className='legend-wrapper my-16 relative flex justify-start text-black'>
-                  <div className='legend-block free-slot flex justify-start items-center mr-12 md:mr-2'>
-                    <div className='legend-box'>
-                      27
-                    </div>
-                    <div className='legend-text md:pl-2 pl-8'>
-                      volný termín
-                    </div>
-                  </div>
-                  <div className='legend-block booked-slot flex justify-start items-center'>
-                    <div className='legend-box'>
-                      27
-                    </div>
-                    <div className='legend-text md:pl-2 pl-8'>
-                      rezervovaný termín
-                    </div>
-                  </div>
-                </div>
-              </AnimateIn>
-            </div>
-          ) : null
-        } */}
-        
         <div className="relative w-full mt-20 mb-32 text-black">
           <AnimateIn>
             <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
@@ -244,40 +137,5 @@ const Cenik = ({location}) => {
     </Layout>
   )
 }
-
-// const GET_ALL_BOOKINGS = gql`
-//   query content_view_0fc2f40c1e92499d879bb91233fcd086 {
-//     page: bookingsConnection {
-//       edges {
-//         node {
-//           id
-//           stage
-//           updatedAt
-//           bookedFrom
-//           bookedTo
-//           createdAt
-//           email
-//           id
-//           mobile
-//           name
-//           publishedAt
-//           updatedAt
-          
-//           documentInStages(includeCurrent: true) {
-//             id
-//             stage
-//             updatedAt
-//             publishedAt
-          
-//           }
-//         }
-//       }
-//     aggregate {
-//       count
-//     }
-//   }
-// }
-
-// `
 
 export default Cenik
