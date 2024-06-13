@@ -62,7 +62,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": "20.10.0"
+    "node": "20.x"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
