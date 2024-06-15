@@ -93,7 +93,7 @@ const KontaktPage = ({location}) => {
           (
             <Map 
               center={[50.085786, 16.848588]}
-              zoom={8}
+              zoom={10}
               minZoom={6}
               maxZoom={18}
               attributionControl={true}
@@ -105,9 +105,9 @@ const KontaktPage = ({location}) => {
               }}
               >
                 <TileLayer
-                    attribution='&copy; <a href="https://en.mapy.cz/">Mapy.cz</a>'
-                    url="https://mapserver.mapy.cz/winter-m/{z}-{x}-{y}"
-                  />
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
                 <Marker position={[50.085786, 16.848588]}>
                   <Popup>
                     Chalupa Na Potok.
