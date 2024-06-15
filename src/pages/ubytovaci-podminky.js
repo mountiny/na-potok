@@ -1,20 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import { MapContainer as Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import AnimateIn from '../components/AnimateIn'
- 
-import NarrowContainer from "../components/NarrowContainer"
-
 
 const KontaktPage = ({location}) => {
 
   return (
     <Layout location={location}>
       <SEO title="Na Potok - Kontakt" />
-
        <section className="bg-primary flex justify-center items-end pt-72 pb-48 content-center">
         <AnimateIn >
           <div className="central-text-block text-center">  
@@ -54,10 +47,7 @@ const KontaktPage = ({location}) => {
 Příjezd si naplánujte mezi 16-19h, odjezd do 10h<br />
 
 Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dodržet domluvený čas příjezdu a odjezdu.<br />
-
-
           </p>
-
           <h2 className="potok font-bold text-2xl pt-16 pb-8 uppercase">
             VŠEOBECNÉ PODMÍNKY
           </h2>
@@ -73,9 +63,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Zástupce provozovatele: Karel Hrušovský +420 737 273 951, Jan Skoumal +420 605 188 399
               </li>
             </ul>
-
           </p>
-
           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Popis
           </h3>
@@ -85,9 +73,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 chalupa NA POTOK v obci Vysoký Potok. Adresa Vysoký Potok 33, Malá Morava 788 33. Dále jen chalupa
               </li>
             </ul>
-
           </p>
-
           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Smysl těchto všeobecných podmínek
           </h3>
@@ -97,9 +83,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Smyslem je naplnit literu zákona a informovat, jaká práva máte a jaká práva máme zase my tak, abyste si Váš pobyt u nás užili naplno.
               </li>
             </ul>
-
           </p>
-
           <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Vznik smluvního vztahu - rezervace
           </h3>
@@ -112,9 +96,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Objednávky na rezervaci chalupy se zasílají emailem nebo telefonicky. Potvrzení provede ubytovatel písemně na Váš email nebo telefonicky. Ihned po rezervaci na základě vystavené faktury ubytovatelem uhradí objednatel zálohu 50 % z ceny pobytu. Zbylou cenu pobytu uhradí objednatel 1 měsíc před nástupem na pobyt zase na základě faktury. Pokud objednatel provede storno objednávku, ubytovatel si ponechá z celkové ceny storno podmínky viz níže. Začíná-li Váš pobyt za 30 dní a méně, hradí se po potvrzení rezervace celá částka za ubytování naráz.
               </li>
             </ul>
-
           </p>
-
            <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Vratná kauce​
           </h3>
@@ -130,9 +112,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 Ubytovaný host přebírá chalupu včetně příslušenství bez závad. Případné závady je povinen neprodleně nahlásit provozovateli. Při nástupu na pobyt předloží hosté doklady totožnosti.
               </li>
             </ul>
-
           </p>
-
            <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Psi
           </h3>
@@ -142,10 +122,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
                 V chalupě je možné po předchozí domluvě ubytovat i pejsky. Poplatek je 250 Kč/den. Ostatní zvířátka nechejte prosím doma nebo po dohodě s provozovatelem.
               </li>
             </ul>
-
           </p>
-
-          
            <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Poplatek z pobytu v obci
           </h3>
@@ -156,9 +133,7 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
 
               </li>
             </ul>
-
           </p>
-
            <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Storno podmínky
           </h3>
@@ -192,7 +167,6 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
             </ul>
 
           </p>
-
              <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Co je potřeba dodržovat?
           </h3>
@@ -324,7 +298,6 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
             </ul>
 
           </p>
-
           
            <h3 className="potok font-bold text-2xl pt-6 pb-0 uppercase">
             Na závěr
@@ -348,15 +321,10 @@ Nemáme žádnou recepci, proto vše budeme řešit osobně a je důležité dod
             chalupa@napotok.cz<br />
             www.napotok.cz
           </p>
-
-
-
         </div>
       </div>
-
     </Layout>
   )
 }
-
 
 export default KontaktPage

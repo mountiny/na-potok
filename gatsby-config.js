@@ -1,3 +1,12 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ */
+
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: `Chalupa Na Potok`,
@@ -8,7 +17,6 @@ module.exports = {
     twitterUsername: "@vitHoracek"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-brotli',
       options: {
@@ -57,7 +65,8 @@ module.exports = {
           require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
         ],
       },
-    }
+    },
+    `gatsby-plugin-image`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

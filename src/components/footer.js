@@ -1,13 +1,11 @@
 
 
 import React from "react"
-import PropTypes from "prop-types"
-import ChataImg from './svg/chata.js'
 import Strecha from './svg/strecha.js'
 import Instagram from './svg/instagram.js'
 import Facebook from './svg/facebook.js'
 
-const Footer = ({ children }) => {
+const Footer = () => {
 
   return (
     <footer className=''>
@@ -41,34 +39,16 @@ const Footer = ({ children }) => {
               </div>
             </div>
           </div>
-
-          {/* <ChataImg 
-            // width={240.006}
-            // height={231.879}
-            width={186}
-            height={180}
-            // viewBox="0 0 240.006 231.879"
-            // viewBox="0 0 186 180"
-            className='chata-img md:mt-16 md:self-center' /> */}
           
           <Strecha 
-            // width={240.006}
-            // height={231.879}
             width={140}
             height={100}
             fill={"#000"}
-            // viewBox="0 0 240.006 231.879"
-            // viewBox="0 0 186 180"
             className='chata-img md:mt-16 md:self-center' />
         </div>
-        
       </div>
     </footer>
   )
-}
-
-Footer.propTypes = {
-  children: PropTypes.node,
 }
 
 export default Footer

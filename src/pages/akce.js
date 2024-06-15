@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import AnimateIn from '../components/AnimateIn'
  
 import ImageSlider from "../components/imageSlider"
@@ -18,12 +18,6 @@ const AkcePage = ({location}) => {
   return (
     <Layout location={location}>
       <SEO title="Na Potok - Akce" />
-
-      {/* <section className="top-block">
-        <div className="title-top absolute flex justify-center items-end content-center">
-          <h2 className='potok text-center uppercase'>Akce a události</h2>
-        </div>
-      </section> */}
       <section className="top-block flex justify-center items-end content-center">
         <Image 
           filename="strecha"
@@ -31,7 +25,6 @@ const AkcePage = ({location}) => {
           imgStyle={{ objectFit: 'contain' }}
           />
       </section>
-
       <NarrowContainer className='text-primary h-half-spacing-bottom'>
 
         <div className="central-text-block text-center h-half-spacing-top h-half-spacing-bottom">
@@ -50,11 +43,9 @@ const AkcePage = ({location}) => {
               threshold={0.1}
               >
               <ImageSlider 
-                  // images={[Svatba1, Svatba2, Svatba3, Svatba4, Svatba5]}
                   images={['svatba1', 'svatba2', 'svatba3', 'svatba4', 'svatba5']}
                   innerColumn={true}
                   className={'tall-image'}
-                  // maxHeight={'462px'}
                   maxHeight={'80vh'}
                 />
             </AnimateIn>
@@ -75,11 +66,9 @@ const AkcePage = ({location}) => {
               threshold={0.1}
               >
               <ImageSlider 
-                  // images={[Teambuilding1, Teambuilding2]}
                   images={['teambuilding1', 'teambuilding2']}
                   innerColumn={true}
                   className={'tall-image'}
-                  // maxHeight={'655px'}
                   maxHeight={'80vh'}
                 />
             </AnimateIn>
@@ -96,16 +85,12 @@ const AkcePage = ({location}) => {
                 
           </div>
         </div>
-
         <div className="w-full text-block mt-44 mb-16 font-medium text-center tracking-wide">
           <Link className="text-3xl uppercase underline" to='/rezervace/'>rezervujte si termín!</Link>
         </div>
-
       </NarrowContainer>
-
     </Layout>
   )
 }
-
 
 export default AkcePage

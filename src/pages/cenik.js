@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import AnimateIn from '../components/AnimateIn'
 import NarrowContainer from "../components/NarrowContainer"
 import UnderlineLinkInter from "../components/UnderlineLinkInter"
@@ -120,7 +120,6 @@ const Cenik = ({location}) => {
             </span>
           </AnimateIn>
         </div>
-        
         <div className="w-full text-block pb-32 font-medium text-center tracking-wide flex justify-center flex-wrap items-center">
           <a 
             className="text-2xl helvetica font-normal px-8 py-4 transition-colors duration-200" 

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import AnimateIn from '../components/AnimateIn'
 
 import ImageSlider from "../components/imageSlider"
@@ -15,29 +15,19 @@ import Voda from '../components/svg/voda.js'
 import Lipa from '../components/svg/lipa.js'
 import Dvere from '../components/svg/dvere.js'
 
-// import ChataImg from '../components/svg/chataGrey.js'
-
 const IndexPage = ({location}) => {
 
   return (
     <Layout location={location}>
       <SEO title="Na potok" />
-
-      {/* INTRO PAGE START */}
-
       <section className="landing-page">
-        {/* <div className="title absolute flex justify-center items-center content-center">
-          <h1 className='potok text-center uppercase'>na chalupu</h1>
-        </div> */}
         <IntroImageSlider
           images={['34', '43', '40intro']}
           />
       </section>
 
-      {/* INTRO PAGE END */}
       <section className="bg-primary">
         <NarrowContainer className='text-black'>
-
           <AnimateIn >
             <div className="central-text-block pb-16 text-center">  
             <div className="centered-block inline-block leading-loose max-w-6xl text-center pb-24 pt-8 text-black">
@@ -87,8 +77,6 @@ const IndexPage = ({location}) => {
                     
                   <Dvere 
                     width={200}
-                    // height={160.25}
-                    // viewBox="0 0 263.68 202.25"
                     className='chata-img mb-16 mt-8' />
                 </div>
                 <span className="text-center potok text-3xl font-bold py-8 uppercase">
@@ -102,8 +90,6 @@ const IndexPage = ({location}) => {
                   <div className="h-72 w-full flex justify-center items-center">
                   <Voda 
                     width={200}
-                    // height={200.05}
-                    // viewBox="0 0 289.87 280.05"
                       className='chata-img mb-12' />
                   </div>
                   <span className="text-center potok text-3xl font-bold py-8 uppercase">
@@ -118,7 +104,6 @@ const IndexPage = ({location}) => {
             
             <div className="relative flex justify-center items-center mt-48">
               <AnimateIn className='w-full mx-auto relative' style={ {maxWidth: "1200px"}}>
-              
                 <ImageSlider 
                   images={['62', '28', '42', '2', '19']}
                   className={''}
@@ -132,7 +117,6 @@ const IndexPage = ({location}) => {
               <AnimateIn>
                 <span className="pt-16 block pb-0 text-5xl lg:text-3xl potok w-full text-center">
                   <UnderlineLinkInter link="/cenik/" text={`Zarezervujte si u nás termín`}>
-                      
                     </UnderlineLinkInter>
                 </span>
               </AnimateIn>
@@ -140,10 +124,8 @@ const IndexPage = ({location}) => {
         </div>
         </WideContainer>
       </section>
-
     </Layout>
   )
 }
-
 
 export default IndexPage
