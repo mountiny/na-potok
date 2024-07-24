@@ -104,7 +104,7 @@ const Cenik = ({location}) => {
           <div className="central-text-block text-center">  
             <div className="centered-block inline-block leading-loose text-center max-w-5xl py-32 md:py-16 text-black">
               <p className="leading-loose">
-              <a className="underline" target="_blank" href='https://www.e-chalupy.cz/kalendar-obsazenosti.php?objekt=12314'>Zde</a> můžete nakouknout, zda-li je Váš termín volný. Pokud ano, neváhejte se nám ozvat. Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech. Těšíme se!
+              <a className="underline font-bold" target="_blank" href='https://www.e-chalupy.cz/kalendar-obsazenosti.php?objekt=12314'>ZDE</a> můžete nakouknout, zda-li je Váš termín volný. Pokud ano, neváhejte se nám ozvat. Máme rádi osobní přístup a určitě se domluvíme na všech podrobnostech. Těšíme se!
                </p>   
             </div>
           </div>
